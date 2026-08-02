@@ -1,35 +1,46 @@
 @import "tailwindcss";
 
 
-/* 1. Déclaration des couleurs personnalisées pour Tailwind v4 */
+/*PALETTE DE COULEURS DE LA CDJ NODASA (Tailwind v4 @theme)*/
+
 @theme {
+  /* Couleurs de structure & d'interface */
   --color-cdj-primary: var(--color-primary);
   --color-cdj-secondary: var(--color-secondary);
   --color-cdj-bg: var(--color-bg);
   --color-cdj-card: var(--color-card);
   --color-cdj-text: var(--color-text);
+  --color-cdj-muted: var(--color-muted);
   --color-cdj-border: var(--color-border);
-  --color-cdj-danger: var(--color-danger);
+
+  /* Piliers du Logo & Badges d'état (Extraits directement des silhouettes) */
+  --color-cdj-piete: #7b2cbf;       /* Violet : Piété (ex: statut excusé) */
+  --color-cdj-foi: #0284c7;         /* Bleu Ciel : Foi (ex: sacrements / infos) */
+  --color-cdj-honnete: #10b981;     /* Vert : Honnêteté / Présence (Vert du logo) */
+  --color-cdj-engagement: #dc2626;  /* Rouge : Engagement / Alerte 3 absences */
+  --color-cdj-gold: #f59e0b;        /* Doré : Sagesse & Jeunesse */
 }
 
-/* 2. Couleurs en MODE CLAIR (Par défaut) */
+/*THÈME CLAIR (Mode par défaut) */
 :root {
-  --color-primary: #1e3a8a;    /* Bleu CDJ */
-  --color-secondary: #d97706;  /* Doré / Jaune */
-  --color-bg: #f8fafc;         /* Fond principal très clair */
-  --color-card: #ffffff;       /* Fond des cartes / blocs blanc */
-  --color-text: #0f172a;       /* Texte sombre */
-  --color-border: #e2e8f0;     /* Bordures claires */
-  --color-danger: #dc2626;     /* Rouge alerte */
+  --color-primary: #0f2a4a;     /* Bleu Nuit institutionnel (Issu du grand "C") */
+  --color-secondary: #f59e0b;   /* Jaune Doré Sagesse (Silhouette supérieure) */
+  --color-bg: #f8fafc;          /* Fond principal doux (Gris-bleu très clair) */
+  --color-card: #ffffff;        /* Surface des cartes (Blanc pur) */
+  --color-text: #0f172a;        /* Texte principal (Très sombre, haute lisibilité) */
+  --color-muted: #64748b;       /* Texte secondaire & sous-titres */
+  --color-border: #e2e8f0;      /* Lignes de séparation & bordures d'inputs */
 }
 
-/* 3. Couleurs en MODE SOMBRE (s'active quand la classe .dark est sur la balise <html>) */
+/* ==========================================================================
+   3. THÈME SOMBRE (Activé via la classe .dark sur la balise <html>)
+   ========================================================================== */
 .dark {
-  --color-primary: #3b82f6;    /* Bleu plus vif pour le sombre */
-  --color-secondary: #f59e0b;  /* Doré ajusté */
-  --color-bg: #0f172a;         /* Fond principal sombre (Slate 900) */
-  --color-card: #1e293b;       /* Fond des cartes sombre (Slate 800) */
-  --color-text: #f8fafc;       /* Texte très clair */
-  --color-border: #334155;     /* Bordures sombres */
-  --color-danger: #ef4444;     /* Rouge alerte sombre */
+  --color-primary: #38bdf8;     /* Bleu ciel vif (Pour ressortir sur fond sombre) */
+  --color-secondary: #fbbf24;   /* Doré ajusté pour le mode nuit */
+  --color-bg: #0b1329;          /* Fond sombre inspiré du bleu nuit du logo */
+  --color-card: #152238;        /* Surface des cartes (Bleu nuit profond) */
+  --color-text: #f8fafc;        /* Texte clair (Blanc cassé) */
+  --color-muted: #94a3b8;       /* Texte secondaire sombre */
+  --color-border: #1e293b;      /* Bordures sombres discrètes */
 }
