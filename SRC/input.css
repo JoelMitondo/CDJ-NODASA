@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+
+/* 1. Déclaration des couleurs personnalisées pour Tailwind v4 */
+@theme {
+  --color-cdj-primary: var(--color-primary);
+  --color-cdj-secondary: var(--color-secondary);
+  --color-cdj-bg: var(--color-bg);
+  --color-cdj-card: var(--color-card);
+  --color-cdj-text: var(--color-text);
+  --color-cdj-border: var(--color-border);
+  --color-cdj-danger: var(--color-danger);
+}
+
+/* 2. Couleurs en MODE CLAIR (Par défaut) */
+:root {
+  --color-primary: #1e3a8a;    /* Bleu CDJ */
+  --color-secondary: #d97706;  /* Doré / Jaune */
+  --color-bg: #f8fafc;         /* Fond principal très clair */
+  --color-card: #ffffff;       /* Fond des cartes / blocs blanc */
+  --color-text: #0f172a;       /* Texte sombre */
+  --color-border: #e2e8f0;     /* Bordures claires */
+  --color-danger: #dc2626;     /* Rouge alerte */
+}
+
+/* 3. Couleurs en MODE SOMBRE (s'active quand la classe .dark est sur la balise <html>) */
+.dark {
+  --color-primary: #3b82f6;    /* Bleu plus vif pour le sombre */
+  --color-secondary: #f59e0b;  /* Doré ajusté */
+  --color-bg: #0f172a;         /* Fond principal sombre (Slate 900) */
+  --color-card: #1e293b;       /* Fond des cartes sombre (Slate 800) */
+  --color-text: #f8fafc;       /* Texte très clair */
+  --color-border: #334155;     /* Bordures sombres */
+  --color-danger: #ef4444;     /* Rouge alerte sombre */
+}
