@@ -52,3 +52,38 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
+// GESTION DU MENU BURGER MOBILE & SOUS-MENUS AU CLIC
+const mobile_menu_btn = document.getElementById("mobile-menu-btn")
+const burger_icon = document.getElementById("burger-icon")
+const close_icon = document.getElementById("close_icon")
+const mobile_menu=document.getElementById("mobile-menu")
+mobile_menu_btn.addEventListener("click", ()=>{
+  burger_icon.classList.toggle("hidden")
+  close_icon.classList.toggle("hidden")
+  mobile_menu.classList.toggle("hidden")
+})
+function cacher_afficher(a,b){
+  a.addEventListener("click", ()=>{
+  b.classList.toggle("hidden")
+  })
+}
+const menu_mobile_grDeVie=document.getElementById("menu_mobile_grDeVie")
+const mobile_sub_groupes=document.getElementById("mobile_sub_groupes")
+cacher_afficher(menu_mobile_grDeVie,mobile_sub_groupes)
+
+const menu_mobile_agenda=document.getElementById("menu_mobile_agenda")
+const mobile_sub_agenda=document.getElementById("mobile_sub_agenda")
+cacher_afficher(menu_mobile_agenda,mobile_sub_agenda)
+
+const menu_mobile_contact=document.getElementById("menu_mobile_contact")
+const mobile_sub_contact=document.getElementById("mobile_sub_contact")
+cacher_afficher(menu_mobile_contact,mobile_sub_contact)
+
+const search_btn=document.querySelector(".search_btn")
+const search_modal=document.getElementById("search-modal")
+cacher_afficher(search_btn,search_modal)
+
+const closes_earch_modal=document.getElementById("close-search-modal")
+cacher_afficher(closes_earch_modal,search_modal)

@@ -3,65 +3,62 @@ export const translations = {
   fr: {
     "navigation.accueil": "Accueil",
     "navigation.groupes": "Groupes de Vie",
-    "navigation.connexion": "Connexion",
-    
-    "accueil.titre": "Commission Diocésaine des Jeunes",
-    "accueil.sous_titre": "Paroisse Notre-Dame de la Sagesse",
-    "accueil.bouton_action": "Espace Jeunesse Engagée",
-    
-    "groupes.titre": "Nos 8 Groupes de Vie",
-    "groupes.sous_titre": "Découvrez et rejoignez les mouvements de notre paroisse.",
-    
-    "presence.titre": "Prise de Présence",
-    "presence.present": "Présent",
-    "presence.absent": "Absent",
-    "presence.excuse": "Excusé",
-    
-    "alerte.absences": "Attention : 3 absences consécutives détectées",
-    "pied_de_page.droits": "Tous droits réservés."
+    "navigation.agenda": "Agenda",
+    "navigation.contact": "Contact",
+    "navigation.connexion": "Espace Engagé",
+    "groupes.generalite": "Généralités",
+    "agenda.activites_cdj": "Activités de la CDJ",
+    "agenda.activites_groupes": "Activités des Groupes de Vie",
+    "contact.bureau_cdj": "Bureau CDJ Paroissial",
+    "contact.responsables_groupes": "Contacts des Responsables",
+    "recherche.placeholder": "Rechercher un groupe, une activité, une info...",
+    "recherche.echap": "ÉCHAP",
+    "recherche.fermer": "Fermer",
+    "recherche.instruction": "Tapez au moins 2 caractères pour lancer la recherche...",
+    "recherche.aucun_resultat": "Aucun résultat trouvé pour",
+    "recherche.categorie_groupes": "Groupes de Vie",
+    "recherche.categorie_agenda": "Agenda & Événements"
   },
 
   // ANGLAIS
   en: {
     "navigation.accueil": "Home",
     "navigation.groupes": "Life Groups",
-    "navigation.connexion": "Login",
-    
-    "accueil.titre": "Diocesan Youth Commission",
-    "accueil.sous_titre": "Our Lady of Wisdom Parish",
-    "accueil.bouton_action": "Engaged Youth Portal",
-    
-    "groupes.titre": "Our 8 Life Groups",
-    "groupes.sous_titre": "Discover and join the parish youth movements.",
-    
-    "presence.titre": "Attendance Tracking",
-    "presence.present": "Present",
-    "presence.absent": "Absent",
-    "presence.excuse": "Excused",
-    
-    "alerte.absences": "Warning: 3 consecutive absences detected",
-    "pied_de_page.droits": "All rights reserved."
+    "navigation.agenda": "Calendar",
+    "navigation.contact": "Contact",
+    "navigation.connexion": "Engaged Portal",
+    "groupes.generalite": "Overview",
+    "agenda.activites_cdj": "DYC Activities",
+    "agenda.activites_groupes": "Life Groups Activities",
+    "contact.bureau_cdj": "Parish DYC Office",
+    "contact.responsables_groupes": "Group Leaders Contacts",
+    "recherche.placeholder": "Search for a group, activity, info...",
+    "recherche.echap": "ESC",
+    "recherche.fermer": "Close",
+    "recherche.instruction": "Type at least 2 characters to search...",
+    "recherche.aucun_resultat": "No results found for",
+    "recherche.categorie_groupes": "Life Groups",
+    "recherche.categorie_agenda": "Calendar & Events"
   },
 
   // LATIN
   la: {
     "navigation.accueil": "Initium",
     "navigation.groupes": "Coetus Vitae",
-    "navigation.connexion": "Initus",
-    
-    "accueil.titre": "Commissio Dioecesana Iuvenum",
-    "accueil.sous_titre": "Parochia Dominae Nostrae Sapientiae",
-    "accueil.bouton_action": "Porta Iuventutis Fidelis",
-    
-    "groupes.titre": "Octo Coetus Vitae Nostri",
-    "groupes.sous_titre": "Invenite et coniungite motus parochiae nostrae.",
-    
-    "presence.titre": "Praesentiae Descriptio",
-    "presence.present": "Adest",
-    "presence.absent": "Abest",
-    "presence.excuse": "Excusatus",
-    
-    "alerte.absences": "Monitio: Tres absentiae consecutivae detectae",
-    "pied_de_page.droits": "Omnia jura reservata."
+    "navigation.agenda": "Ordo Dierum",
+    "navigation.contact": "Contactus",
+    "navigation.connexion": "Porta Fidelis",
+    "groupes.generalite": "Generalia",
+    "agenda.activites_cdj": "Activitatis CDJ",
+    "agenda.activites_groupes": "Activitatis Coetuum Vitae",
+    "contact.bureau_cdj": "Officium CDJ Parochiale",
+    "contact.responsables_groupes": "Contactus Ducerum",
+    "recherche.placeholder": "Quaere coetum, activitatem, nuntium...",
+    "recherche.echap": "ESC",
+    "recherche.fermer": "Claudere",
+    "recherche.instruction": "Scribe saltem II litteras ut quaeras...",
+    "recherche.aucun_resultat": "Nullus eventus inventus pro",
+    "recherche.categorie_groupes": "Coetus Vitae",
+    "recherche.categorie_agenda": "Ordo Dierum & Eventus"
   }
 };
