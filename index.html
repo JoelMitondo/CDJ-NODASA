@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>CDJ NODASA</title>
     <link rel="stylesheet" href="./SRC/output.css">
+    <script type="module" src="./SRC/JS/app.js"></script>
     <script type="module" src="./SRC/JS/scripts.js"></script>
 </head>
 <body class="bg-cdj-bg text-cdj-text transition-colors duration-300">
@@ -97,7 +98,7 @@
                     </select>
                 </div>
                 <!-- ICÔNE COMMUTATEUR THÈME -->
-                <button onclick="toggleTheme()" class="p-2 rounded-lg border border-cdj-border/80 bg-cdj-bg/50 hover:bg-cdj-bg transition-colors" title="Changer de thème">
+                <button id="btn_mode_sombre_clair" class="p-2 rounded-lg border border-cdj-border/80 bg-cdj-bg/50 hover:bg-cdj-bg transition-colors" title="Changer de thème">
                     <!-- Soleil (Mode Sombre -> Clair) -->
                     <svg class="hidden w-4 h-4 text-cdj-primary dark:text-sky-4000 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
                     <!-- Lune (Mode Clair -> Sombre) -->
@@ -176,9 +177,227 @@
 
         </div>
     </header>
+    <!-- SECTION HÉRO (PLEIN ÉCRAN AVEC IMAGE D'ARRIÈRE-PLAN ET OVERLAY) -->
+    <section id="section-hero" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-900 text-white -mt-20">
+    <!-- 1. IMAGE D'ARRIÈRE-PLAN -->
+    <div 
+        id="image-fond-hero" 
+        class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 scale-105"
+        style="background-image: url('./publics/img/arriere_plan_cdj.jpg');">
+    </div>
 
+    <!-- 2. COUCHE DE SUPERPOSITION (OVERLAY SOMBRE AVEC DÉGRADÉ ET FLOU LÉGER) -->
+    <div 
+        id="superposition-hero" 
+        class="absolute inset-0 z-10 bg-gradient-to-b from-slate-950/80 via-slate-900/70 to-slate-950/90 backdrop-blur-[2px]">
+    </div>
 
-<!-- FENÊTRE MODALE DE RECHERCHE (OVERLAY) -->
+    <!-- 3. CONTENU PRINCIPAL (CENTRÉ EN HAUTEUR ET EN LARGEUR) -->
+    <div id="conteneur-hero" class="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-28 pb-16 flex flex-col items-center justify-center min-h-screen">
+        
+        <!-- BADGE SLOGAN -->
+        <div id="badge-slogan" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cdj-primary/20 border border-cdj-primary/40 text-white dark:text-sky-300 text-xs sm:text-sm font-bold uppercase tracking-widest mb-6 backdrop-blur-md shadow-lg">
+        <span class="w-2 h-2 rounded-full bg-cdj-secondary animate-pulse"></span>
+        <span data-i18n="hero.slogan">Piété • Foi • Honnêteté • Engagement</span>
+        </div>
+
+        <!-- TITRE PRINCIPAL -->
+        <h1 id="titre-principal-hero" class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight mb-6 max-w-4xl text-drop-shadow">
+        <span class="block text-white" data-i18n="hero.titre_ligne1">Commission des Jeunes</span>
+        <span class="block text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-blue-300 to-amber-300" data-i18n="hero.titre_ligne2">
+            Paroisse Notre-Dame de la Sagesse
+        </span>
+        </h1>
+
+        <!-- VERSET BIBLIQUE & PHRASE D'ACCROCHE -->
+        <div id="bloc-verset-hero" class="max-w-2xl mb-10 space-y-2">
+        <blockquote id="citation-verset-hero" class="text-base sm:text-lg lg:text-xl font-medium italic text-slate-200 leading-relaxed">
+            « Que personne ne méprise ta jeunesse ; mais sois un modèle pour les fidèles, en parole, en conduite, en charité, en foi, en pureté. »
+        </blockquote>
+        <p id="reference-verset-hero" class="text-xs sm:text-sm font-bold text-amber-400 tracking-wider uppercase">
+            — 1 Timothée 4:12
+        </p>
+        </div>
+
+        <!-- BOUTONS D'ACTION (CTA) -->
+        <div id="conteneur-boutons-hero" class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+        
+            <!-- BOUTON PRINCIPAL -->
+            <a 
+                id="bouton-action-principal" 
+                href="./SRC/html/groupeVie.html" 
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-cdj-primary text-white hover:bg-opacity-90 font-bold px-8 py-4 rounded-2xl shadow-xl shadow-blue-950/50 hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-200 border border-blue-400/30 text-sm sm:text-base">
+                <span data-i18n="hero.bouton_rejoindre">Découvrir nos Groupes</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+            </a>
+
+            <!-- BOUTON SECONDAIRE -->
+            <a 
+                id="bouton-action-secondaire" 
+                href="./SRC/html/agendaCdj.html" 
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-800/80 hover:bg-slate-700/80 text-white font-semibold px-8 py-4 rounded-2xl border border-slate-600/60 backdrop-blur-md hover:border-slate-400 transition-all duration-200 text-sm sm:text-base">
+                <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 002 2v12a2 2 0 002 2z"/>
+                </svg>
+                <span data-i18n="hero.bouton_agenda">Voir l'Agenda</span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- INDICATEUR DE DÉFILEMENT (FLÈCHE ANIME EN BAS) -->
+    <a 
+        id="indicateur-defilement-hero" 
+        href="#piliers" 
+        class="absolute bottom-6 z-20 text-slate-400 hover:text-white transition-colors animate-bounce p-2"
+        aria-label="Défiler vers le bas">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7-7-7"/>
+        </svg>
+    </a>
+
+    </section>
+    <!-- SECTION : MOT DU PRÉSIDENT, OBJECTIFS & COMPTEURS DYNAMIQUES (PLEIN ÉCRAN) -->
+    <section id="section-mot-et-objectifs" class="relative min-h-screen flex flex-col justify-between py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-transparent">
+    
+    <div class="flex-1 flex flex-col justify-center space-y-12 my-auto">
+        
+        <!-- EN-TÊTE DE SECTION -->
+        <div class="text-center max-w-3xl mx-auto space-y-3">
+        <h2 class="text-xs sm:text-sm font-bold uppercase tracking-widest text-cdj-primary dark:text-sky-400" data-i18n="section.soustitre">
+            Vision & Engagement
+        </h2>
+        <p class="text-2xl sm:text-4xl font-extrabold text-cdj-text tracking-tight" data-i18n="section.titre">
+            Construire Ensemble la Jeunesse de Demain
+        </p>
+        </div>
+
+        <!-- GRILLE : MOT DU PRÉSIDENT & OBJECTIFS DU SITE -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- CARTE 1 : LE MOT DU PRÉSIDENT (5 colonnes sur desktop) -->
+        <div id="carte-mot-president" class="lg:col-span-5 bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col justify-between relative overflow-hidden group">
+            <!-- Décoration d'arrière-plan -->
+            <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-cdj-primary/5 rounded-full blur-2xl group-hover:bg-cdj-primary/10 transition-all"></div>
+
+            <div>
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cdj-primary/10 text-cdj-primary dark:text-sky-400 text-xs font-bold uppercase mb-6">
+                💬 <span data-i18n="president.badge">Le Mot du Président</span>
+            </div>
+
+            <!-- Citation / Message -->
+            <blockquote class="text-cdj-text font-medium text-base sm:text-lg italic leading-relaxed mb-6">
+                « Chers jeunes de la NODASA, ce site est votre maison numérique. Il a été conçu pour rapprocher nos communautés, favoriser le réengagement de chacun et faire rayonner nos actions pastorales au-delà des murs de la paroisse. »
+            </blockquote>
+            </div>
+
+            <!-- Profil du Président -->
+            <div class="flex items-center gap-4 pt-4 border-t border-cdj-border/60 mt-auto">
+            <div class="w-14 h-14 rounded-2xl bg-slate-200 dark:bg-slate-700 overflow-hidden shrink-0 border-2 border-cdj-primary">
+                <img src="assets/images/president.jpg" alt="Président CDJ" class="w-full h-full object-cover" loading="lazy">
+            </div>
+            <div>
+                <h3 class="font-bold text-cdj-text text-base">Joel Mitondo</h3>
+                <p class="text-xs text-cdj-muted font-medium" data-i18n="president.role">Président du Bureau CDJ NODASA</p>
+            </div>
+            </div>
+        </div>
+
+        <!-- CARTE 2 : OBJECTIFS DU SITE (7 colonnes sur desktop) -->
+        <div id="carte-objectifs-site" class="lg:col-span-7 bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col justify-between">
+            
+            <div>
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-500 text-xs font-bold uppercase mb-6">
+                🎯 <span data-i18n="objectifs.badge">Mission de la Plateforme</span>
+            </div>
+
+            <h3 class="text-xl sm:text-2xl font-bold text-cdj-text mb-6" data-i18n="objectifs.titre">
+                Pourquoi cette plateforme numérique ?
+            </h3>
+
+            <!-- Liste des 3 Objectifs Majeurs -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                
+                <!-- Objectif 1 -->
+                <div class="p-4 rounded-2xl bg-cdj-bg/60 border border-cdj-border/50 space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-500 flex items-center justify-center font-bold text-lg">
+                    📢
+                </div>
+                <h4 class="font-bold text-sm text-cdj-text" data-i18n="objectifs.un.titre">Centraliser l'Information</h4>
+                <p class="text-xs text-cdj-muted leading-snug" data-i18n="objectifs.un.desc">Accéder rapidement aux activités, agendas et communiqués officiels.</p>
+                </div>
+
+                <!-- Objectif 2 -->
+                <div class="p-4 rounded-2xl bg-cdj-bg/60 border border-cdj-border/50 space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center font-bold text-lg">
+                    🤝
+                </div>
+                <h4 class="font-bold text-sm text-cdj-text" data-i18n="objectifs.deux.titre">Unir les Groupes</h4>
+                <p class="text-xs text-cdj-muted leading-snug" data-i18n="objectifs.deux.desc">Créer des ponts solides entre les 8 groupes de vie de la paroisse.</p>
+                </div>
+
+                <!-- Objectif 3 -->
+                <div class="p-4 rounded-2xl bg-cdj-bg/60 border border-cdj-border/50 space-y-2">
+                <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-500 flex items-center justify-center font-bold text-lg">
+                    🚀
+                </div>
+                <h4 class="font-bold text-sm text-cdj-text" data-i18n="objectifs.trois.titre">Digitaliser l'Engagement</h4>
+                <p class="text-xs text-cdj-muted leading-snug" data-i18n="objectifs.trois.desc">Permettre l'inscription directe des membres et le suivi dynamique.</p>
+                </div>
+
+            </div>
+            </div>
+
+        </div>
+
+        </div>
+
+        <!-- BLOC COMPTEURS DYNAMIQUES (DÉCLENCHEMENT AU DÉFILEMENT) -->
+        <div id="conteneur-statistiques" class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
+        
+        <!-- COMPTEUR 1 : GROUPES DE VIE -->
+        <div class="bg-cdj-card border border-cdj-border rounded-2xl p-6 text-center shadow-lg hover:border-cdj-primary/40 transition-all">
+            <div class="text-3xl sm:text-5xl font-black text-cdj-primary dark:text-sky-400 mb-2 flex items-center justify-center">
+            <span id="compteur-groupes" data-cible="8">0</span>
+            </div>
+            <p class="text-xs sm:text-sm font-bold text-cdj-text uppercase tracking-wider" data-i18n="statistiques.groupes">
+            Groupes de Vie
+            </p>
+        </div>
+
+        <!-- COMPTEUR 2 : JEUNES ACTIFS -->
+        <div class="bg-cdj-card border border-cdj-border rounded-2xl p-6 text-center shadow-lg hover:border-cdj-primary/40 transition-all">
+            <div class="text-3xl sm:text-5xl font-black text-cdj-secondary mb-2 flex items-center justify-center">
+            <span id="compteur-jeunes" data-cible="1200">0</span>
+            <span>+</span>
+            </div>
+            <p class="text-xs sm:text-sm font-bold text-cdj-text uppercase tracking-wider" data-i18n="statistiques.jeunes">
+            Jeunes Actifs
+            </p>
+        </div>
+
+        <!-- COMPTEUR 3 : ENCADREURS -->
+        <div class="bg-cdj-card border border-cdj-border rounded-2xl p-6 text-center shadow-lg hover:border-cdj-primary/40 transition-all">
+            <div class="text-3xl sm:text-5xl font-black text-amber-500 mb-2 flex items-center justify-center">
+            <span id="compteur-encadreurs" data-cible="45">0</span>
+            <span>+</span>
+            </div>
+            <p class="text-xs sm:text-sm font-bold text-cdj-text uppercase tracking-wider" data-i18n="statistiques.encadreurs">
+            Encadreurs & Aînés
+            </p>
+        </div>
+
+        </div>
+
+    </div>
+
+    </section>
+<!-- FENÊTRE MODALE DE RECHERCHE -->
     <div id="search-modal" class="fixed inset-0 z-500 hidden bg-slate-900/60 backdrop-blur-sm flex items-start justify-center p-4 sm:p-6 md:p-20 transition-all duration-200">
         <!-- Carte Conteneur -->
         <div id="search-modal-card" class="bg-cdj-card border border-cdj-border w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden flex flex-col transform transition-all my-auto sm:my-0">
@@ -223,23 +442,5 @@
 
         </div>
     </div>
-
 </body>
-<script>
-    // Au chargement de la page : appliquer le thème sauvegardé ou la préférence du système
-const savedTheme = localStorage.getItem('theme');
-const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
-  document.documentElement.classList.add('dark');
-} else {
-  document.documentElement.classList.remove('dark');
-}
-
-// Fonction pour basculer le thème au clic sur un bouton
-function toggleTheme() {
-  const isDark = document.documentElement.classList.toggle('dark');
-  localStorage.setItem('theme', isDark ? 'dark' : 'light');
-}
-</script>
 </html>
