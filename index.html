@@ -16,8 +16,7 @@
             <a href="index.html" class="flex items-center gap-3 shrink-0 group">
                 <img src="./publics/logo_icones/LOGO CDJ NODASA sans fond.png" alt="Logo CDJ NODASA" class="rounded-full h-15 w-auto transition-transform group-hover:scale-105">
                 <div class="flex flex-col">
-                    <span class="font-extrabold text-base sm:text-lg leading-tight text-cdj-primary dark:text-sky-400">
-                    CDJ NODASA
+                    <span class="sigleCommission font-extrabold text-base sm:text-lg leading-tight text-cdj-primary dark:text-sky-400">
                     </span>
                     <span class="text-xs text-cdj-muted hidden md:inline-block font-medium">
                     Notre-Dame de la Sagesse
@@ -177,6 +176,7 @@
 
         </div>
     </header>
+
     <!-- SECTION HÉRO (PLEIN ÉCRAN AVEC IMAGE D'ARRIÈRE-PLAN ET OVERLAY) -->
     <section id="section-hero" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-900 text-white -mt-20">
     <!-- 1. IMAGE D'ARRIÈRE-PLAN -->
@@ -260,6 +260,7 @@
     </a>
 
     </section>
+
     <!-- SECTION : MOT DU PRÉSIDENT, OBJECTIFS & COMPTEURS DYNAMIQUES (PLEIN ÉCRAN) -->
     <section id="section-mot-et-objectifs" class="relative min-h-screen flex flex-col justify-between py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-transparent">
     
@@ -282,11 +283,16 @@
         <div id="carte-mot-president" class="lg:col-span-5 bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col justify-between relative overflow-hidden group">
             <!-- Décoration d'arrière-plan -->
             <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-cdj-primary/5 rounded-full blur-2xl group-hover:bg-cdj-primary/10 transition-all"></div>
-
+                
             <div>
             <!-- Badge -->
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cdj-primary/10 text-cdj-primary dark:text-sky-400 text-xs font-bold uppercase mb-6">
-                💬 <span data-i18n="president.badge">Le Mot du Président</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="6" r="4" fill="currentColor" />
+                    <path fill="currentColor" d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5" />
+                </svg>
+                <span data-i18n="president.badge">Le Mot du Président</span>
             </div>
 
             <!-- Citation / Message -->
@@ -298,11 +304,11 @@
             <!-- Profil du Président -->
             <div class="flex items-center gap-4 pt-4 border-t border-cdj-border/60 mt-auto">
             <div class="w-14 h-14 rounded-2xl bg-slate-200 dark:bg-slate-700 overflow-hidden shrink-0 border-2 border-cdj-primary">
-                <img src="assets/images/president.jpg" alt="Président CDJ" class="w-full h-full object-cover" loading="lazy">
+                <img src="./publics/img/IMG-20211024-WA0034.jpg" alt="Président CDJ" class="w-full h-full object-cover" loading="lazy">
             </div>
             <div>
-                <h3 class="font-bold text-cdj-text text-base">Joel Mitondo</h3>
-                <p class="text-xs text-cdj-muted font-medium" data-i18n="president.role">Président du Bureau CDJ NODASA</p>
+                <h3 class="nomPresidentCDJ font-bold text-cdj-text text-base"></h3>
+                <p class="text-xs text-cdj-muted font-medium" data-i18n="president.role">Président du Bureau <span class="sigleCommission"></span></p>
             </div>
             </div>
         </div>
@@ -313,7 +319,7 @@
             <div>
             <!-- Badge -->
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-500 text-xs font-bold uppercase mb-6">
-                🎯 <span data-i18n="objectifs.badge">Mission de la Plateforme</span>
+                <span data-i18n="objectifs.badge">Mission de la Plateforme</span>
             </div>
 
             <h3 class="text-xl sm:text-2xl font-bold text-cdj-text mb-6" data-i18n="objectifs.titre">
@@ -325,29 +331,42 @@
                 
                 <!-- Objectif 1 -->
                 <div class="p-4 rounded-2xl bg-cdj-bg/60 border border-cdj-border/50 space-y-2">
-                <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-500 flex items-center justify-center font-bold text-lg">
-                    📢
-                </div>
-                <h4 class="font-bold text-sm text-cdj-text" data-i18n="objectifs.un.titre">Centraliser l'Information</h4>
-                <p class="text-xs text-cdj-muted leading-snug" data-i18n="objectifs.un.desc">Accéder rapidement aux activités, agendas et communiqués officiels.</p>
+                    <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-500 flex items-center justify-center font-bold text-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m.6-3h16.8M3.6 15h16.8" />
+                                <path d="M11.5 3a17 17 0 0 0 0 18m1-18a17 17 0 0 1 0 18" />
+                            </g>
+                        </svg>
+                    </div>
+                    <h4 class="font-bold text-sm text-cdj-text" data-i18n="objectifs.un.titre">Centraliser l'Information</h4>
+                    <p class="text-xs text-cdj-muted leading-snug" data-i18n="objectifs.un.desc">Accéder rapidement aux activités, agendas et communiqués officiels.</p>
                 </div>
 
                 <!-- Objectif 2 -->
                 <div class="p-4 rounded-2xl bg-cdj-bg/60 border border-cdj-border/50 space-y-2">
-                <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center font-bold text-lg">
-                    🤝
-                </div>
-                <h4 class="font-bold text-sm text-cdj-text" data-i18n="objectifs.deux.titre">Unir les Groupes</h4>
-                <p class="text-xs text-cdj-muted leading-snug" data-i18n="objectifs.deux.desc">Créer des ponts solides entre les 8 groupes de vie de la paroisse.</p>
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center font-bold text-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.25em" height="1em" viewBox="0 0 640 512">
+                            <path d="M0 0h640v512H0z" fill="none" />
+                            <path fill="currentColor" d="M144 0a80 80 0 1 1 0 160a80 80 0 1 1 0-160m368 0a80 80 0 1 1 0 160a80 80 0 1 1 0-160M0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96H21.3C9.6 320 0 310.4 0 298.7M405.3 320h-.7c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7c58.9 0 106.7 47.8 106.7 106.7c0 11.8-9.6 21.3-21.3 21.3H405.4zM224 224a96 96 0 1 1 192 0a96 96 0 1 1-192 0m-96 261.3c0-73.6 59.7-133.3 133.3-133.3h117.3c73.7 0 133.4 59.7 133.4 133.3c0 14.7-11.9 26.7-26.7 26.7H154.6c-14.7 0-26.7-11.9-26.7-26.7z" />
+                        </svg>
+                    </div>
+                    <h4 class="font-bold text-sm text-cdj-text" data-i18n="objectifs.deux.titre">Unir les Groupes</h4>
+                    <p class="text-xs text-cdj-muted leading-snug" data-i18n="objectifs.deux.desc">Créer des ponts solides entre les 8 groupes de vie de la paroisse.</p>
                 </div>
 
                 <!-- Objectif 3 -->
                 <div class="p-4 rounded-2xl bg-cdj-bg/60 border border-cdj-border/50 space-y-2">
-                <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-500 flex items-center justify-center font-bold text-lg">
-                    🚀
-                </div>
-                <h4 class="font-bold text-sm text-cdj-text" data-i18n="objectifs.trois.titre">Digitaliser l'Engagement</h4>
-                <p class="text-xs text-cdj-muted leading-snug" data-i18n="objectifs.trois.desc">Permettre l'inscription directe des membres et le suivi dynamique.</p>
+                    <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-500 flex items-center justify-center font-bold text-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path fill="currentColor" d="M14 18.32A7.06 7.06 0 0 1 11.28 16H3V4h18v2.26a7.1 7.1 0 0 1 2 2.15V4a2 2 0 0 0-2-2H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2Z" />
+                            <path fill="currentColor" d="M17 6a6 6 0 1 0 6 6a6 6 0 0 0-6-6m0 7.5a1.5 1.5 0 1 1 1.5-1.5a1.5 1.5 0 0 1-1.5 1.5" />
+                        </svg>
+                    </div>
+                    <h4 class="font-bold text-sm text-cdj-text" data-i18n="objectifs.trois.titre">Digitaliser l'Engagement</h4>
+                    <p class="text-xs text-cdj-muted leading-snug" data-i18n="objectifs.trois.desc">Permettre l'inscription directe des membres et le suivi dynamique.</p>
                 </div>
 
             </div>
@@ -397,7 +416,915 @@
     </div>
 
     </section>
-<!-- FENÊTRE MODALE DE RECHERCHE -->
+    
+    <!-- SECTION : GROUPES DE VIE (GRILLE BENTO ASYMÉTRIQUE) -->
+    <section id="section-groupes-vie" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    
+    <!-- EN-TÊTE DE SECTION -->
+    <div class="text-center max-w-3xl mx-auto space-y-3 mb-12 sm:mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cdj-primary/10 text-cdj-primary dark:text-sky-400 text-xs font-bold uppercase tracking-wider">
+        ⚜️ <span data-i18n="groupes.badge_en_tete">Mouvements & Mouvements d'Action</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-black text-cdj-text tracking-tight" data-i18n="groupes.titre_section">
+        Nos 8 Groupes de Vie
+        </h2>
+        <p class="text-sm sm:text-base text-cdj-muted max-w-2xl mx-auto" data-i18n="groupes.description_section">
+        Chaque groupe est une famille spirituelle pour grandir, servir et partager sa foi selon ses charismes et talents.
+        </p>
+    </div>
+
+    <!-- GRILLE BENTO (ASSEMBLAGE ASYMÉTRIQUE DIVERSIFIÉ) -->
+    <div id="grille-groupes-bento" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[minmax(220px,auto)]">
+
+        <!-- 1. KIZITO-ANUARITE (K.A) - CARTE MAJEURE (LARGE - 2 COLONNES) -->
+        <div id="carte-groupe-ka" class="md:col-span-2 bg-gradient-to-br from-amber-500/10 via-cdj-card to-cdj-card border-2 border-amber-500/30 rounded-3xl p-6 sm:p-8 shadow-xl hover:shadow-2xl hover:border-amber-500/60 transition-all duration-300 flex flex-col justify-between relative overflow-hidden group">
+        <!-- Badge Lumineux -->
+        <div class="flex items-center justify-between gap-4 mb-4">
+            <span class="px-3 py-1 rounded-full bg-amber-500 text-slate-950 font-black text-xs uppercase tracking-wider shadow-sm">
+            Enfants & Encadreurs
+            </span>
+            <span class="text-xs text-cdj-muted font-semibold flex items-center gap-1">
+            🕒 Samedi 15h00
+            </span>
+        </div>
+
+        <!-- Contenu -->
+        <div class="space-y-3 z-10">
+            <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-500 flex items-center justify-center font-black text-2xl shrink-0">
+                🔥
+            </div>
+            <div>
+                <h3 class="text-2xl font-black text-cdj-text group-hover:text-amber-500 transition-colors">
+                Kizito - Anuarite (K.A)
+                </h3>
+                <p class="text-xs text-amber-600 dark:text-amber-400 font-bold uppercase tracking-wider">
+                « Servir dans la joie et la pureté »
+                </p>
+            </div>
+            </div>
+            <p class="text-sm text-cdj-muted leading-relaxed line-clamp-3 sm:line-clamp-none">
+            Mouvement d'initiation chrétienne et d'encadrement des plus jeunes (Kizito pour les garçons, Anuarite pour les filles). Éducation aux valeurs évangéliques, prière et fraternité.
+            </p>
+        </div>
+
+        <!-- Pied de carte -->
+        <div class="pt-6 mt-6 border-t border-cdj-border/60 flex items-center justify-between z-10">
+            <span class="text-xs font-bold text-cdj-text">Section Paroissiale NODASA</span>
+            <a href="groupe-detail.html?g=ka" class="inline-flex items-center gap-2 text-xs font-black text-amber-500 hover:text-amber-600 transition-colors">
+            <span data-i18n="groupes.bouton_decouvrir">Découvrir le groupe</span>
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+        </div>
+        </div>
+
+        <!-- 2. SCOUTS - CARTE HAUTE & ÉNERGIQUE (1 COLONNE) -->
+        <div id="carte-groupe-scouts" class="bg-cdj-card border border-cdj-border rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:border-emerald-500/50 transition-all duration-300 flex flex-col justify-between group">
+        <div>
+            <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-500 font-bold text-xs">
+                Aventure & Discipline
+            </span>
+            <span class="text-2xl">⛺</span>
+            </div>
+            <h3 class="text-xl font-black text-cdj-text group-hover:text-emerald-500 transition-colors mb-2">
+            Scouts du Congo
+            </h3>
+            <p class="text-xs text-cdj-muted leading-relaxed mb-4">
+            Formation du caractère, civisme, vie en plein air, débrouillardise et service communautaire au nom de l'Évangile.
+            </p>
+        </div>
+
+        <div class="pt-4 border-t border-cdj-border/60 flex items-center justify-between">
+            <span class="text-xs text-cdj-muted font-semibold">🕒 Dimanche 09h00</span>
+            <a href="groupe-detail.html?g=scout" class="p-2 rounded-xl bg-cdj-bg text-cdj-text group-hover:bg-emerald-500 group-hover:text-white transition-all">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+        </div>
+        </div>
+
+        <!-- 3. BILENGE YA MWINDA (BJM) - CARTE ACCENTUÉE (1 COLONNE - VIBRANTE) -->
+        <div id="carte-groupe-bjm" class="bg-gradient-to-b from-sky-500/10 via-cdj-card to-cdj-card border border-sky-500/30 rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:border-sky-500 transition-all duration-300 flex flex-col justify-between group">
+        <div>
+            <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 font-bold text-xs">
+                Lumière du Christ
+            </span>
+            <span class="text-2xl">💡</span>
+            </div>
+            <h3 class="text-xl font-black text-cdj-text group-hover:text-sky-400 transition-colors mb-2">
+            Bilenge Ya Mwinda (BJM)
+            </h3>
+            <p class="text-xs text-cdj-muted leading-relaxed mb-4">
+            « Jeunes de la Lumière ». Mouvement de prise de conscience, d'épanouissement humain et de témoignage de foi dans le milieu quotidien.
+            </p>
+        </div>
+
+        <div class="pt-4 border-t border-cdj-border/60 flex items-center justify-between">
+            <span class="text-xs text-cdj-muted font-semibold">🕒 Dimanche 11h00</span>
+            <a href="groupe-detail.html?g=bjm" class="p-2 rounded-xl bg-cdj-bg text-cdj-text group-hover:bg-sky-500 group-hover:text-white transition-all">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+        </div>
+        </div>
+
+        <!-- 4. JEFAC - CARTE STANDARD (1 COLONNE) -->
+        <div id="carte-groupe-jefac" class="bg-cdj-card border border-cdj-border rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:border-purple-500/50 transition-all duration-300 flex flex-col justify-between group">
+        <div>
+            <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 font-bold text-xs">
+                Action Catholique
+            </span>
+            <span class="text-2xl">✝️</span>
+            </div>
+            <h3 class="text-xl font-black text-cdj-text group-hover:text-purple-400 transition-colors mb-2">
+            JEFAC
+            </h3>
+            <p class="text-xs text-cdj-muted leading-relaxed mb-4">
+            Jeunesse de la Famille Catholique. Engagement social, réflexion doctrinale et accompagnement de la famille chrétienne.
+            </p>
+        </div>
+
+        <div class="pt-4 border-t border-cdj-border/60 flex items-center justify-between">
+            <span class="text-xs text-cdj-muted font-semibold">🕒 Samedi 16h30</span>
+            <a href="groupe-detail.html?g=jefac" class="p-2 rounded-xl bg-cdj-bg text-cdj-text group-hover:bg-purple-500 group-hover:text-white transition-all">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+        </div>
+        </div>
+
+        <!-- 5. MIJERDA - CARTE COMPACTE (1 COLONNE) -->
+        <div id="carte-groupe-mijerda" class="bg-cdj-card border border-cdj-border rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:border-rose-500/50 transition-all duration-300 flex flex-col justify-between group">
+        <div>
+            <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full bg-rose-500/10 text-rose-400 font-bold text-xs">
+                Spiritualité & Charité
+            </span>
+            <span class="text-2xl">🌹</span>
+            </div>
+            <h3 class="text-xl font-black text-cdj-text group-hover:text-rose-400 transition-colors mb-2">
+            MIJERDA
+            </h3>
+            <p class="text-xs text-cdj-muted leading-relaxed mb-4">
+            Mouvement Chrétien d'Apostolat pour l'approfondissement de la foi, la solidarité et l'entraide entre jeunes.
+            </p>
+        </div>
+
+        <div class="pt-4 border-t border-cdj-border/60 flex items-center justify-between">
+            <span class="text-xs text-cdj-muted font-semibold">🕒 Dimanche 12h00</span>
+            <a href="groupe-detail.html?g=mijerda" class="p-2 rounded-xl bg-cdj-bg text-cdj-text group-hover:bg-rose-500 group-hover:text-white transition-all">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+        </div>
+        </div>
+
+        <!-- 6. APOSTOLAT DE LA PRIÈRE (APA) - CARTE HORIZONTALE MOYENNE (2 COLONNES) -->
+        <div id="carte-groupe-apa" class="md:col-span-2 bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl hover:shadow-2xl hover:border-blue-500/50 transition-all duration-300 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 group">
+        <div class="space-y-2 max-w-lg">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 font-bold text-xs">
+            🙏 Période d'Intercession & Devotion
+            </div>
+            <h3 class="text-2xl font-black text-cdj-text group-hover:text-blue-500 transition-colors">
+            Apostolat de la Prière (APA)
+            </h3>
+            <p class="text-xs text-cdj-muted leading-relaxed">
+            Offrande quotidienne de sa vie, prière aux intentions du Pape et de l'Église, dévotion au Cœur de Jésus.
+            </p>
+        </div>
+
+        <div class="shrink-0 flex flex-col sm:items-end gap-3 w-full sm:w-auto">
+            <span class="text-xs text-cdj-muted font-semibold">🕒 Vendredi 16h00</span>
+            <a href="groupe-detail.html?g=apa" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs transition-colors shadow-md">
+            <span>Rejoindre la Prière</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+        </div>
+        </div>
+
+        <!-- 7. LÉGION DE MARIE - CARTE MARIALE (1 COLONNE) -->
+        <div id="carte-groupe-legio" class="bg-cdj-card border border-cdj-border rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:border-indigo-500/50 transition-all duration-300 flex flex-col justify-between group">
+        <div>
+            <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 font-bold text-xs">
+                Prière Mariale
+            </span>
+            <span class="text-2xl">👑</span>
+            </div>
+            <h3 class="text-xl font-black text-cdj-text group-hover:text-indigo-400 transition-colors mb-2">
+            Légion de Marie
+            </h3>
+            <p class="text-xs text-cdj-muted leading-relaxed mb-4">
+            Armée spirituelle sous le patronage de la Vierge Marie. Évangélisation, visites aux malades et récitation du chapelet.
+            </p>
+        </div>
+
+        <div class="pt-4 border-t border-cdj-border/60 flex items-center justify-between">
+            <span class="text-xs text-cdj-muted font-semibold">🕒 Dimanche 08h30</span>
+            <a href="groupe-detail.html?g=legio" class="p-2 rounded-xl bg-cdj-bg text-cdj-text group-hover:bg-indigo-500 group-hover:text-white transition-all">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+        </div>
+        </div>
+
+        <!-- 8. EUCHARISTIQUE & CHŒUR (ECM) - CARTE COMPACTE (1 COLONNE) -->
+        <div id="carte-groupe-ecm" class="bg-cdj-card border border-cdj-border rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:border-amber-400/50 transition-all duration-300 flex flex-col justify-between group">
+        <div>
+            <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full bg-amber-400/10 text-amber-500 font-bold text-xs">
+                Service Liturgique & Chant
+            </span>
+            <span class="text-2xl">🎶</span>
+            </div>
+            <h3 class="text-xl font-black text-cdj-text group-hover:text-amber-500 transition-colors mb-2">
+            Mouvement Eucharistique (ECM)
+            </h3>
+            <p class="text-xs text-cdj-muted leading-relaxed mb-4">
+            Servants de messe et chorale des jeunes pour embellir les célébrations liturgiques de la paroisse.
+            </p>
+        </div>
+
+        <div class="pt-4 border-t border-cdj-border/60 flex items-center justify-between">
+            <span class="text-xs text-cdj-muted font-semibold">🕒 Samedi 14h00</span>
+            <a href="groupe-detail.html?g=ecm" class="p-2 rounded-xl bg-cdj-bg text-cdj-text group-hover:bg-amber-500 group-hover:text-white transition-all">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+        </div>
+        </div>
+
+    </div>
+
+    </section>
+    <!-- SECTION : AGENDA & PROCHAINS ÉVÉNEMENTS -->
+    <section id="section-agenda" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-cdj-border/40">
+    
+    <!-- EN-TÊTE DE SECTION -->
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div class="space-y-3 max-w-2xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cdj-primary/10 text-cdj-primary dark:text-sky-400 text-xs font-bold uppercase tracking-wider">
+            🗓️ <span data-i18n="agenda.badge">Rassemblements & Activités</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-black text-cdj-text tracking-tight" data-i18n="agenda.titre_section">
+            Prochains Événements
+        </h2>
+        <p class="text-sm sm:text-base text-cdj-muted" data-i18n="agenda.description_section">
+            Ne manquez aucun rassemblement, messe des jeunes, formation ou activité organisée à la paroisse.
+        </p>
+        </div>
+
+        <!-- BOUTONS DE FILTRAGE PAR CATEGORIE -->
+        <div id="filtres-agenda" class="flex items-center gap-2 bg-cdj-bg p-1.5 rounded-2xl border border-cdj-border self-start md:self-auto overflow-x-auto max-w-full">
+        <button 
+            id="bouton-filtre-tous" 
+            onclick="filtrerEvenements('tous')" 
+            class="px-4 py-2 rounded-xl text-xs font-bold transition-all bg-cdj-primary text-white shadow-sm shrink-0" 
+            data-i18n="agenda.filtre_tous">
+            Tous
+        </button>
+        <button 
+            id="bouton-filtre-cdj" 
+            onclick="filtrerEvenements('cdj')" 
+            class="px-4 py-2 rounded-xl text-xs font-bold text-cdj-muted hover:text-cdj-text transition-all shrink-0" 
+            data-i18n="agenda.filtre_cdj">
+            Bureau CDJ
+        </button>
+        <button 
+            id="bouton-filtre-groupes" 
+            onclick="filtrerEvenements('groupes')" 
+            class="px-4 py-2 rounded-xl text-xs font-bold text-cdj-muted hover:text-cdj-text transition-all shrink-0" 
+            data-i18n="agenda.filtre_groupes">
+            Groupes de Vie
+        </button>
+        </div>
+    </div>
+
+    <!-- GRILLE DES ÉVÉNEMENTS -->
+    <div id="conteneur-evenements" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- ÉVÉNEMENT 1 : VEDETTE (CDJ PAROISSIAL) -->
+        <article 
+        id="carte-evenement-1" 
+        data-categorie="cdj" 
+        class="carte-evenement lg:col-span-2 bg-gradient-to-br from-cdj-primary/10 via-cdj-card to-cdj-card border-2 border-cdj-primary/40 rounded-3xl p-6 sm:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col sm:flex-row gap-6 relative overflow-hidden group">
+        
+        <!-- Bloc Date Magnétique -->
+        <div class="flex sm:flex-col items-center justify-center gap-2 sm:gap-0 bg-cdj-primary text-white p-4 sm:p-6 rounded-2xl shrink-0 sm:w-28 text-center shadow-lg">
+            <span class="text-3xl sm:text-4xl font-black leading-none">15</span>
+            <span class="text-xs sm:text-sm font-bold uppercase tracking-wider">AOÛT</span>
+            <span class="text-[10px] opacity-80 font-semibold hidden sm:block mt-1">2026</span>
+        </div>
+
+        <!-- Détails de l'événement -->
+        <div class="flex-1 flex flex-col justify-between space-y-4">
+            <div>
+            <div class="flex items-center gap-2 mb-2 flex-wrap">
+                <span class="px-2.5 py-0.5 rounded-full bg-cdj-primary/20 text-cdj-primary dark:text-sky-300 font-bold text-[11px] uppercase">
+                Événement CDJ
+                </span>
+                <span class="text-xs text-cdj-muted font-semibold flex items-center gap-1">
+                📍 Église Paroissiale
+                </span>
+            </div>
+
+            <h3 class="text-xl sm:text-2xl font-black text-cdj-text group-hover:text-cdj-primary transition-colors mb-2">
+                Grande Messe des Jeunes & Assemblée Générale
+            </h3>
+
+            <p class="text-xs sm:text-sm text-cdj-muted leading-relaxed line-clamp-2 sm:line-clamp-none">
+                Célébration eucharistique réunissant l'ensemble des 8 groupes de vie pour le lancement officiel des activités du second semestre, suivie d'une séance d'échange avec le Bureau.
+            </p>
+            </div>
+
+            <!-- Informations secondaires et Action -->
+            <div class="pt-4 border-t border-cdj-border/60 flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3 text-xs text-cdj-muted font-bold">
+                <span class="flex items-center gap-1">🕒 09h00 - 12h30</span>
+            </div>
+
+            <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-cdj-primary text-white text-xs font-bold hover:bg-opacity-90 transition-all shadow-md">
+                <span data-i18n="agenda.bouton_participer">S'informer</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+            </div>
+        </div>
+        </article>
+
+        <!-- ÉVÉNEMENT 2 : GROUPE DE VIE (SCOUTS) -->
+        <article 
+        id="carte-evenement-2" 
+        data-categorie="groupes" 
+        class="carte-evenement bg-cdj-card border border-cdj-border rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:border-emerald-500/50 transition-all duration-300 flex flex-col justify-between group">
+        
+        <div>
+            <div class="flex items-start justify-between gap-3 mb-4">
+            <!-- Bloc Date Compact -->
+            <div class="bg-emerald-500/10 text-emerald-500 p-3 rounded-2xl text-center shrink-0 min-w-[60px]">
+                <span class="block text-2xl font-black leading-none">22</span>
+                <span class="text-[10px] font-bold uppercase">AOÛT</span>
+            </div>
+
+            <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 font-bold text-[11px] uppercase">
+                Scouts
+            </span>
+            </div>
+
+            <h3 class="text-lg font-black text-cdj-text group-hover:text-emerald-500 transition-colors mb-2">
+            Camp de Formation & Survie en Plein Air
+            </h3>
+
+            <p class="text-xs text-cdj-muted leading-relaxed mb-4">
+            Exercices pratiques de secourisme, cartographie et civisme pour les patrouilles de la troupe.
+            </p>
+        </div>
+
+        <div class="pt-4 border-t border-cdj-border/60 flex items-center justify-between text-xs text-cdj-muted font-semibold">
+            <span>🕒 08h00 • Cour Paroissiale</span>
+            <span class="text-emerald-500 font-bold">Gratuit</span>
+        </div>
+        </article>
+
+        <!-- ÉVÉNEMENT 3 : GROUPE DE VIE (APA / ECM) -->
+        <article 
+        id="carte-evenement-3" 
+        data-categorie="groupes" 
+        class="carte-evenement bg-cdj-card border border-cdj-border rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:border-amber-500/50 transition-all duration-300 flex flex-col justify-between group">
+        
+        <div>
+            <div class="flex items-start justify-between gap-3 mb-4">
+            <!-- Bloc Date Compact -->
+            <div class="bg-amber-500/10 text-amber-500 p-3 rounded-2xl text-center shrink-0 min-w-[60px]">
+                <span class="block text-2xl font-black leading-none">28</span>
+                <span class="text-[10px] font-bold uppercase">AOÛT</span>
+            </div>
+
+            <span class="px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-500 font-bold text-[11px] uppercase">
+                APA & ECM
+            </span>
+            </div>
+
+            <h3 class="text-lg font-black text-cdj-text group-hover:text-amber-500 transition-colors mb-2">
+            Nuit d'Adoration & Louange Eucharistique
+            </h3>
+
+            <p class="text-xs text-cdj-muted leading-relaxed mb-4">
+            Temps fort d'intercession, de méditation du Saint-Sacrement et d'animation musicale spirituelle.
+            </p>
+        </div>
+
+        <div class="pt-4 border-t border-cdj-border/60 flex items-center justify-between text-xs text-cdj-muted font-semibold">
+            <span>🕒 20h00 • Chapelle</span>
+            <span class="text-amber-500 font-bold">Ouvert à tous</span>
+        </div>
+        </article>
+
+        <!-- ÉVÉNEMENT 4 : GROUPE DE VIE (K.A) -->
+        <article 
+        id="carte-evenement-4" 
+        data-categorie="groupes" 
+        class="carte-evenement lg:col-span-2 bg-cdj-card border border-cdj-border rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:border-purple-500/50 transition-all duration-300 flex flex-col justify-between group">
+        
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
+            <div class="flex items-center gap-3">
+            <div class="bg-purple-500/10 text-purple-400 p-3 rounded-2xl text-center shrink-0 min-w-[60px]">
+                <span class="block text-2xl font-black leading-none">05</span>
+                <span class="text-[10px] font-bold uppercase">SEP</span>
+            </div>
+
+            <div>
+                <span class="px-2.5 py-0.5 rounded-full bg-purple-500/10 text-purple-400 font-bold text-[11px] uppercase inline-block mb-1">
+                Kizito - Anuarite
+                </span>
+                <h3 class="text-lg font-black text-cdj-text group-hover:text-purple-400 transition-colors">
+                Journée Portes Ouvertes & Inscriptions des Nouveaux
+                </h3>
+            </div>
+            </div>
+
+            <span class="text-xs text-cdj-muted font-semibold bg-cdj-bg px-3 py-1.5 rounded-xl border border-cdj-border">
+            🕒 14h00 - 17h00
+            </span>
+        </div>
+
+        <p class="text-xs text-cdj-muted leading-relaxed mb-4">
+            Présentation du parcours Kizito et Anuarite pour les parents et enfants de la paroisse souhaitant intégrer le groupe pour l'année pastorale 2026-2027.
+        </p>
+
+        <div class="pt-4 border-t border-cdj-border/60 flex items-center justify-between text-xs text-cdj-muted font-semibold">
+            <span>📍 Salle Paroissiale Saint-Joseph</span>
+            <a href="groupe-detail.html?g=ka" class="text-purple-400 font-bold hover:underline">S'inscrire à l'avance →</a>
+        </div>
+        </article>
+
+    </div>
+
+    </section>
+    <!-- SECTION : DERNIÈRES ACTUALITÉS & COMMUNIQUÉS -->
+    <section id="section-actualites" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-cdj-border/40">
+    
+    <!-- EN-TÊTE DE SECTION -->
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div class="space-y-3 max-w-2xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 text-sky-500 dark:text-sky-400 text-xs font-bold uppercase tracking-wider">
+            📰 <span data-i18n="actualites.badge">Annonces & Publications</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-black text-cdj-text tracking-tight" data-i18n="actualites.titre_section">
+            Dernières Actualités & Communiqués
+        </h2>
+        <p class="text-sm sm:text-base text-cdj-muted" data-i18n="actualites.description_section">
+            Restez informés des notes officielles du Bureau CDJ, des projets en cours et de la vie de notre communauté.
+        </p>
+        </div>
+
+        <!-- LIEN VERS TOUTES LES ACTUALITÉS -->
+        <a 
+        id="lien-voir-toutes-actualites" 
+        href="actualites.html" 
+        class="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-cdj-primary dark:text-sky-400 hover:underline shrink-0 self-start md:self-auto">
+        <span data-i18n="actualites.bouton_tous">Voir toutes les publications</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+    </div>
+
+    <!-- GRILLE : COMMUNIQUÉ ÉPINGLÉ & ACTUALITÉS RÉCENTES -->
+    <div id="grille-actualites" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+
+        <!-- 1. COMMUNIQUÉ OFFICIEL ÉPINGLÉ (8 COLONNES DESKTOP) -->
+        <article 
+        id="carte-communique-principal" 
+        class="lg:col-span-8 bg-gradient-to-br from-slate-900 via-slate-900 to-blue-950 text-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-blue-500/30 flex flex-col justify-between relative overflow-hidden group">
+        
+        <!-- Décoration en filigrane -->
+        <div class="absolute -right-16 -top-16 w-64 h-64 bg-cdj-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div>
+            <!-- En-tête de la carte : Badge et date -->
+            <div class="flex items-center justify-between gap-4 mb-6 flex-wrap z-10 relative">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-500/20 text-red-400 border border-red-500/30 text-xs font-black uppercase tracking-wider">
+                📌 <span data-i18n="actualites.badge_urgent">Communiqué Officiel</span>
+            </span>
+            <span class="text-xs text-slate-400 font-medium">01 Août 2026 • Ref: N° 004/CDJ/2026</span>
+            </div>
+
+            <!-- Titre & Extrait -->
+            <div class="space-y-4 z-10 relative mb-6">
+            <h3 class="text-2xl sm:text-3xl font-black text-white group-hover:text-sky-300 transition-colors leading-snug">
+                Réorganisation du calendrier des assemblées mensuelles et modalités de cotisation annuelle 2026-2027
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed line-clamp-3 sm:line-clamp-none">
+                Le Bureau de la Commission des Jeunes porte à la connaissance de l'ensemble des responsables de groupes et membres actifs des décisions arrêtées lors du conseil paroissial. Tous les responsables sont priés de prendre disposition.
+            </p>
+            </div>
+        </div>
+
+        <!-- Pied de carte : Auteur & Action -->
+        <div class="pt-6 border-t border-slate-800 flex items-center justify-between gap-4 z-10 relative mt-auto">
+            <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-blue-600/30 border border-blue-400/40 flex items-center justify-center text-sm font-bold text-sky-300">
+                BC
+            </div>
+            <div>
+                <p class="text-xs font-bold text-white">Bureau Central CDJ</p>
+                <p class="text-[11px] text-slate-400">Secrétariat Général</p>
+            </div>
+            </div>
+
+            <a 
+            id="bouton-lire-communique" 
+            href="actualite-detail.html?id=communique-004" 
+            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs transition-all shadow-lg">
+            <span data-i18n="actualites.bouton_lire">Lire la suite</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+        </div>
+        </article>
+
+        <!-- 2. ACTUALITÉS SECONDAIRES (4 COLONNES DESKTOP) -->
+        <div class="lg:col-span-4 flex flex-col gap-6 justify-between">
+
+        <!-- CARTE ACTUALITÉ 1 -->
+        <article 
+            id="carte-actualite-1" 
+            class="bg-cdj-card border border-cdj-border rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:border-cdj-primary/40 transition-all duration-300 flex-1 flex flex-col justify-between group">
+            <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-500 font-bold text-[11px] uppercase">
+                Vie Pastorale
+                </span>
+                <span class="text-[11px] text-cdj-muted">28 Juillet 2026</span>
+            </div>
+
+            <h4 class="text-base font-black text-cdj-text group-hover:text-cdj-primary transition-colors mb-2 leading-snug">
+                Grand succès pour la journée de salubrité et de reboisement de la cour paroissiale
+            </h4>
+
+            <p class="text-xs text-cdj-muted leading-relaxed line-clamp-2">
+                Plus de 150 jeunes issus de tous les mouvements ont participé activement aux travaux d'embellissement.
+            </p>
+            </div>
+
+            <div class="pt-4 mt-4 border-t border-cdj-border/60 flex items-center justify-between">
+            <span class="text-[11px] font-semibold text-cdj-muted">⏱️ 2 min de lecture</span>
+            <a href="actualite-detail.html?id=salubrite-2026" class="text-xs font-bold text-cdj-primary dark:text-sky-400 hover:underline">
+                Lire →
+            </a>
+            </div>
+        </article>
+
+        <!-- CARTE ACTUALITÉ 2 -->
+        <article 
+            id="carte-actualite-2" 
+            class="bg-cdj-card border border-cdj-border rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:border-amber-500/40 transition-all duration-300 flex-1 flex flex-col justify-between group">
+            <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-500 font-bold text-[11px] uppercase">
+                Formation
+                </span>
+                <span class="text-[11px] text-cdj-muted">15 Juillet 2026</span>
+            </div>
+
+            <h4 class="text-base font-black text-cdj-text group-hover:text-amber-500 transition-colors mb-2 leading-snug">
+                Lancement du premier atelier numérique : Initiation à la gestion de projet
+            </h4>
+
+            <p class="text-xs text-cdj-muted leading-relaxed line-clamp-2">
+                Une opportunité d'apprentissage offerte gratuitement aux jeunes encadreurs de la paroisse NODASA.
+            </p>
+            </div>
+
+            <div class="pt-4 mt-4 border-t border-cdj-border/60 flex items-center justify-between">
+            <span class="text-[11px] font-semibold text-cdj-muted">⏱️ 4 min de lecture</span>
+            <a href="actualite-detail.html?id=atelier-numerique" class="text-xs font-bold text-amber-500 hover:underline">
+                Lire →
+            </a>
+            </div>
+        </article>
+
+        </div>
+
+    </div>
+
+    </section>
+    <!-- SECTION : COMMENT NOUS REJOINDRE (CLARIFICATION & GUIDAGE) -->
+    <section id="section-comment-rejoindre" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-cdj-border/40">
+    
+    <!-- EN-TÊTE DE SECTION -->
+    <div class="text-center max-w-3xl mx-auto space-y-3 mb-12 sm:mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-500 font-bold text-xs uppercase tracking-wider">
+        🤝 <span data-i18n="rejoindre.badge">Guide & Adhésion</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-black text-cdj-text tracking-tight" data-i18n="rejoindre.titre_section">
+        Comment Nous Rejoindre ?
+        </h2>
+        <p class="text-sm sm:text-base text-cdj-muted max-w-2xl mx-auto" data-i18n="rejoindre.description_section">
+        Découvrez comment fonctionne la Commission des Jeunes et comment intégrer l'un de nos mouvements paroissiaux.
+        </p>
+    </div>
+
+    <!-- BLOC D'EXPLICATION MAJEUR : COMPREHENSION DE LA CDJ -->
+    <div id="bloc-explication-cdj" class="bg-gradient-to-r from-cdj-primary/10 via-blue-500/5 to-transparent border border-cdj-primary/30 rounded-3xl p-6 sm:p-8 mb-12 shadow-lg relative overflow-hidden">
+        <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+        
+        <div class="w-16 h-16 rounded-2xl bg-cdj-primary text-white flex items-center justify-center font-black text-3xl shrink-0 shadow-md">
+            🏛️
+        </div>
+
+        <div class="space-y-2 flex-1">
+            <h3 class="text-xl sm:text-2xl font-black text-cdj-text" data-i18n="rejoindre.comprendre_titre">
+            Bon à savoir : Qu'est-ce que la CDJ NODASA ?
+            </h3>
+            <p class="text-xs sm:text-sm text-cdj-muted leading-relaxed" data-i18n="rejoindre.comprendre_texte">
+            La <strong>Commission des Jeunes (CDJ)</strong> n'est pas un groupe ou un mouvement à part entière. C'est la <strong>structure globale</strong> qui coordonne et accompagne tous les jeunes de la Paroisse Notre-Dame de la Sagesse. Elle rassemble en son sein l'ensemble des 8 groupes de vie, qui fonctionnent chacun de manière totalement autonome.
+            </p>
+        </div>
+
+        </div>
+    </div>
+
+    <!-- GRILLE : LES 2 VOIES D'ENGAGEMENT -->
+    <div id="grille-voies-engagement" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- VOIE 1 : MEMBRE DE LA CDJ -->
+        <div id="carte-voie-cdj" class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl hover:shadow-2xl hover:border-cdj-primary/40 transition-all duration-300 flex flex-col justify-between group">
+        <div class="space-y-4">
+            <!-- Badge étape -->
+            <div class="flex items-center justify-between">
+            <span class="w-10 h-10 rounded-2xl bg-sky-500/10 text-sky-400 flex items-center justify-center font-black text-lg">
+                1
+            </span>
+            <span class="px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 font-bold text-xs uppercase">
+                Ouvert à tous
+            </span>
+            </div>
+
+            <h3 class="text-2xl font-black text-cdj-text group-hover:text-cdj-primary transition-colors">
+            Faire partie de la CDJ
+            </h3>
+
+            <p class="text-xs sm:text-sm text-cdj-muted leading-relaxed">
+            Pour faire partie de la CDJ, <strong>il n'est pas obligatoire d'appartenir à un groupe spécifique</strong>. Il suffit d'être un jeune catholique priant à la paroisse Notre-Dame de la Sagesse (NODASA).
+            </p>
+
+            <!-- Points clés -->
+            <ul class="space-y-2 text-xs text-cdj-text pt-2">
+            <li class="flex items-center gap-2">
+                <span class="text-emerald-500 font-bold">✓</span> Participation aux Messes des Jeunes
+            </li>
+            <li class="flex items-center gap-2">
+                <span class="text-emerald-500 font-bold">✓</span> Accès aux grands rassemblements & formations
+            </li>
+            <li class="flex items-center gap-2">
+                <span class="text-emerald-500 font-bold">✓</span> Membre à part entière de la communauté NODASA
+            </li>
+            </ul>
+        </div>
+
+        <div class="pt-6 mt-6 border-t border-cdj-border/60">
+            <a href="#section-agenda" class="inline-flex items-center justify-center w-full gap-2 px-5 py-3 rounded-2xl bg-cdj-bg border border-cdj-border hover:border-cdj-primary text-cdj-text font-bold text-xs transition-all">
+            <span>Consulter les prochaines activités</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+        </div>
+        </div>
+
+        <!-- VOIE 2 : ADHÉSION À UN GROUPE DE VIE -->
+        <div id="carte-voie-groupe" class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl hover:shadow-2xl hover:border-amber-500/40 transition-all duration-300 flex flex-col justify-between group">
+        <div class="space-y-4">
+            <!-- Badge étape -->
+            <div class="flex items-center justify-between">
+            <span class="w-10 h-10 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center font-black text-lg">
+                2
+            </span>
+            <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-500 font-bold text-xs uppercase">
+                Gestion Autonome
+            </span>
+            </div>
+
+            <h3 class="text-2xl font-black text-cdj-text group-hover:text-amber-500 transition-colors">
+            Intégrer un Groupe de Vie
+            </h3>
+
+            <p class="text-xs sm:text-sm text-cdj-muted leading-relaxed">
+            Chaque groupe (K.A, Scouts, BJM, JEFAC, etc.) <strong>gère son adhésion de manière autonome</strong> selon ses propres critères, charismes et horaires de rencontre.
+            </p>
+
+            <!-- Demarche -->
+            <div class="p-4 rounded-2xl bg-amber-500/5 border border-amber-500/20 space-y-1">
+            <p class="text-xs font-bold text-amber-600 dark:text-amber-400">💡 Comment procéder ?</p>
+            <p class="text-xs text-cdj-muted">
+                Prière d'entrer directement en contact avec les responsables du groupe qui vous intéresse ou d'assister à l'une de leurs réunions hebdomadaires.
+            </p>
+            </div>
+        </div>
+
+        <div class="pt-6 mt-6 border-t border-cdj-border/60">
+            <a href="#section-groupes-vie" class="inline-flex items-center justify-center w-full gap-2 px-5 py-3 rounded-2xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs transition-all shadow-md">
+            <span>Contacter un responsable de groupe</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+        </div>
+        </div>
+
+    </div>
+
+    </section>
+    <!-- SECTION : CONTACT & LOCALISATION PAROISSIALE -->
+    <section id="section-contact-localisation" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-cdj-border/40">
+    
+    <!-- EN-TÊTE DE SECTION -->
+    <div class="text-center max-w-3xl mx-auto space-y-3 mb-12 sm:mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cdj-primary/10 text-cdj-primary dark:text-sky-400 font-bold text-xs uppercase tracking-wider">
+        📍 <span data-i18n="contact.badge">Nous Trouver & Nous Écrire</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-black text-cdj-text tracking-tight" data-i18n="contact.titre_section">
+        Contact & Localisation
+        </h2>
+        <p class="text-sm sm:text-base text-cdj-muted max-w-2xl mx-auto" data-i18n="contact.description_section">
+        Une question, une suggestion ou besoin d'échanger avec le Bureau CDJ ? Rendez-nous visite ou envoyez-nous un message.
+        </p>
+    </div>
+
+    <!-- GRILLE PRINCIPALE : INFORMATIONS DE CONTACT ET FORMULAIRE -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- COLONNE 1 : COORDONNÉES ET PERMANENCE (5 COLONNES DESKTOP) -->
+        <div id="bloc-informations-contact" class="lg:col-span-5 space-y-6">
+        
+            <!-- CARTE ADRESSE & PERMANENCE -->
+            <div class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl space-y-6">
+                
+                <h3 class="text-xl font-black text-cdj-text flex items-center gap-2">
+                🏛️ <span data-i18n="contact.titre_coordonnees">Bureau de la CDJ</span>
+                </h3>
+
+                <div class="space-y-5 text-xs sm:text-sm">
+                
+                <!-- Adresse physique -->
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-2xl bg-cdj-primary/10 text-cdj-primary dark:text-sky-400 flex items-center justify-center font-bold text-lg shrink-0">
+                    📌
+                    </div>
+                    <div>
+                    <h4 class="font-bold text-cdj-text" data-i18n="contact.label_adresse">Adresse</h4>
+                    <p class="text-cdj-muted leading-relaxed">
+                        Paroisse Notre-Dame de la Sagesse (NODASA)<br>
+                        Campus Universitaire de Kinshasa (UNIKIN)<br>
+                        Commune de Lemba, Kinshasa — RDC
+                    </p>
+                    </div>
+                </div>
+
+                <!-- Permanences -->
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center font-bold text-lg shrink-0">
+                    🕒
+                    </div>
+                    <div>
+                    <h4 class="font-bold text-cdj-text" data-i18n="contact.label_permanence">Permanences du Bureau</h4>
+                    <p class="text-cdj-muted leading-relaxed">
+                        <strong>Dimanche :</strong> 11h00 - 13h00 (Après la messe)<br>
+                        <strong>Samedi :</strong> 15h00 - 17h00 (Sur rendez-vous)
+                    </p>
+                    </div>
+                </div>
+
+                <!-- Canaux directs -->
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-2xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center font-bold text-lg shrink-0">
+                    📱
+                    </div>
+                    <div>
+                    <h4 class="font-bold text-cdj-text" data-i18n="contact.label_canaux">Téléphone & WhatsApp</h4>
+                    <p class="text-cdj-muted leading-relaxed">
+                        <a href="tel:+243000000000" class="hover:text-cdj-primary transition-colors">+243 (0) 00 000 000</a><br>
+                        <a href="mailto:contact@cdj-nodasa.org" class="hover:text-cdj-primary transition-colors">contact@cdj-nodasa.org</a>
+                    </p>
+                    </div>
+                </div>
+
+                </div>
+
+                <!-- RÉSEAUX SOCIAUX -->
+                <div class="pt-6 border-t border-cdj-border/60">
+                <p class="text-xs font-bold text-cdj-text mb-3" data-i18n="contact.suivez_nous">Suivez la CDJ sur les réseaux</p>
+                <div class="flex items-center gap-3">
+                    <a href="#" aria-label="Facebook CDJ NODASA" class="w-10 h-10 rounded-xl bg-cdj-bg border border-cdj-border flex items-center justify-center text-cdj-text hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="#" aria-label="WhatsApp CDJ NODASA" class="w-10 h-10 rounded-xl bg-cdj-bg border border-cdj-border flex items-center justify-center text-cdj-text hover:bg-emerald-600 hover:text-white hover:border-emerald-600 transition-all">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                    </a>
+                    <a href="#" aria-label="YouTube CDJ NODASA" class="w-10 h-10 rounded-xl bg-cdj-bg border border-cdj-border flex items-center justify-center text-cdj-text hover:bg-red-600 hover:text-white hover:border-red-600 transition-all">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        </div>
+
+        <!-- COLONNE 2 : FORMULAIRE DE CONTACT (7 COLONNES DESKTOP) -->
+        <div id="bloc-formulaire-contact" class="lg:col-span-7 bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl">
+        
+        <h3 class="text-xl font-black text-cdj-text mb-2" data-i18n="contact.titre_formulaire">
+            Envoyez un message au Bureau
+        </h3>
+        <p class="text-xs sm:text-sm text-cdj-muted mb-6" data-i18n="contact.sous_titre_formulaire">
+            Remplissez ce formulaire pour poser vos questions, soumettre une préoccupation ou demander une orientation.
+        </p>
+
+        <form id="formulaire-contact-rapide" onsubmit="event.preventDefault(); alert('Message envoyé avec succès !');" class="space-y-4">
+            
+            <!-- Nom Complet & Téléphone/Email -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            
+            <!-- Champ Nom -->
+            <div class="space-y-1.5">
+                <label for="champ-nom-complet" class="text-xs font-bold text-cdj-text block" data-i18n="contact.label_nom">
+                Nom complet *
+                </label>
+                <input 
+                type="text" 
+                id="champ-nom-complet" 
+                name="nom" 
+                required 
+                placeholder="Ex: Joel Mohindo" 
+                class="w-full px-4 py-3 rounded-xl bg-cdj-bg border border-cdj-border text-cdj-text text-xs sm:text-sm focus:outline-none focus:border-cdj-primary focus:ring-1 focus:ring-cdj-primary transition-all">
+            </div>
+
+            <!-- Champ Email/WhatsApp -->
+            <div class="space-y-1.5">
+                <label for="champ-email-telephone" class="text-xs font-bold text-cdj-text block" data-i18n="contact.label_contact">
+                Email ou Numéro WhatsApp *
+                </label>
+                <input 
+                type="text" 
+                id="champ-email-telephone" 
+                name="contact" 
+                required 
+                placeholder="Ex: joel@gmail.com ou +243..." 
+                class="w-full px-4 py-3 rounded-xl bg-cdj-bg border border-cdj-border text-cdj-text text-xs sm:text-sm focus:outline-none focus:border-cdj-primary focus:ring-1 focus:ring-cdj-primary transition-all">
+            </div>
+
+            </div>
+
+            <!-- Sélection Sujet / Groupe Concerné -->
+            <div class="space-y-1.5">
+            <label for="champ-sujet-groupe" class="text-xs font-bold text-cdj-text block" data-i18n="contact.label_sujet">
+                Objet de votre message *
+            </label>
+            <select 
+                id="champ-sujet-groupe" 
+                name="sujet" 
+                required 
+                class="w-full px-4 py-3 rounded-xl bg-cdj-bg border border-cdj-border text-cdj-text text-xs sm:text-sm focus:outline-none focus:border-cdj-primary focus:ring-1 focus:ring-cdj-primary transition-all">
+                <option value="" disabled selected data-i18n="contact.option_choisir">Choisir un sujet...</option>
+                <option value="orientation">Orientation / Adhésion générale</option>
+                <option value="bureau-cdj">Question au Bureau Central CDJ</option>
+                <option value="ka">Groupe Kizito - Anuarite (K.A)</option>
+                <option value="scouts">Groupe Scouts du Congo</option>
+                <option value="bjm">Groupe Bilenge Ya Mwinda (BJM)</option>
+                <option value="jefac">Groupe JEFAC</option>
+                <option value="mijerda">Groupe MIJERDA</option>
+                <option value="apa">Apostolat de la Prière (APA)</option>
+                <option value="legio">Légion de Marie</option>
+                <option value="ecm">Mouvement Eucharistique (ECM)</option>
+                <option value="autre">Autre demande</option>
+            </select>
+            </div>
+
+            <!-- Champ Message -->
+            <div class="space-y-1.5">
+            <label for="champ-message-utilisateur" class="text-xs font-bold text-cdj-text block" data-i18n="contact.label_message">
+                Votre message *
+            </label>
+            <textarea 
+                id="champ-message-utilisateur" 
+                name="message" 
+                rows="5" 
+                required 
+                placeholder="Écrivez votre message ici..." 
+                class="w-full px-4 py-3 rounded-xl bg-cdj-bg border border-cdj-border text-cdj-text text-xs sm:text-sm focus:outline-none focus:border-cdj-primary focus:ring-1 focus:ring-cdj-primary transition-all resize-none"></textarea>
+            </div>
+
+            <!-- Bouton de Soumission -->
+            <button 
+            type="submit" 
+            id="bouton-envoyer-message" 
+            class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-cdj-primary hover:bg-opacity-90 text-white font-bold text-xs sm:text-sm shadow-lg transition-all flex items-center justify-center gap-2">
+            <span data-i18n="contact.bouton_envoyer">Envoyer le message</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </button>
+
+        </form>
+
+        </div>
+
+    </div>
+
+    </section>
+
+    <!-- FENÊTRE MODALE DE RECHERCHE -->
     <div id="search-modal" class="fixed inset-0 z-500 hidden bg-slate-900/60 backdrop-blur-sm flex items-start justify-center p-4 sm:p-6 md:p-20 transition-all duration-200">
         <!-- Carte Conteneur -->
         <div id="search-modal-card" class="bg-cdj-card border border-cdj-border w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden flex flex-col transform transition-all my-auto sm:my-0">
@@ -442,5 +1369,157 @@
 
         </div>
     </div>
+
+    <!-- PIED DE PAGE (FOOTER COMPLET) -->
+    <footer id="pied-de-page" class="bg-slate-950 text-slate-300 border-t border-slate-800/80 pt-16 pb-8 px-4 sm:px-6 lg:px-8">
+    
+    <div class="max-w-7xl mx-auto">
+        
+        <!-- GRILLE PRINCIPALE (4 COLONNES) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800/80">
+
+        <!-- COLONNE 1 : BRANDING & DEVISE (4 COLONNES DESKTOP) -->
+        <div id="bloc-pied-branding" class="lg:col-span-4 space-y-4">
+            <!-- Logo / Titre -->
+            <a href="index.html" class="inline-flex items-center gap-3 group">
+            <div class="w-10 h-10 rounded-2xl bg-cdj-primary flex items-center justify-center text-white font-black text-xl shadow-lg group-hover:scale-105 transition-transform">
+                ⚜️
+            </div>
+            <div>
+                <span class="sigleCommission text-xl font-black text-white tracking-tight block leading-none"></span>
+                <span class="text-[10px] text-sky-400 font-bold uppercase tracking-widest block mt-1">Paroisse N.D. de la Sagesse</span>
+            </div>
+            </a>
+
+            <!-- Description -->
+            <p class="text-xs text-slate-400 leading-relaxed max-w-sm" data-i18n="footer.description">
+            La Commission des Jeunes coordonne et accompagne l'épanouissement spirituel, humain et social de la jeunesse catholique du Campus Universitaire de Kinshasa (UNIKIN).
+            </p>
+
+            <!-- Verset Inspirant -->
+            <blockquote class="p-3.5 rounded-2xl bg-slate-900/90 border border-slate-800/80 text-slate-300 text-xs italic">
+            « Que personne ne méprise ta jeunesse ; mais sois un modèle pour les fidèles. »
+            <cite class="block text-[11px] font-bold text-sky-400 not-italic mt-1">— 1 Timothée 4:12</cite>
+            </blockquote>
+        </div>
+
+        <!-- COLONNE 2 : NAVIGATION RAPIDE (2 COLONNES DESKTOP) -->
+        <div id="bloc-pied-navigation" class="lg:col-span-2 space-y-4">
+            <h3 class="text-xs font-black text-white uppercase tracking-wider text-sky-400" data-i18n="footer.titre_nav">
+            Navigation
+            </h3>
+            <ul class="space-y-2.5 text-xs font-semibold">
+            <li>
+                <a href="#section-hero" class="hover:text-white transition-colors flex items-center gap-1.5">
+                <span>›</span> <span data-i18n="footer.lien_accueil">Accueil</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section-mot-president" class="hover:text-white transition-colors flex items-center gap-1.5">
+                <span>›</span> <span data-i18n="footer.lien_mot">Mot du Président</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section-groupes-vie" class="hover:text-white transition-colors flex items-center gap-1.5">
+                <span>›</span> <span data-i18n="footer.lien_groupes">Groupes de Vie</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section-agenda" class="hover:text-white transition-colors flex items-center gap-1.5">
+                <span>›</span> <span data-i18n="footer.lien_agenda">Agenda & Événements</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section-actualites" class="hover:text-white transition-colors flex items-center gap-1.5">
+                <span>›</span> <span data-i18n="footer.lien_actualites">Actualités</span>
+                </a>
+            </li>
+            <li>
+                <a href="#section-comment-rejoindre" class="hover:text-white transition-colors flex items-center gap-1.5">
+                <span>›</span> <span data-i18n="footer.lien_rejoindre">Nous Rejoindre</span>
+                </a>
+            </li>
+            </ul>
+        </div>
+
+        <!-- COLONNE 3 : LIENS DIRECTS VERS LES 8 GROUPES (3 COLONNES DESKTOP) -->
+        <div id="bloc-pied-groupes" class="lg:col-span-3 space-y-4">
+            <h3 class="text-xs font-black text-white uppercase tracking-wider text-sky-400" data-i18n="footer.titre_mouvements">
+            Nos 8 Groupes de Vie
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-2 gap-y-2 text-xs font-medium text-slate-400">
+            <a href="groupe-detail.html?g=ka" class="hover:text-amber-400 transition-colors">🔥 Kizito - Anuarite</a>
+            <a href="groupe-detail.html?g=scout" class="hover:text-emerald-400 transition-colors">⛺ Scouts du Congo</a>
+            <a href="groupe-detail.html?g=bjm" class="hover:text-sky-400 transition-colors">💡 Bilenge Ya Mwinda</a>
+            <a href="groupe-detail.html?g=jefac" class="hover:text-purple-400 transition-colors">✝️ JEFAC</a>
+            <a href="groupe-detail.html?g=mijerda" class="hover:text-rose-400 transition-colors">🌹 MIJERDA</a>
+            <a href="groupe-detail.html?g=apa" class="hover:text-blue-400 transition-colors">🙏 Apostolat Prière</a>
+            <a href="groupe-detail.html?g=legio" class="hover:text-indigo-400 transition-colors">👑 Légion de Marie</a>
+            <a href="groupe-detail.html?g=ecm" class="hover:text-amber-300 transition-colors">🎶 Eucharistique (ECM)</a>
+            </div>
+        </div>
+
+        <!-- COLONNE 4 : PERMANENCE & CANAUX SOCIAUX (3 COLONNES DESKTOP) -->
+        <div id="bloc-pied-contact" class="lg:col-span-3 space-y-4">
+            <h3 class="text-xs font-black text-white uppercase tracking-wider text-sky-400" data-i18n="footer.titre_permanence">
+            Permanence & Réseaux
+            </h3>
+
+            <!-- Badge Horaires -->
+            <div class="p-3.5 rounded-2xl bg-slate-900 border border-slate-800 space-y-1.5">
+            <p class="text-[11px] font-bold text-slate-200 flex items-center gap-1.5">
+                🕒 <span data-i18n="footer.permanence_titre">Permanence du Dimanche</span>
+            </p>
+            <p class="text-xs text-slate-400">11h00 - 13h00 (À la sortie des messes)</p>
+            <p class="text-[10px] text-sky-400 font-semibold">📍 Cour Paroissiale NODASA</p>
+            </div>
+
+            <!-- Boutons Réseaux Sociaux -->
+            <div class="space-y-2">
+            <p class="text-[11px] font-bold text-slate-400" data-i18n="footer.suivre">Restez connectés :</p>
+            <div class="flex items-center gap-2">
+                <a href="#" aria-label="Facebook" class="p-2.5 rounded-xl bg-slate-900 hover:bg-blue-600 text-slate-300 hover:text-white transition-all border border-slate-800">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="#" aria-label="WhatsApp" class="p-2.5 rounded-xl bg-slate-900 hover:bg-emerald-600 text-slate-300 hover:text-white transition-all border border-slate-800">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                </a>
+                <a href="#" aria-label="YouTube" class="p-2.5 rounded-xl bg-slate-900 hover:bg-red-600 text-slate-300 hover:text-white transition-all border border-slate-800">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </a>
+            </div>
+            </div>
+        </div>
+
+        </div>
+
+        <!-- BAS DE PAGE : COPYRIGHT, CRÉDITS & BOUTON RETOUR EN HAUT -->
+        <div id="barre-copyright" class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 font-medium">
+        
+        <!-- Copyright -->
+        <p id="texte-copyright">
+            © 2026 <strong class="text-slate-200">CDJ NODASA</strong>. Tous droits réservés.
+        </p>
+
+        <!-- Crédit de Conception -->
+        <p id="texte-conception" class="text-[11px] text-slate-400">
+            Conçu & développé pour la jeunesse de Notre-Dame de la Sagesse.
+        </p>
+
+        <!-- Bouton Flottant / Ancre Retour en Haut -->
+        <button 
+            id="bouton-retour-haut" 
+            onclick="window.scrollTo({top: 0, behavior: 'smooth'})" 
+            aria-label="Remonter en haut" 
+            class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-cdj-primary text-slate-300 hover:text-white border border-slate-800 transition-all shadow-md">
+            <span>Haut de page</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+        </button>
+
+        </div>
+
+    </div>
+
+    </footer>
 </body>
 </html>
