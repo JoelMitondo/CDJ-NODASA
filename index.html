@@ -9,7 +9,7 @@
     <script type="module" src="./SRC/JS/scripts.js"></script>
     <script src="./SRC/JS/donnees.js" defer></script>
 </head>
-<body class="w-full bg-cdj-bg text-cdj-text transition-colors duration-300">
+<body class="w-full max-w-full mx-auto overflow-x-hidden bg-cdj-bg text-cdj-text transition-colors duration-300">
     <!--L'en-tête de la page-->
     <header class="sticky top-0 z-50 w-full backdrop-blur-md bg-cdj-card/80 dark:bg-slate-900/80 border-b border-cdj-border/60 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
@@ -27,7 +27,7 @@
             </a>
 
             <!-- 2. CENTRE : NAVIGATION PRINCIPALE & RECHERCHE -->
-            <nav class="lg:flex items-center gap-6">
+            <nav class="hidden lg:flex items-center gap-6">
             
                 <!-- MENU DÉROULANT 1 : GROUPES DE VIE -->
                 <div class="hidden sm:block relative group py-2">
@@ -195,7 +195,7 @@
     </div>
 
     <!-- 3. CONTENU PRINCIPAL (CENTRÉ EN HAUTEUR ET EN LARGEUR) -->
-    <div id="conteneur-hero" class="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-28 pb-16 flex flex-col items-center justify-center min-h-screen">
+    <div id="conteneur-hero" class="relative z-20 max-w-5xl w-full mx-auto px-4 sm:px-6 lg:px-8 text-center pt-28 pb-16 flex flex-col items-center justify-center min-h-screen">
         
         <!-- BADGE SLOGAN -->
         <div id="badge-slogan" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cdj-primary/20 border border-cdj-primary/40 text-white dark:text-sky-300 text-xs sm:text-sm font-bold uppercase tracking-widest mb-6 backdrop-blur-md shadow-lg">
