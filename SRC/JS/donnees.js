@@ -60,7 +60,9 @@ const tousGroupeDeVie = [
     "lien_logo": "https://votre-domaine.org/assets/logos/kizito-anuarite.png",
     "description": "Mouvement d'encadrement des enfants et adolescents pour leur éducation chrétienne, humaine et civique, inspiré par la vie des saints martyrs.",
     "jour_reunion": "Dimanche de 10h00 à 13h00",
-    "lien_page" : "./SRC/html/Groupes_vies/ka.html"
+    "lien_page" : "./SRC/html/Groupes_vies/ka.html",
+    "lieu_de_rencontre" : "Paroisse NODASA",
+    "logo": "./publics/img/logo_grKa.jpeg"
   },
   {
     "id": "scout",
@@ -71,18 +73,22 @@ const tousGroupeDeVie = [
     "lien_logo": "https://votre-domaine.org/assets/logos/scouts.png",
     "description": "Mouvement éducatif visant à former des citoyens responsables, débrouillards et utiles à la communauté grâce à la vie en plein air.",
     "jour_reunion": "Dimanche de 09h30 à 13h00",
-    "lien_page" : "./SRC/html/Groupes_vies/scouts.html"
+    "lien_page" : "./SRC/html/Groupes_vies/scouts.html",
+    "lieu_de_rencontre" : "Paroisse NODASA",
+    "logo": "./publics/img/logo_scout.png"
   },
   {
     "id": "bym",
     "nom_groupe": "Bilenge Ya Mwinda",
     "sigle": "B.Y.M",
     "devise": "Lumière du monde, Sel de la terre",
-    "categorie": "Formation & Épanouissement de la Jeunesse",
+    "categorie": "Formation & Épanouissement",
     "lien_logo": "https://votre-domaine.org/assets/logos/bjm.png",
     "description": "Mouvement favorisant l'épanouissement intégral des jeunes à travers la parole de Dieu, l'auto-prise en charge et la maturité humaine.",
     "jour_reunion": "Dimanche de 11h30 à 13h00",
-    "lien_page" : "./SRC/html/Groupes_vies/bym.html"
+    "lien_page" : "./SRC/html/Groupes_vies/bym.html",
+    "lieu_de_rencontre" : "Paroisse NODASA",
+    "logo": "./publics/img/logo_bym.jpeg"
   },
   {
     "id": "jefac",
@@ -93,7 +99,9 @@ const tousGroupeDeVie = [
     "lien_logo": "https://votre-domaine.org/assets/logos/jefac.png",
     "description": "Groupe centré sur la promotion des valeurs familiales chrétiennes, la préparation à la vie adulte et le témoignage de chasteté.",
     "jour_reunion": "Dimanche de 12h00 à 13h30",
-    "lien_page" : "./SRC/html/Groupes_vies/jefac.html"
+    "lien_page" : "./SRC/html/Groupes_vies/jefac.html",
+    "lieu_de_rencontre" : "Paroisse NODASA",
+    "logo": "./publics/img/logo_jefac.jpg"
   },
   {
     "id": "mijercha",
@@ -104,7 +112,9 @@ const tousGroupeDeVie = [
     "lien_logo": "https://votre-domaine.org/assets/logos/mijerda.png",
     "description": "Mouvement d'intercession, d'évangélisation et de prière basé sur les charismes du Saint-Esprit et la vie communautaire.",
     "jour_reunion": "Jeudi de 16h30 à 18h00",
-    "lien_page" : "./SRC/html/Groupes_vies/mijerca.html"
+    "lien_page" : "./SRC/html/Groupes_vies/mijerca.html",
+    "lieu_de_rencontre" : "Paroisse NODASA",
+    "logo": "./publics/img/logo_mijerca.jpeg"
   },
   {
     "id": "apa",
@@ -115,7 +125,9 @@ const tousGroupeDeVie = [
     "lien_logo": "https://votre-domaine.org/assets/logos/apa.png",
     "description": "Réseau mondial de prière du Pape chez les jeunes, axé sur la dévotion au Sacré-Cœur de Jésus et les intentions de l'Église.",
     "jour_reunion": "Dimanche de 10h00 à 11h30",
-    "lien_page" : "./SRC/html/Groupes_vies/apa.html"
+    "lien_page" : "./SRC/html/Groupes_vies/apa.html",
+    "lieu_de_rencontre" : "Paroisse NODASA",
+    "logo": "./publics/img/logo_apa.jpeg"
   },
   {
     "id": "legio",
@@ -126,7 +138,9 @@ const tousGroupeDeVie = [
     "lien_logo": "https://votre-domaine.org/assets/logos/legion-de-marie.png",
     "description": "Mouvement apostolique dédié à la prière du chapelet, aux visites à domicile, au réconfort des malades et à l'évangélisation.",
     "jour_reunion": "Samedi de 16h00 à 17h30",
-    "lien_page" : "./SRC/html/Groupes_vies/legion.html"
+    "lien_page" : "./SRC/html/Groupes_vies/legion.html",
+    "lieu_de_rencontre" : "Paroisse NODASA",
+    "logo": "./publics/img/logo_legion.jpg"
   },
   {
     "id": "ecm",
@@ -137,7 +151,110 @@ const tousGroupeDeVie = [
     "lien_logo": "https://votre-domaine.org/assets/logos/ecm.png",
     "description": "Mouvement axé sur l'amour de l'Eucharistie, l'adoration du Saint-Sacrement et la formation liturgique des jeunes.",
     "jour_reunion": "Dimanche de 11h30 à 13h00",
-    "lien_page" : "./SRC/html/Groupes_vies/emc.html"
+    "lien_page" : "./SRC/html/Groupes_vies/emc.html",
+    "lieu_de_rencontre" : "Paroisse NODASA",
+    
   }
 ]
 localStorage.setItem("groupeDeVie", JSON.stringify(tousGroupeDeVie))
+
+const evenementsData = [
+  {
+    "id": "evt-001",
+    "nom_evenement": "Grande Messe des Jeunes & Assemblée Générale",
+    "date_evenement": "2026-08-15",
+    "lieu": "Église Paroissiale NODASA",
+    "adresse_exacte" : "22, virunga, Kindele, Lemba",
+    "groupe_responsable": "Bureau CDJ",
+    "heure_debut": "09h00",
+    "heure_fin": "12h30",
+    "droit_entree": "Jeunes de la paroisse",
+    "description_evenement": "Célébration eucharistique réunissant l'ensemble des 8 groupes de vie pour le lancement officiel des activités du second semestre, suivie d'une séance d'échange avec le Bureau.",
+    "frais" : "45.000Fc",
+    "orateur" : "Gratien Mbey",
+    "apropos_evenement" : "La CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesse, La CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesseLa CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesse"
+  },
+  {
+    "id": "evt-002",
+    "nom_evenement": "Camp de Formation & Survie en Plein Air",
+    "date_evenement": "2026-08-22",
+    "lieu": "Cour Paroissiale & Terrain Annexe",
+    "adresse_exacte" : "22, virunga, Kindele, Lemba",
+    "groupe_responsable": "Scouts",
+    "heure_debut": "08h00",
+    "heure_fin": "16h00",
+    "droit_entree": "Jeunes du groupe",
+    "description_evenement": "Exercices pratiques de secourisme, cartographie, civisme et techniques de secourisme pour les patrouilles de la troupe.",
+    "frais" : "Gratuits",
+    "orateur" : "Gratien Mbey",
+    "apropos_evenement" : "La CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesse, La CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesseLa CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesse"
+  },
+  {
+    "id": "evt-003",
+    "nom_evenement": "Nuit d'Adoration & Louange Eucharistique",
+    "date_evenement": "2026-08-28",
+    "lieu": "Chapelle Paroissiale",
+    "adresse_exacte" : "22, virunga, Kindele, Lemba",
+    "groupe_responsable": "APA",
+    "heure_debut": "20h00",
+    "heure_fin": "05h00",
+    "droit_entree": "Gratuit",
+    "description_evenement": "Temps fort d'intercession, de méditation du Saint-Sacrement et d'animation musicale spirituelle ouvert à toute la jeunesse.",
+    "frais" : "45.000Fc",
+    "orateur" : "Gratien Mbey",
+    "apropos_evenement" : "La CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesse, La CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesseLa CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesse"
+  },
+  {
+    "id": "evt-004",
+    "nom_evenement": "Journée Portes Ouvertes & Inscriptions",
+    "date_evenement": "2026-09-05",
+    "lieu": "Salle Paroissiale Saint-Joseph",
+    "adresse_exacte" : "22, virunga, Kindele, Lemba",
+    "groupe_responsable": "K.A",
+    "heure_debut": "14h00",
+    "heure_fin": "17h00",
+    "droit_entree": "Jeunes de la paroisse",
+    "description_evenement": "Présentation du parcours Kizito et Anuarite pour les parents et enfants souhaitant intégrer le groupe pour l'année pastorale 2026-2027.",
+    "frais" : "45.000Fc",
+    "orateur" : "Gratien Mbey",
+    "apropos_evenement" : "La CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesse, La CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesseLa CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesse"
+  }
+]
+localStorage.setItem("evenements", JSON.stringify(evenementsData))
+
+const communiqueOfficielCDJ = [
+  {
+    "id": "communique-004",
+    "titre": "Réorganisation du calendrier des assemblées mensuelles et modalités de cotisation annuelle 2026-2027",
+    "date": "2026-08-01",
+    "numero_ref" : "SGB/HH342/5",
+    "categorie": "Communiqué Officiel",
+    "description": "Le Bureau de la Commission des Jeunes porte à la connaissance de l'ensemble des responsables de groupes et membres actifs des décisions arrêtées lors du conseil paroissial. Tous les responsables sont priés de prendre disposition.",
+    "auteur": "Joel Mitondo",
+    "qualite": "Président de la CDJ",
+    "time" : "2min"
+  },
+  {
+    "id": "actu-001",
+    "titre": "Grand succès pour la journée de salubrité et de reboisement de la cour paroissiale",
+    "date": "2026-07-28",
+    "numero_ref" : "SGB/HH342/5",
+    "categorie": "Vie des jeunes",
+    "description": "Plus de 150 jeunes issus de tous les mouvements ont participé activement aux travaux d'embellissement et de nettoyage de l'enceinte paroissiale.",
+    "auteur": "Grace Kabeya",
+    "qualite": "Secrétaire Générale",
+    "time" : "2min"
+  },
+  {
+    "id": "actu-002",
+    "titre": "Lancement du premier atelier numérique : Initiation à la gestion de projet",
+    "date": "2026-07-15",
+    "numero_ref" : "SGB/HH342/5",
+    "categorie": "Formation",
+    "description": "Une opportunité d'apprentissage offerte gratuitement aux jeunes encadreurs de la paroisse NODASA pour renforcer leurs compétences managériales.",
+    "auteur": "Sun Ilunga",
+    "qualite": "Vice-Président chargé de la Formation",
+    "time" : "2min"
+  }
+]
+localStorage.setItem("communiqueOfficielCDJ", JSON.stringify(communiqueOfficielCDJ))
