@@ -19,7 +19,7 @@ export const translations = {
     "recherche.categorie_groupes": "Groupes de Vie",
     "recherche.categorie_agenda": "Agenda & Événements",
     "hero.slogan": "Piété • Foi • Honnêteté • Engagement",
-    "hero.titre_ligne1": "Commission des Jeunes",
+    "hero.titre_ligne1": "Commission de Jeunes",
     "hero.titre_ligne2": "Paroisse Notre-Dame de la Sagesse",
     "hero.bouton_rejoindre": "Découvrir nos Groupes",
     "hero.bouton_agenda": "Voir l'Agenda",

@@ -144,7 +144,7 @@ const tousGroupeDeVie = [
   },
   {
     "id": "ecm",
-    "nom_groupe": "Ecole Missionnaire",
+    "nom_groupe": "Ecole de Charite et de Mission",
     "sigle": "E.C.M",
     "devise": "Prie, Communie, Sacrifie-toi, Sois Apôtre",
     "categorie": "Spiritualité Eucharistique",
