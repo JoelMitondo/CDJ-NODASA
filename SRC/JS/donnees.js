@@ -260,3 +260,147 @@ const communiqueOfficielCDJ = [
   }
 ]
 localStorage.setItem("communiqueOfficielCDJ", JSON.stringify(communiqueOfficielCDJ))
+
+const detailGroupe = [
+  {
+    "id": "ka",
+    "nom_groupe": "Kizito - Anuarite",
+    "sigle": "K.A",
+    "presentation_generale": "Le groupe Kizito-Anuarite est un mouvement d'action catholique dédié à la formation spirituelle, humaine et civique des enfants et adolescents de la paroisse Notre-Dame de la Sagesse. Il vise à inculquer des valeurs chrétiennes solides dès le plus jeune âge à travers le jeu, la prière et la vie communautaire.",
+    "historique": "Fondé dans les années 1980 en République Démocratique du Congo et inspiré par la vie du jeune martyr Saint Kizito et de la Sainte Anuarite Nengapeta, le mouvement s'est implanté au sein de la paroisse NODASA pour répondre au besoin d'un encadrement spirituel adapté à la jeunesse d'âge scolaire.",
+    "charisme": "Le charisme du mouvement repose sur la pureté, le témoignage de foi joyeux, le leadership chrétien et le service désintéressé en milieu scolaire et familial.",
+    "organisation": "Le groupe est structuré en deux sections (Kizito pour les garçons et Anuarite pour les filles), elles-mêmes divisées en petites équipes appelées « Noyaux » animées par des encadreurs (Yaya/Mbotama). Les réunions se tiennent tous les samedis.",
+    "types_formations": [
+      "Formation spirituelle et catéchèse sur la vie des Saints Martyrs",
+      "Ateliers de développement personnel et leadership jeune",
+      "Apprentissage des valeurs civiques, du respect et du secourisme",
+      "Activités manuelles, chants liturgiques et expression théâtrale"
+    ],
+    "encadreurs": [
+      {
+        "nom": "Mukendi",
+        "prenom": "Emmanuel",
+        "telephone": "+243 820 000 777",
+        "role": "Encadreur Principal",
+        "poste": "Président de section K.A",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/emmanuel.jpg"
+      },
+      {
+        "nom": "Kalonji",
+        "prenom": "Bénédicte",
+        "telephone": "+243 810 000 888",
+        "role": "Vice-Présidente",
+        "poste": "Responsable de la section Anuarite",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/benedicte.jpg"
+      },
+      {
+        "nom": "Mbuyi",
+        "prenom": "Christian",
+        "telephone": "+243 990 000 999",
+        "role": "Chargé de Formation",
+        "poste": "Encadreur de la section Kizito",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/christian.jpg"
+      }
+    ]
+  },
+  {
+    "id": "scout",
+    "nom_groupe": "Fédération des Scouts du Congo",
+    "sigle": "Scouts",
+    "presentation_generale": "Mouvement éducatif pour les jeunes reposant sur le volontariat, à caractère non politique et ouvert à tous. Le scoutisme paroissial vise le développement physique, mental et spirituel des jeunes pour qu'ils jouent un rôle constructif dans la société.",
+    "historique": "Fondé mondialement par Robert Baden-Powell en 1907 et implanté en RDC au début du XXe siècle, le groupe scout de la paroisse éduque la jeunesse à travers la vie active en plein air, le civisme et le respect de la promesse scout.",
+    "charisme": "Débrouillardise, fraternité universelle, civisme, respect de la nature et sens poussé du service gratuit envers la communauté.",
+    "organisation": "Organisé en patrouilles regroupées au sein d'une Troupe (éclaireurs) ou d'une Meute (louveteaux). Les activités sont encadrées par des chefs de troupe et assistants formés aux pédagogies scout.",
+    "types_formations": [
+      "Techniques de survie, secourisme, secourisme appliqué et cartographie",
+      "Éducation au civisme, au leadership et à la responsabilité individuelle",
+      "Protection de l'environnement, campisme et vie en plein air",
+      "Formation à la citoyenneté active et à l'engagement communautaire"
+    ],
+    "encadreurs": [
+      {
+        "nom": "Kassoma",
+        "prenom": "David",
+        "telephone": "+243 820 111 222",
+        "role": "Chef de Troupe",
+        "poste": "Responsable Unité Scout",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/david.jpg"
+      },
+      {
+        "nom": "Tshilombo",
+        "prenom": "Nathalie",
+        "telephone": "+243 810 222 333",
+        "role": "Assistante Chef de Troupe",
+        "poste": "Encadreuse Meute Louveteaux",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/nathalie.jpg"
+      }
+    ]
+  },
+  {
+    "id": "bjm",
+    "nom_groupe": "Bilenge Ya Mwinda",
+    "sigle": "B.J.M",
+    "presentation_generale": "Mouvement d'action catholique et d'épanouissement intégral des jeunes, visant à en faire des hommes et des femmes conscients, autonomes et engagés dans l'Église et la société selon les valeurs de l'Évangile.",
+    "historique": "Initiative née en RDC sous l'impulsion des évêques dans les années 1980 pour offrir un cadre d'épanouissement humain et spirituel à la jeunesse face aux défis sociaux et aux quêtes de sens.",
+    "charisme": "Éveil de la conscience chrétienne, auto-prise en charge, témoignage de vie lumineux et recherche d'une excellence intégrale (spirituelle, morale et intellectuelle).",
+    "organisation": "Structuré en équipes de fraternité par tranche d'âge, dirigées par un berger de groupe et des encadreurs expérimentés qui animent les carrefours de réflexion hebdomadaires.",
+    "types_formations": [
+      "Développement personnel, art oratoire et prise de parole en public",
+      "Éducation à la maturité affective, humaine et spirituelle",
+      "Initiation à l'entrepreneuriat jeune et auto-prise en charge",
+      "Étude et mise en pratique de la Doctrine Sociale de l'Église"
+    ],
+    "encadreurs": [
+      {
+        "nom": "Bondo",
+        "prenom": "Patrick",
+        "telephone": "+243 990 333 444",
+        "role": "Berger de Groupe",
+        "poste": "Responsable Général B.J.M",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/patrick.jpg"
+      },
+      {
+        "nom": "Mwamba",
+        "prenom": "Clarisse",
+        "telephone": "+243 850 444 555",
+        "role": "Encadreuse",
+        "poste": "Chargée de la Formation Féminine",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/clarisse.jpg"
+      }
+    ]
+  },
+  {
+    "id": "legio",
+    "nom_groupe": "Légion de Marie - Praesidium Jeunes",
+    "sigle": "Légion de Marie",
+    "presentation_generale": "Association internationale de laïcs catholiques qui servent l'Église volontairement. Le praesidium des jeunes de la paroisse se consacre à la prière du chapelet, à l'apostolat de proximité et au soutien des personnes seules ou malades.",
+    "historique": "Fondée à Dublin en 1921 par Frank Duff, la Légion de Marie s'est étendue dans le monde entier. Le praesidium jeune de la paroisse rassemble les jeunes désireux d'imiter la foi, la pureté et l'humilité de la Sainte Vierge.",
+    "charisme": "Spiritualité mariale profonde, docilité à l'Esprit Saint, foi agissante, apostolat direct et prière quotidienne du Chapelet.",
+    "organisation": "Structure hiérarchique appelée Praesidium au niveau paroissial, dirigée par un bureau restreint (Président, Vice-Président, Secrétaire, Trésorier) guidé spirituellement par l'aumônier.",
+    "types_formations": [
+      "Spiritualité mariale et méditation approfondie des mystères du Rosaire",
+      "Techniques d'évangélisation directe et d'apostolat de visite à domicile",
+      "Prière d'intercession et soutien moral aux personnes vulnérables",
+      "Formation à la vie de sainteté au quotidien et œuvres de miséricorde"
+    ],
+    "encadreurs": [
+      {
+        "nom": "Ngalula",
+        "prenom": "Thérèse",
+        "telephone": "+243 900 555 666",
+        "role": "Présidente de Praesidium",
+        "poste": "Responsable Légion Jeunes",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/therese.jpg"
+      },
+      {
+        "nom": "Ilunga",
+        "prenom": "Marc",
+        "telephone": "+243 840 666 777",
+        "role": "Vice-Président",
+        "poste": "Chargé de l'Apostolat",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/marc.jpg"
+      }
+    ]
+  }
+]
+localStorage.setItem("detailGroupe", JSON.stringify(detailGroupe))

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CDJ NODASA</title>
-    <link rel="stylesheet" href="./../../output.css">
+    <link rel="stylesheet" href="./../output.css">
     <script type="module" src="./SRC/JS/app.js"></script>
     <script type="module" src="./SRC/JS/scripts.js"></script>
     <script src="./SRC/JS/donnees.js" defer></script>
@@ -180,20 +180,20 @@
 
         </div>
     </header>
-    <!-- CONTENEUR PRINCIPAL DE LA PAGE GROUPE -->
-<!-- CONTENEUR PRINCIPAL DE LA PAGE GROUPE (MODE DÉMO AVEC TEXTE) -->
+
+
+<!-- PAGE CDJ : SECTION PRÉSENTATION -->
 <main class="min-h-screen bg-cdj-bg text-cdj-text transition-colors duration-300 pb-12">
 
-  <!-- 1. SECTION PRINCIPALE (HERO BANNER) -->
+  <!-- HERO BANNER CDJ -->
   <section class="bg-gradient-to-br from-sky-500/10 via-cdj-card to-cdj-card border-b border-sky-400/20 py-10 px-4 sm:px-6 transition-colors duration-300">
     <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
       
-      <!-- LOGO DU GROUPE -->
+      <!-- LOGO / EMBLÈME CDJ -->
       <div class="w-28 h-28 sm:w-36 sm:h-36 rounded-3xl bg-cdj-card border-2 border-sky-400/40 p-2.5 shadow-xl shrink-0 flex items-center justify-center relative group">
         <img 
-          id="logo-groupe" 
-          src="assets/logos/kizito-anuarite.png" 
-          alt="Logo Kizito - Anuarite" 
+          src="assets/logos/cdj-logo.png" 
+          alt="Logo Commission des Jeunes" 
           class="w-full h-full object-contain rounded-2xl transition-transform duration-300 group-hover:scale-105"
         />
       </div>
@@ -201,317 +201,367 @@
       <!-- INFOS D'EN-TÊTE -->
       <div class="text-center sm:text-left space-y-2">
         <div class="flex items-center justify-center sm:justify-start gap-2 flex-wrap">
-          <span id="sigle-badge" class="px-3 py-1 rounded-full bg-sky-500/15 text-sky-500 font-black text-xs uppercase tracking-wider border border-sky-400/30">
-            K.A
+          <span class="px-3 py-1 rounded-full bg-sky-500/15 text-sky-500 font-black text-xs uppercase tracking-wider border border-sky-400/30">
+            Organe Central
           </span>
           <span class="text-xs text-cdj-muted font-bold uppercase tracking-wide">
-            • Groupe de Vie
+            • Paroisse NODASA
           </span>
         </div>
 
-        <h1 id="nom-groupe" class="text-3xl sm:text-4xl lg:text-5xl font-black text-cdj-text tracking-tight">
-          Kizito - Anuarite
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-cdj-text tracking-tight">
+          Commission des Jeunes
         </h1>
 
-        <p id="devise-groupe" class="text-sm sm:text-base font-bold italic text-sky-500">
-          « Servir et Faire Servir »
+        <p class="text-sm sm:text-base font-bold italic text-sky-500">
+          « Une jeunesse unie dans la foi et l'action »
         </p>
       </div>
 
     </div>
   </section>
 
-  <!-- 2. SECTION PRÉSENTATION GÉNÉRALE -->
-  <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-8">
-    <div class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl transition-colors duration-300 relative overflow-hidden">
+  <!-- CONTENEUR DES CARTES DE PRÉSENTATION -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-8 space-y-6">
+
+    <!-- 1. CARTE VERSET D'ACCROCHE & DEVISE / SLOGAN -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
       
-      <div class="flex items-center gap-3 mb-4">
-        <span class="p-2 rounded-xl bg-sky-500/10 text-sky-500 text-lg">📌</span>
+      <!-- Verset Biblique d'Accroche (Prend 2 colonnes sur grand écran) -->
+      <article class="lg:col-span-2 bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl transition-colors duration-300 flex flex-col justify-between relative overflow-hidden">
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="p-2 rounded-xl bg-sky-500/10 text-sky-500 text-lg">📖</span>
+            <h2 class="text-lg sm:text-xl font-black text-cdj-text">
+              Verset d'Accroche
+            </h2>
+          </div>
+
+          <blockquote class="text-base sm:text-lg font-bold text-cdj-text italic leading-relaxed border-l-4 border-sky-500 pl-4 py-1">
+            « Que personne ne méprise ta jeunesse ; mais sois un modèle pour les fidèles, en parole, en conduite, en charité, en foi, en pureté. »
+          </blockquote>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-cdj-border/60 flex items-center justify-end">
+          <span class="px-3 py-1 rounded-xl bg-sky-500/10 text-sky-500 font-black text-xs border border-sky-400/20">
+            1 Timothée 4:12
+          </span>
+        </div>
+      </article>
+
+      <!-- Devise & Slogan (1 colonne) -->
+      <article class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl transition-colors duration-300 flex flex-col justify-between space-y-6">
+        
+        <!-- Devise -->
+        <div class="space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="p-1.5 rounded-lg bg-sky-500/10 text-sky-500 text-sm">⚓</span>
+            <h3 class="text-xs uppercase font-black tracking-wider text-sky-500">Devise</h3>
+          </div>
+          <p class="font-bold text-cdj-text text-sm sm:text-base">
+            Savoir, Foi et Service au cœur du Campus
+          </p>
+        </div>
+
+        <!-- Slogan -->
+        <div class="space-y-2 pt-4 border-t border-cdj-border/60">
+          <div class="flex items-center gap-2">
+            <span class="p-1.5 rounded-lg bg-sky-500/10 text-sky-500 text-sm">📣</span>
+            <h3 class="text-xs uppercase font-black tracking-wider text-sky-500">Slogan</h3>
+          </div>
+          <p class="font-bold text-cdj-text text-sm sm:text-base">
+            Lève-toi, resplendis et sers !
+          </p>
+        </div>
+
+      </article>
+
+    </div>
+
+    <!-- 2. CARTE OBJECTIFS DE LA COMMISSION -->
+    <article class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl transition-colors duration-300 space-y-6">
+      
+      <div class="flex items-center gap-3">
+        <span class="p-2 rounded-xl bg-sky-500/10 text-sky-500 text-lg">🎯</span>
         <h2 class="text-xl sm:text-2xl font-black text-cdj-text">
-          Présentation Générale
+          Nos Objectifs Principaux
         </h2>
       </div>
 
-      <p id="presentation-generale" class="text-sm sm:text-base text-cdj-muted leading-relaxed font-normal">
-        Le groupe Kizito-Anuarite est un mouvement d'action catholique dédié à la formation spirituelle, humaine et civique des enfants et adolescents de la paroisse Notre-Dame de la Sagesse. Il vise à inculquer des valeurs chrétiennes solides dès le plus jeune âge à travers le jeu, la prière, le témoignage de vie et la camaraderie joyeuse.
+      <p class="text-sm text-cdj-muted leading-relaxed">
+        La Commission des Jeunes (CDJ) est la structure faîtière chargée d'orienter, d'harmoniser et de dynamiser la vie pastorale de la jeunesse au sein de la Paroisse Notre-Dame de la Sagesse.
       </p>
 
-    </div>
-  </section>
-<!-- 3. SECTION STRUCTURE & COMITÉ D'ENCADREMENT -->
-<section class="max-w-6xl mx-auto px-4 sm:px-6 pt-8">
+      <!-- Grille des 4 Objectifs -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <!-- Objectif 1 -->
+        <div class="p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20 space-y-2">
+          <span class="flex items-center justify-center w-8 h-8 rounded-xl bg-sky-500/15 text-sky-500 font-black text-xs">
+            01
+          </span>
+          <h3 class="font-black text-cdj-text text-sm">Unification</h3>
+          <p class="text-xs text-cdj-muted leading-relaxed">
+            Fédérer et coordonner les actions des 8 groupes de vie pour une pastorale paroissiale harmonieuse.
+          </p>
+        </div>
+
+        <!-- Objectif 2 -->
+        <div class="p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20 space-y-2">
+          <span class="flex items-center justify-center w-8 h-8 rounded-xl bg-sky-500/15 text-sky-500 font-black text-xs">
+            02
+          </span>
+          <h3 class="font-black text-cdj-text text-sm">Formation Intégrale</h3>
+          <p class="text-xs text-cdj-muted leading-relaxed">
+            Accompagner la maturité spirituelle, intellectuelle et humaine de la jeunesse étudiante et paroissiale.
+          </p>
+        </div>
+
+        <!-- Objectif 3 -->
+        <div class="p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20 space-y-2">
+          <span class="flex items-center justify-center w-8 h-8 rounded-xl bg-sky-500/15 text-sky-500 font-black text-xs">
+            03
+          </span>
+          <h3 class="font-black text-cdj-text text-sm">Évangélisation</h3>
+          <p class="text-xs text-cdj-muted leading-relaxed">
+            Organiser des rassemblements majeurs, résessions, messes des jeunes et temps forts de louange.
+          </p>
+        </div>
+
+        <!-- Objectif 4 -->
+        <div class="p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20 space-y-2">
+          <span class="flex items-center justify-center w-8 h-8 rounded-xl bg-sky-500/15 text-sky-500 font-black text-xs">
+            04
+          </span>
+          <h3 class="font-black text-cdj-text text-sm">Engagement Social</h3>
+          <p class="text-xs text-cdj-muted leading-relaxed">
+            Promouvoir le leadership chrétien, le civisme et le service communautaire au sein de l'université.
+          </p>
+        </div>
+
+      </div>
+
+    </article>
+
+  </div>
+
+  <!-- PAGE CDJ : SECTION STRUCTURE & BUREAU DIRECTEUR -->
+<section class="max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-12">
   <div class="space-y-6">
     
     <!-- En-tête de section -->
     <div class="flex items-center gap-3">
-      <span class="p-2 rounded-xl bg-sky-500/10 text-sky-500 text-lg">👥</span>
-      <h2 class="text-xl sm:text-2xl font-black text-cdj-text">
-        Structure & Comité d'Encadrement
-      </h2>
-    </div>
-
-    <!-- Grille des encadreurs (Données fictives de démonstration) -->
-    <div id="grille-encadreurs" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      
-      <!-- Carte Encadreur 1 -->
-      <article class="bg-cdj-card border border-cdj-border rounded-3xl p-5 shadow-xl transition-all duration-300 hover:border-sky-400/50 flex items-center gap-4 group">
-        <img 
-          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200" 
-          alt="Emmanuel Mukendi" 
-          class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl object-cover bg-sky-500/10 border border-sky-400/30 shrink-0 transition-transform duration-300 group-hover:scale-105"
-        />
-        <div class="space-y-1 min-w-0 flex-1">
-          <span class="inline-block px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-500 font-bold text-[10px] uppercase border border-sky-400/20">
-            Encadreur Principal
-          </span>
-          <h3 class="font-black text-cdj-text text-base truncate">
-            Emmanuel Mukendi
-          </h3>
-          <p class="text-cdj-muted font-semibold text-xs truncate">
-            Président de section K.A
-          </p>
-          <a href="tel:+243820000777" class="inline-flex items-center gap-1 text-sky-500 hover:underline font-bold text-xs pt-1">
-            📞 +243 820 000 777
-          </a>
-        </div>
-      </article>
-
-      <!-- Carte Encadreur 2 -->
-      <article class="bg-cdj-card border border-cdj-border rounded-3xl p-5 shadow-xl transition-all duration-300 hover:border-sky-400/50 flex items-center gap-4 group">
-        <img 
-          src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=200" 
-          alt="Bénédicte Kalonji" 
-          class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl object-cover bg-sky-500/10 border border-sky-400/30 shrink-0 transition-transform duration-300 group-hover:scale-105"
-        />
-        <div class="space-y-1 min-w-0 flex-1">
-          <span class="inline-block px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-500 font-bold text-[10px] uppercase border border-sky-400/20">
-            Vice-Présidente
-          </span>
-          <h3 class="font-black text-cdj-text text-base truncate">
-            Bénédicte Kalonji
-          </h3>
-          <p class="text-cdj-muted font-semibold text-xs truncate">
-            Responsable Section Anuarite
-          </p>
-          <a href="tel:+243810000888" class="inline-flex items-center gap-1 text-sky-500 hover:underline font-bold text-xs pt-1">
-            📞 +243 810 000 888
-          </a>
-        </div>
-      </article>
-
-      <!-- Carte Encadreur 3 -->
-      <article class="bg-cdj-card border border-cdj-border rounded-3xl p-5 shadow-xl transition-all duration-300 hover:border-sky-400/50 flex items-center gap-4 group">
-        <img 
-          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200" 
-          alt="Christian Mbuyi" 
-          class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl object-cover bg-sky-500/10 border border-sky-400/30 shrink-0 transition-transform duration-300 group-hover:scale-105"
-        />
-        <div class="space-y-1 min-w-0 flex-1">
-          <span class="inline-block px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-500 font-bold text-[10px] uppercase border border-sky-400/20">
-            Chargé de Formation
-          </span>
-          <h3 class="font-black text-cdj-text text-base truncate">
-            Christian Mbuyi
-          </h3>
-          <p class="text-cdj-muted font-semibold text-xs truncate">
-            Encadreur Section Kizito
-          </p>
-          <a href="tel:+243990000999" class="inline-flex items-center gap-1 text-sky-500 hover:underline font-bold text-xs pt-1">
-            📞 +243 990 000 999
-          </a>
-        </div>
-      </article>
-
-    </div>
-
-  </div>
-</section>
-<!-- 4. SECTIONS HISTORIQUE & ORGANISATION -->
-<section class="max-w-6xl mx-auto px-4 sm:px-6 pt-8">
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-    
-    <!-- CARTE 1 : HISTORIQUE -->
-    <article class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl transition-colors duration-300 flex flex-col justify-between">
+      <span class="p-2 rounded-xl bg-sky-500/10 text-sky-500 text-lg">🏛️</span>
       <div>
-        <div class="flex items-center gap-3 mb-4">
-          <span class="p-2 rounded-xl bg-sky-500/10 text-sky-500 text-lg">📜</span>
-          <h2 class="text-xl sm:text-2xl font-black text-cdj-text">
-            Historique du Groupe
-          </h2>
-        </div>
-
-        <p class="text-sm sm:text-base text-cdj-muted leading-relaxed">
-          Fondé dans les années 1980 en République Démocratique du Congo et inspiré par le témoignage héroïque du jeune martyr Saint Kizito et de la Sainte Anuarite Nengapeta, le mouvement s'est implanté au sein de la paroisse NODASA pour offrir un cadre d'encadrement spirituel et humain adapté aux enfants et adolescents.
+        <h2 class="text-xl sm:text-2xl font-black text-cdj-text">
+          Structure & Bureau Directeur
+        </h2>
+        <p class="text-xs sm:text-sm text-cdj-muted font-medium">
+          Les responsables coordinateurs de la Commission des Jeunes
         </p>
       </div>
-
-      <!-- Accentuation visuelle bas de carte -->
-      <div class="mt-6 pt-4 border-t border-cdj-border/60 flex items-center justify-between text-xs text-cdj-muted font-bold">
-        <span>Ancrage paroissial</span>
-        <span class="text-sky-500 font-semibold">Depuis plus de 30 ans</span>
-      </div>
-    </article>
-
-    <!-- CARTE 2 : ORGANISATION -->
-    <article class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl transition-colors duration-300 flex flex-col justify-between">
-      <div>
-        <div class="flex items-center gap-3 mb-4">
-          <span class="p-2 rounded-xl bg-sky-500/10 text-sky-500 text-lg">⚙️</span>
-          <h2 class="text-xl sm:text-2xl font-black text-cdj-text">
-            Organisation Interne
-          </h2>
-        </div>
-
-        <p class="text-sm sm:text-base text-cdj-muted leading-relaxed">
-          Le groupe est structuré en deux grandes sections : la section Kizito pour les garçons et la section Anuarite pour les filles. Elles sont elles-mêmes subdivisées en petites équipes appelées « Noyaux » d'une dizaine de membres, dirigées et animées par des encadreurs (Yaya / Mbotama).
-        </p>
-      </div>
-
-      <!-- Informations clés sur la routine -->
-      <div class="mt-6 pt-4 border-t border-cdj-border/60 flex items-center justify-between text-xs text-cdj-muted font-bold">
-        <span>Rencontres ordinaires</span>
-        <span class="text-sky-500 font-semibold">Tous les samedis de 14h à 16h</span>
-      </div>
-    </article>
-
-  </div>
-</section>
-<!-- 5. SECTION CHARISME PROPRE -->
-<section class="max-w-6xl mx-auto px-4 sm:px-6 pt-8">
-  <div class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl transition-colors duration-300 relative overflow-hidden">
-    
-    <!-- En-tête de section -->
-    <div class="flex items-center gap-3 mb-6">
-      <span class="p-2 rounded-xl bg-sky-500/10 text-sky-500 text-lg">✨</span>
-      <h2 class="text-xl sm:text-2xl font-black text-cdj-text">
-        Charisme Propre & Spiritualité
-      </h2>
     </div>
 
-    <!-- Description globale -->
-    <p class="text-sm sm:text-base text-cdj-muted leading-relaxed mb-6">
-      Le charisme du groupe Kizito-Anuarite repose sur l'imitation du courage spirituel, de la pureté et de la fidélité des jeunes martyrs. Il vise à former la conscience des plus jeunes pour en faire des témoins audacieux et joyeux du Christ dans leurs milieux de vie.
-    </p>
-
-    <!-- Grille des piliers du charisme -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <!-- Grille des membres du Bureau (Données de démonstration) -->
+    <div id="grille-membres-cdj" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       
-      <!-- Pilier 1 -->
-      <div class="p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20 space-y-2 flex flex-col justify-between">
-        <div>
-          <span class="text-2xl block mb-2">🕊️</span>
-          <h3 class="font-black text-cdj-text text-sm">Pureté & Intégrité</h3>
-          <p class="text-xs text-cdj-muted leading-relaxed mt-1">Inculquer le respect de soi, l'honnêteté et la chasteté à l'exemple de Sainte Anuarite.</p>
+      <!-- Membre 1 : Président -->
+      <article class="bg-cdj-card border border-cdj-border rounded-3xl p-5 shadow-xl transition-all duration-300 hover:border-sky-400/50 flex flex-col justify-between group">
+        <div class="flex items-start gap-4">
+          <img 
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200" 
+            alt="Joël Mitondo" 
+            class="w-20 h-20 rounded-2xl object-cover bg-sky-500/10 border border-sky-400/30 shrink-0 transition-transform duration-300 group-hover:scale-105"
+          />
+          <div class="space-y-1.5 min-w-0 flex-1">
+            <span class="inline-block px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-500 font-bold text-[10px] uppercase border border-sky-400/20">
+              Président
+            </span>
+            <h3 class="font-black text-cdj-text text-base truncate">
+              Joël Mitondo
+            </h3>
+            <p class="text-cdj-muted font-semibold text-xs truncate">
+              Bureau Directeur CDJ
+            </p>
+          </div>
         </div>
-      </div>
 
-      <!-- Pilier 2 -->
-      <div class="p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20 space-y-2 flex flex-col justify-between">
-        <div>
-          <span class="text-2xl block mb-2">🔥</span>
-          <h3 class="font-black text-cdj-text text-sm">Courage de la Foi</h3>
-          <p class="text-xs text-cdj-muted leading-relaxed mt-1">Affirmer son identité chrétienne avec fierté à l'image du jeune martyr Saint Kizito.</p>
+        <!-- Groupe de provenance & Contact -->
+        <div class="mt-4 pt-3 border-t border-cdj-border/60 flex items-center justify-between text-xs">
+          <span class="px-2.5 py-1 rounded-xl bg-sky-500/5 text-cdj-muted font-bold text-[11px] border border-sky-400/10 flex items-center gap-1">
+            🌱 <strong class="text-sky-500">K.A</strong>
+          </span>
+          <a href="tel:+243820000111" class="inline-flex items-center gap-1 text-sky-500 hover:underline font-bold text-xs">
+            📞 +243 820 000 111
+          </a>
         </div>
-      </div>
+      </article>
 
-      <!-- Pilier 3 -->
-      <div class="p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20 space-y-2 flex flex-col justify-between">
-        <div>
-          <span class="text-2xl block mb-2">🤝</span>
-          <h3 class="font-black text-cdj-text text-sm">Service & Fraternité</h3>
-          <p class="text-xs text-cdj-muted leading-relaxed mt-1">Apprendre à servir son prochain avec joie, bienveillance et esprit d'entraide.</p>
+      <!-- Membre 2 : Vice-Présidente -->
+      <article class="bg-cdj-card border border-cdj-border rounded-3xl p-5 shadow-xl transition-all duration-300 hover:border-sky-400/50 flex flex-col justify-between group">
+        <div class="flex items-start gap-4">
+          <img 
+            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=200" 
+            alt="Sarah Ilunga" 
+            class="w-20 h-20 rounded-2xl object-cover bg-sky-500/10 border border-sky-400/30 shrink-0 transition-transform duration-300 group-hover:scale-105"
+          />
+          <div class="space-y-1.5 min-w-0 flex-1">
+            <span class="inline-block px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-500 font-bold text-[10px] uppercase border border-sky-400/20">
+              Vice-Présidente
+            </span>
+            <h3 class="font-black text-cdj-text text-base truncate">
+              Sarah Ilunga
+            </h3>
+            <p class="text-cdj-muted font-semibold text-xs truncate">
+              Coordinatrice des Projets
+            </p>
+          </div>
         </div>
-      </div>
 
-      <!-- Pilier 4 -->
-      <div class="p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20 space-y-2 flex flex-col justify-between">
-        <div>
-          <span class="text-2xl block mb-2">⭐</span>
-          <h3 class="font-black text-cdj-text text-sm">Leadership Jeune</h3>
-          <p class="text-xs text-cdj-muted leading-relaxed mt-1">Développer l'autonomie et l'esprit de responsabilité dès le plus jeune âge.</p>
+        <!-- Groupe de provenance & Contact -->
+        <div class="mt-4 pt-3 border-t border-cdj-border/60 flex items-center justify-between text-xs">
+          <span class="px-2.5 py-1 rounded-xl bg-sky-500/5 text-cdj-muted font-bold text-[11px] border border-sky-400/10 flex items-center gap-1">
+            🌱 <strong class="text-sky-500">B.J.M</strong>
+          </span>
+          <a href="tel:+243810000222" class="inline-flex items-center gap-1 text-sky-500 hover:underline font-bold text-xs">
+            📞 +243 810 000 222
+          </a>
         </div>
-      </div>
+      </article>
 
-    </div>
-
-  </div>
-</section>
-<!-- 6. SECTION FORMATION -->
-<section class="max-w-6xl mx-auto px-4 sm:px-6 pt-8">
-  <div class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl transition-colors duration-300">
-    
-    <!-- En-tête de section -->
-    <div class="flex items-center gap-3 mb-6">
-      <span class="p-2 rounded-xl bg-sky-500/10 text-sky-500 text-lg">🎓</span>
-      <h2 class="text-xl sm:text-2xl font-black text-cdj-text">
-        Types de Formations Dispensées
-      </h2>
-    </div>
-
-    <!-- Intro -->
-    <p class="text-sm sm:text-base text-cdj-muted leading-relaxed mb-6">
-      Afin d'assurer l'épanouissement intégral des membres, le groupe propose un parcours d'apprentissage complet étalé sur l'année pastorale.
-    </p>
-
-    <!-- Grille des formations -->
-    <div id="liste-formations" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      
-      <!-- Module 1 -->
-      <div class="flex items-start gap-3 p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20">
-        <span class="flex items-center justify-center w-7 h-7 rounded-xl bg-sky-500/15 text-sky-500 font-black text-xs shrink-0 mt-0.5">
-          ✓
-        </span>
-        <div class="space-y-1">
-          <h3 class="font-bold text-cdj-text text-sm">Spiritualité & Catéchèse</h3>
-          <p class="text-xs text-cdj-muted leading-relaxed">
-            Formation spirituelle et enseignements approfondis sur la vie des Saints Martyrs.
-          </p>
+      <!-- Membre 3 : Secrétaire Général -->
+      <article class="bg-cdj-card border border-cdj-border rounded-3xl p-5 shadow-xl transition-all duration-300 hover:border-sky-400/50 flex flex-col justify-between group">
+        <div class="flex items-start gap-4">
+          <img 
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200" 
+            alt="Marc Mbayo" 
+            class="w-20 h-20 rounded-2xl object-cover bg-sky-500/10 border border-sky-400/30 shrink-0 transition-transform duration-300 group-hover:scale-105"
+          />
+          <div class="space-y-1.5 min-w-0 flex-1">
+            <span class="inline-block px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-500 font-bold text-[10px] uppercase border border-sky-400/20">
+              Secrétaire Général
+            </span>
+            <h3 class="font-black text-cdj-text text-base truncate">
+              Marc Mbayo
+            </h3>
+            <p class="text-cdj-muted font-semibold text-xs truncate">
+              Administration & Archives
+            </p>
+          </div>
         </div>
-      </div>
 
-      <!-- Module 2 -->
-      <div class="flex items-start gap-3 p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20">
-        <span class="flex items-center justify-center w-7 h-7 rounded-xl bg-sky-500/15 text-sky-500 font-black text-xs shrink-0 mt-0.5">
-          ✓
-        </span>
-        <div class="space-y-1">
-          <h3 class="font-bold text-cdj-text text-sm">Développement Personnel & Leadership</h3>
-          <p class="text-xs text-cdj-muted leading-relaxed">
-            Ateliers interactifs axés sur la confiance en soi, la prise de parole et l'initiative.
-          </p>
+        <!-- Groupe de provenance & Contact -->
+        <div class="mt-4 pt-3 border-t border-cdj-border/60 flex items-center justify-between text-xs">
+          <span class="px-2.5 py-1 rounded-xl bg-sky-500/5 text-cdj-muted font-bold text-[11px] border border-sky-400/10 flex items-center gap-1">
+            🌱 <strong class="text-sky-500">Scouts</strong>
+          </span>
+          <a href="tel:+243990000333" class="inline-flex items-center gap-1 text-sky-500 hover:underline font-bold text-xs">
+            📞 +243 990 000 333
+          </a>
         </div>
-      </div>
+      </article>
 
-      <!-- Module 3 -->
-      <div class="flex items-start gap-3 p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20">
-        <span class="flex items-center justify-center w-7 h-7 rounded-xl bg-sky-500/15 text-sky-500 font-black text-xs shrink-0 mt-0.5">
-          ✓
-        </span>
-        <div class="space-y-1">
-          <h3 class="font-bold text-cdj-text text-sm">Valeurs Civiques & Secourisme</h3>
-          <p class="text-xs text-cdj-muted leading-relaxed">
-            Sensibilisation au respect du bien commun, citoyenneté et gestes de premiers secours.
-          </p>
+      <!-- Membre 4 : Trésorière -->
+      <article class="bg-cdj-card border border-cdj-border rounded-3xl p-5 shadow-xl transition-all duration-300 hover:border-sky-400/50 flex flex-col justify-between group">
+        <div class="flex items-start gap-4">
+          <img 
+            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200" 
+            alt="Clarisse Kabedi" 
+            class="w-20 h-20 rounded-2xl object-cover bg-sky-500/10 border border-sky-400/30 shrink-0 transition-transform duration-300 group-hover:scale-105"
+          />
+          <div class="space-y-1.5 min-w-0 flex-1">
+            <span class="inline-block px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-500 font-bold text-[10px] uppercase border border-sky-400/20">
+              Trésorière Générale
+            </span>
+            <h3 class="font-black text-cdj-text text-base truncate">
+              Clarisse Kabedi
+            </h3>
+            <p class="text-cdj-muted font-semibold text-xs truncate">
+              Finances & Logistique
+            </p>
+          </div>
         </div>
-      </div>
 
-      <!-- Module 4 -->
-      <div class="flex items-start gap-3 p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20">
-        <span class="flex items-center justify-center w-7 h-7 rounded-xl bg-sky-500/15 text-sky-500 font-black text-xs shrink-0 mt-0.5">
-          ✓
-        </span>
-        <div class="space-y-1">
-          <h3 class="font-bold text-cdj-text text-sm">Expression Artistique & Culturelle</h3>
-          <p class="text-xs text-cdj-muted leading-relaxed">
-            Activités manuelles, apprentissage des chants liturgiques et expression théâtrale.
-          </p>
+        <!-- Groupe de provenance & Contact -->
+        <div class="mt-4 pt-3 border-t border-cdj-border/60 flex items-center justify-between text-xs">
+          <span class="px-2.5 py-1 rounded-xl bg-sky-500/5 text-cdj-muted font-bold text-[11px] border border-sky-400/10 flex items-center gap-1">
+            🌱 <strong class="text-sky-500">Légion de Marie</strong>
+          </span>
+          <a href="tel:+243850000444" class="inline-flex items-center gap-1 text-sky-500 hover:underline font-bold text-xs">
+            📞 +243 850 000 444
+          </a>
         </div>
-      </div>
+      </article>
+
+      <!-- Membre 5 : Chargé de Communication -->
+      <article class="bg-cdj-card border border-cdj-border rounded-3xl p-5 shadow-xl transition-all duration-300 hover:border-sky-400/50 flex flex-col justify-between group">
+        <div class="flex items-start gap-4">
+          <img 
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200" 
+            alt="Alain Mukeba" 
+            class="w-20 h-20 rounded-2xl object-cover bg-sky-500/10 border border-sky-400/30 shrink-0 transition-transform duration-300 group-hover:scale-105"
+          />
+          <div class="space-y-1.5 min-w-0 flex-1">
+            <span class="inline-block px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-500 font-bold text-[10px] uppercase border border-sky-400/20">
+              Chargé de Com
+            </span>
+            <h3 class="font-black text-cdj-text text-base truncate">
+              Alain Mukeba
+            </h3>
+            <p class="text-cdj-muted font-semibold text-xs truncate">
+              Médias & Communication
+            </p>
+          </div>
+        </div>
+
+        <!-- Groupe de provenance & Contact -->
+        <div class="mt-4 pt-3 border-t border-cdj-border/60 flex items-center justify-between text-xs">
+          <span class="px-2.5 py-1 rounded-xl bg-sky-500/5 text-cdj-muted font-bold text-[11px] border border-sky-400/10 flex items-center gap-1">
+            🌱 <strong class="text-sky-500">K.A</strong>
+          </span>
+          <a href="tel:+243840000555" class="inline-flex items-center gap-1 text-sky-500 hover:underline font-bold text-xs">
+            📞 +243 840 000 555
+          </a>
+        </div>
+      </article>
+
+      <!-- Membre 6 : Aumônier des Jeunes -->
+      <article class="bg-cdj-card border border-cdj-border rounded-3xl p-5 shadow-xl transition-all duration-300 hover:border-sky-400/50 flex flex-col justify-between group">
+        <div class="flex items-start gap-4">
+          <img 
+            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200" 
+            alt="Père Jean-Marc" 
+            class="w-20 h-20 rounded-2xl object-cover bg-sky-500/10 border border-sky-400/30 shrink-0 transition-transform duration-300 group-hover:scale-105"
+          />
+          <div class="space-y-1.5 min-w-0 flex-1">
+            <span class="inline-block px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-500 font-bold text-[10px] uppercase border border-sky-400/20">
+              Aumônier
+            </span>
+            <h3 class="font-black text-cdj-text text-base truncate">
+              Père Jean-Marc
+            </h3>
+            <p class="text-cdj-muted font-semibold text-xs truncate">
+              Accompagnateur Spirituel
+            </p>
+          </div>
+        </div>
+
+        <!-- Groupe de provenance & Contact -->
+        <div class="mt-4 pt-3 border-t border-cdj-border/60 flex items-center justify-between text-xs">
+          <span class="px-2.5 py-1 rounded-xl bg-sky-500/5 text-cdj-muted font-bold text-[11px] border border-sky-400/10 flex items-center gap-1">
+            ⛪ <strong class="text-sky-500">Paroisse NODASA</strong>
+          </span>
+          <a href="tel:+243900000666" class="inline-flex items-center gap-1 text-sky-500 hover:underline font-bold text-xs">
+            📞 +243 900 000 666
+          </a>
+        </div>
+      </article>
 
     </div>
 
   </div>
 </section>
 </main>
+
 </body>
 </html>
