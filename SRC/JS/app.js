@@ -1,5 +1,5 @@
 import {afficherEtCacher, modeClairEtSombre, animationCompteurIndex} from './scripts.js';
-import {miseEnPage, afficherLesGroupes, afficherEvenement, afficherCommunique} from './miseEnPage.js';
+import {miseEnPage, afficherLesGroupes, afficherEvenement, afficherCommunique, btnFiltreEvenement} from './miseEnPage.js';
 
 afficherEtCacher()
 modeClairEtSombre()
@@ -8,3 +8,4 @@ miseEnPage()
 afficherLesGroupes()
 afficherEvenement()
 afficherCommunique()
+btnFiltreEvenement()

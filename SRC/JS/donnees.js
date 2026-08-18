@@ -5,6 +5,8 @@ const informationCommission = {
     "Une jeunesse unie dans la foi et l'action",
     "Savoir, Foi et Service au cœur du Campus"
   ],
+  "logoClair": "./publics/logo_icones/mode clair.png",
+  "logoSombre": "./publics/logo_icones/mode sombre.png",
   "verset_accroche": "Que personne ne méprise ta jeunesse ; mais sois un modèle pour les fidèles, en parole, en conduite, en charité, en foi, en pureté.",
   "reference_biblique": "1 Timothée 4:12",
   "adresse_gmail": "cdj.nodasa.unikin@gmail.com",
@@ -153,7 +155,7 @@ const tousGroupeDeVie = [
     "jour_reunion": "Dimanche de 11h30 à 13h00",
     "lien_page" : "./SRC/html/Groupes_vies/emc.html",
     "lieu_de_rencontre" : "Paroisse NODASA",
-    
+    "logo": "./publics/img/logo_ecm.jpg"
   }
 ]
 localStorage.setItem("groupeDeVie", JSON.stringify(tousGroupeDeVie))

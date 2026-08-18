@@ -1,3 +1,4 @@
+
 const svgIconeLieu = `
     <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
         <path d="M0 0h24v24H0z" fill="none" />
@@ -52,12 +53,16 @@ const nomMois = [
     "Novembre",
     "Décembre"
 ];
+
+
 export function miseEnPage(){
     const infoCommis = JSON.parse(localStorage.getItem("infoCommis"))
+    
+
     const sigle = infoCommis.sigle
     const siglePage = document.querySelectorAll(".sigleCommission")
     siglePage.forEach(element => element.textContent=sigle)
-
+    
     function afficherInfoUser(tableau, posteUser){
         for(const info of tableau){
             if(info.poste === posteUser){
@@ -433,6 +438,47 @@ export function afficherLesGroupes(){
     divParent.innerHTML=groupe
 }
 
+export function btnFiltreEvenement() {
+
+    const filtreAgenda = document.getElementById("filtres-agenda");
+
+    filtreAgenda.addEventListener("click", (event) => {
+
+        const btnClique = event.target.closest("button");
+
+        // Si le clic ne vient pas d'un bouton
+        if (!btnClique) return;
+
+        const btn = filtreAgenda.querySelectorAll("button");
+
+        // Remettre tous les boutons à leur état normal
+        btn.forEach((bouton) => {
+
+            bouton.classList.remove(
+                "bg-cdj-primary",
+                "text-white",
+                "shadow-sm"
+            );
+
+            bouton.classList.add(
+                "text-cdj-muted",
+                "hover:text-cdj-text"
+            );
+        });
+
+        // Activer le bouton cliqué
+        btnClique.classList.remove(
+            "text-cdj-muted",
+            "hover:text-cdj-text"
+        );
+
+        btnClique.classList.add(
+            "bg-cdj-primary",
+            "text-white",
+            "shadow-sm"
+        );
+    });
+}
 export function afficherEvenement(){
     const lesEvenements = JSON.parse(localStorage.getItem("evenements"))
     const container_evenement = document.getElementById("conteneur-evenements")

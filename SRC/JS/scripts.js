@@ -1,4 +1,5 @@
 import { translations } from './translations.js';
+import { logoSombreClair } from './lesFonctions.js';
 
 //Fonction de gestion de la traduction de la page
   const DEFAULT_LANG = 'fr';
@@ -105,7 +106,9 @@ export function modeClairEtSombre(){
   }
   btn_mode_sombre_clair.addEventListener("click",()=>{
     toggleTheme()
+    logoSombreClair() //changement au moment de chaque clique
   })
+  logoSombreClair() //affichage lors du chargement de la page
 }
 
 // ANIMATION DES COMPTEURS DYNAMIQUES AU DÉFILEMENT
