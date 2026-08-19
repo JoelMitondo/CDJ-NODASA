@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CDJ NODASA</title>
-    <link rel="stylesheet" href="./../../output.css">
-    <script type="module" src="./SRC/JS/app.js"></script>
-    <script type="module" src="./SRC/JS/scripts.js"></script>
-    <script src="./SRC/JS/donnees.js" defer></script>
+    <link rel="stylesheet" href="/SRC/output.css">
+    <script type="module" src="/SRC/JS/app.js"></script>
+    <script type="module" src="/SRC/JS/scripts.js"></script>
+    <script src="/SRC/JS/donnees.js" defer></script>
 </head>
 <body class="w-full max-w-full mx-auto overflow-x-hidden bg-cdj-bg text-cdj-text transition-colors duration-300">
+    <!--L'en-tête de la page-->
     <header class="sticky top-0 z-50 w-full backdrop-blur-md bg-cdj-card/80 dark:bg-slate-900/80 border-b border-cdj-border/60 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
 
             <!-- 1. GAUCHE : LOGO OFFICIEL & NOM COMPLET -->
-            <a href="index.html" class="flex items-center gap-3 shrink-0 group">
+            <a href="/index.html" class="flex items-center gap-3 shrink-0 group">
                 <div class="logoCdj h-20 w-auto rounded-full transition-transform group-hover:scale-105">
                     
                 </div>
@@ -38,17 +39,16 @@
                     </button>
                     <!-- Sous-menu au survol -->
                     <div class="absolute top-full left-0 w-64 bg-cdj-card dark:bg-slate-800 border border-cdj-border rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2 space-y-1">
-                        <a href="./SRC/html/groupeVie.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-cdj-bg transition-colors" data-i18n="groupes.generalite">Généralités</a>
-                        <a href="./SRC/html/groupeVie.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-cdj-bg transition-colors">CDJ NODASA</a>
+                        <a href="/SRC/html/cdj.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-cdj-bg transition-colors">CDJ NODASA</a>
                         <div class="h-px bg-cdj-border my-1"></div>
-                        <a href="./SRC/html/Groupes_vies/ka.html" class="block px-3 py-2 rounded-lg text-sm hover:bg-cdj-bg transition-colors">K.A Kizito-Anuarite</a>
-                        <a href="./SRC/html/Groupes_vies/scouts.html" class="block px-3 py-2 rounded-lg text-sm hover:bg-cdj-bg transition-colors">Scouts</a>
-                        <a href="./SRC/html/Groupes_vies/jefac.html" class="block px-3 py-2 rounded-lg text-sm hover:bg-cdj-bg transition-colors">JEFAC</a>
-                        <a href="./SRC/html/Groupes_vies/apa.html" class="block px-3 py-2 rounded-lg text-sm hover:bg-cdj-bg transition-colors">APA Armée des Petits Anges</a>
-                        <a href="./SRC/html/Groupes_vies/bym.html" class="block px-3 py-2 rounded-lg text-sm hover:bg-cdj-bg transition-colors">BYM Bilenge Ya Mwinda</a>
-                        <a href="./SRC/html/Groupes_vies/mijerca.html" class="block px-3 py-2 rounded-lg text-sm hover:bg-cdj-bg transition-colors">MIJERCA</a>
-                        <a href="./SRC/html/Groupes_vies/legion.html" class="block px-3 py-2 rounded-lg text-sm hover:bg-cdj-bg transition-colors">Légion de Marie</a>
-                        <a href="./SRC/html/Groupes_vies/emc.html" class="block px-3 py-2 rounded-lg text-sm hover:bg-cdj-bg transition-colors">ECM</a>
+                        <a href="/SRC/html/Groupes_vies/ka.html" class="block px-3 py-2 rounded-lg text-sm hover:bg-cdj-bg transition-colors">K.A Kizito-Anuarite</a>
+                        <a href="/SRC/html/Groupes_vies/scouts.html" class="block px-3 py-2 rounded-lg text-sm hover:bg-cdj-bg transition-colors">Scouts</a>
+                        <a href="/SRC/html/Groupes_vies/jefac.html" class="block px-3 py-2 rounded-lg text-sm hover:bg-cdj-bg transition-colors">JEFAC</a>
+                        <a href="/SRC/html/Groupes_vies/apa.html" class="block px-3 py-2 rounded-lg text-sm hover:bg-cdj-bg transition-colors">APA Armée des Petits Anges</a>
+                        <a href="/SRC/html/Groupes_vies/bym.html" class="block px-3 py-2 rounded-lg text-sm hover:bg-cdj-bg transition-colors">BYM Bilenge Ya Mwinda</a>
+                        <a href="/SRC/html/Groupes_vies/mijerca.html" class="block px-3 py-2 rounded-lg text-sm hover:bg-cdj-bg transition-colors">MIJERCA</a>
+                        <a href="/SRC/html/Groupes_vies/legion.html" class="block px-3 py-2 rounded-lg text-sm hover:bg-cdj-bg transition-colors">Légion de Marie</a>
+                        <a href="/SRC/html/Groupes_vies/emc.html" class="block px-3 py-2 rounded-lg text-sm hover:bg-cdj-bg transition-colors">ECM</a>
                     </div>
                 </div>
 
@@ -60,8 +60,8 @@
                     </button>
                     <!-- Sous-menu au survol -->
                     <div class="absolute top-full left-0 w-56 bg-cdj-card dark:bg-slate-800 border border-cdj-border rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2 space-y-1">
-                        <a href="./SRC/html/agendaCdj.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-cdj-bg transition-colors" data-i18n="agenda.activites_cdj">Activités de la CDJ</a>
-                        <a href="./SRC/html/agendaGrVie.html" class="block px-3 py-2 rounded-lg text-sm hover:bg-cdj-bg transition-colors" data-i18n="agenda.activites_groupes">Activités des Groupes de Vie</a>
+                        <a href="/SRC/html/agendaCdj.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-cdj-bg transition-colors" data-i18n="agenda.activites_cdj">Activités de la CDJ</a>
+                        <a href="/SRC/html/agendaGrVie.html" class="block px-3 py-2 rounded-lg text-sm hover:bg-cdj-bg transition-colors" data-i18n="agenda.activites_groupes">Activités des Groupes de Vie</a>
                     </div>
                 </div>
 
@@ -73,8 +73,8 @@
                     </button>
                     <!-- Sous-menu au survol -->
                     <div class="absolute top-full left-0 w-56 bg-cdj-card dark:bg-slate-800 border border-cdj-border rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 p-2 space-y-1">
-                    <a href="./SRC/html/conctactCdj.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-cdj-bg transition-colors" data-i18n="contact.bureau_cdj">Bureau CDJ Paroissial</a>
-                    <a href="./SRC/html/conctactGrVie.html" class="block px-3 py-2 rounded-lg text-sm hover:bg-cdj-bg transition-colors" data-i18n="contact.responsables_groupes">Contacts des Responsables</a>
+                    <a href="/SRC/html/conctactCdj.html" class="block px-3 py-2 rounded-lg text-sm font-medium hover:bg-cdj-bg transition-colors" data-i18n="contact.bureau_cdj">Bureau CDJ Paroissial</a>
+                    <a href="/SRC/html/conctactGrVie.html" class="block px-3 py-2 rounded-lg text-sm hover:bg-cdj-bg transition-colors" data-i18n="contact.responsables_groupes">Contacts des Responsables</a>
                     </div>
                 </div>
 
@@ -108,7 +108,7 @@
                     <svg class="block w-4 h-4 text-cdj-primary dark:text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
                 </button>
                 <!-- BOUTON D'ACTION : CONNEXION ESPACE ENGAGÉ -->
-                <a href="./SRC/html/connexion.html" class="hidden sm:inline-flex items-center gap-2 bg-cdj-primary text-white hover:bg-opacity-90 px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm shadow-md transition-all transform active:scale-95">
+                <a href="/SRC/html/connexion.html" class="hidden sm:inline-flex items-center gap-2 bg-cdj-primary text-white hover:bg-opacity-90 px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm shadow-md transition-all transform active:scale-95">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/></svg>
                     <span data-i18n="navigation.connexion">Espace Engagé</span>
                 </a>
@@ -135,15 +135,15 @@
                 </button>
                 <!-- Sous-pages (Masquées par défaut, affichées au CLIC) -->
                 <div id="mobile_sub_groupes" class="hidden pl-3 mt-1 space-y-1.5 border-l-2 border-cdj-primary/40">
-                    <a href="./SRC/html/groupeVie.html" class="block py-1.5 text-sm font-semibold text-cdj-primary dark:text-sky-400" data-i18n="groupes.generalite">Généralités</a>
-                    <a href="./SRC/html/Groupes_vies/ka.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text">Kizito-Anuarite (K.A)</a>
-                    <a href="./SRC/html/Groupes_vies/scouts.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text">Scouts</a>
-                    <a href="./SRC/html/Groupes_vies/jefac.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text">JEFAC</a>
-                    <a href="./SRC/html/Groupes_vies/apa.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text">Apostolat de la Prière (APA)</a>
-                    <a href="./SRC/html/Groupes_vies/bym.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text">Bilenge Ya Mwinda (BJM)</a>
-                    <a href="./SRC/html/Groupes_vies/mijerca.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text">MIJERDA</a>
-                    <a href="./SRC/html/Groupes_vies/legion.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text">Légion de Marie</a>
-                    <a href="./SRC/html/Groupes_vies/emc.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text">Ecole de la Foi (ECM)</a>
+                    <a href="/SRC/html/groupeVie.html" class="block py-1.5 text-sm font-semibold text-cdj-primary dark:text-sky-400" data-i18n="groupes.generalite">Généralités</a>
+                    <a href="/SRC/html/Groupes_vies/ka.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text">Kizito-Anuarite (K.A)</a>
+                    <a href="/SRC/html/Groupes_vies/scouts.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text">Scouts</a>
+                    <a href="/SRC/html/Groupes_vies/jefac.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text">JEFAC</a>
+                    <a href="/SRC/html/Groupes_vies/apa.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text">Apostolat de la Prière (APA)</a>
+                    <a href="/SRC/html/Groupes_vies/bym.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text">Bilenge Ya Mwinda (BJM)</a>
+                    <a href="/SRC/html/Groupes_vies/mijerca.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text">MIJERDA</a>
+                    <a href="/SRC/html/Groupes_vies/legion.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text">Légion de Marie</a>
+                    <a href="/SRC/html/Groupes_vies/emc.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text">Ecole de la Foi (ECM)</a>
                 </div>
             </div>
 
@@ -154,8 +154,8 @@
                     <svg id="arrow-agenda" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                 </button>
                 <div id="mobile_sub_agenda" class="hidden pl-3 mt-1 space-y-1.5 border-l-2 border-cdj-primary/40">
-                    <a href="./SRC/html/agendaCdj.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text" data-i18n="agenda.activites_cdj">Activités de la CDJ</a>
-                    <a href="./SRC/html/agendaGrVie.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text" data-i18n="agenda.activites_groupes">Activités des Groupes de Vie</a>
+                    <a href="/SRC/html/agendaCdj.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text" data-i18n="agenda.activites_cdj">Activités de la CDJ</a>
+                    <a href="/SRC/html/agendaGrVie.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text" data-i18n="agenda.activites_groupes">Activités des Groupes de Vie</a>
                 </div>
             </div>
 
@@ -166,14 +166,14 @@
                     <svg id="arrow-contact" class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                 </button>
                 <div id="mobile_sub_contact" class="hidden pl-3 mt-1 space-y-1.5 border-l-2 border-cdj-primary/40">
-                    <a href="./SRC/html/conctactCdj.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text" data-i18n="contact.bureau_cdj">Bureau CDJ Paroissial</a>
-                    <a href="./SRC/html/conctactGrVie.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text" data-i18n="contact.responsables_groupes">Contacts des Responsables</a>
+                    <a href="/SRC/html/conctactCdj.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text" data-i18n="contact.bureau_cdj">Bureau CDJ Paroissial</a>
+                    <a href="/SRC/html/conctactGrVie.html" class="block py-1 text-sm text-cdj-muted hover:text-cdj-text" data-i18n="contact.responsables_groupes">Contacts des Responsables</a>
                 </div>
             </div>
 
             <!-- LIEN CONNEXION MOBILE -->
             <div class="pt-2">
-            <a href="./SRC/html/connexion.html" class="w-full flex items-center justify-center gap-2 bg-cdj-primary text-white py-3 rounded-xl font-bold text-sm shadow-md" data-i18n="navigation.connexion">
+            <a href="/SRC/html/connexion.html" class="w-full flex items-center justify-center gap-2 bg-cdj-primary text-white py-3 rounded-xl font-bold text-sm shadow-md" data-i18n="navigation.connexion">
                 <span>Espace Engagé</span>
             </a>
             </div>
@@ -513,5 +513,205 @@
   </div>
 </section>
 </main>
+  <!-- FENÊTRE MODALE DE RECHERCHE -->
+  <div id="search-modal" class="fixed inset-0 z-500 hidden bg-slate-900/60 backdrop-blur-sm flex items-start justify-center p-4 sm:p-6 md:p-20 transition-all duration-200">
+      <!-- Carte Conteneur -->
+      <div id="search-modal-card" class="bg-cdj-card border border-cdj-border w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden flex flex-col transform transition-all my-auto sm:my-0">
+          
+          <!-- En-tête : Champ de Saisie -->
+          <div class="relative flex items-center px-4 py-3.5 border-b border-cdj-border">
+          <!-- Icône Loupe -->
+          <svg class="w-5 h-5 text-cdj-muted shrink-0 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+          
+          <!-- Input Texte -->
+          <input 
+              type="text" 
+              id="search-input" 
+              data-i18n-placeholder="recherche.placeholder"
+              class="w-full bg-transparent text-cdj-text placeholder:text-cdj-muted text-base focus:outline-none" 
+              placeholder="Rechercher un groupe, une activité, une info..."
+              autocomplete="off"
+          />
+
+          <!-- Bouton Fermer (X) -->
+          <button id="close-search-modal" class="p-1.5 rounded-lg text-cdj-muted hover:text-cdj-text hover:bg-cdj-bg transition-colors" title="Fermer (Échap)">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+          </button>
+          </div>
+
+          <!-- Corps : Résultats de Recherche -->
+          <div id="search-results-container" class="p-4 max-h-[60vh] overflow-y-auto space-y-4">
+          
+          <!-- État initial (Message par défaut) -->
+          <div data-i18n="recherche.instruction" id="search-placeholder" class="text-center py-8 text-cdj-muted text-sm">
+              <p>Tapez au moins 2 caractères pour lancer la recherche...</p>
+          </div>
+
+          <!-- Zone d'injection des résultats JS -->
+          <div id="search-content" class="hidden space-y-4"></div>
+
+          </div>
+
+      </div>
+  </div>
+    <!-- PIED DE PAGE (FOOTER COMPLET) -->
+    <footer id="pied-de-page" class="bg-slate-950 text-slate-300 border-t border-slate-800/80 pt-16 pb-8 px-4 sm:px-6 lg:px-8">
+    
+    <div class="max-w-7xl mx-auto">
+        
+        <!-- GRILLE PRINCIPALE (4 COLONNES) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800/80">
+
+        <!-- COLONNE 1 : BRANDING & DEVISE (4 COLONNES DESKTOP) -->
+        <div id="bloc-pied-branding" class="lg:col-span-4 space-y-4">
+            <!-- Logo / Titre -->
+            <a href="index.html" class="inline-flex items-center gap-3 group">
+            <div class="w-15 h-15 rounded-2xl group-hover:scale-105 transition-transform">
+                <img src="/publics/logo_icones/mode sombre.png" alt="logo Cdj" >
+            </div>
+            <div>
+                <span class="sigleCommission text-xl font-black text-white tracking-tight block leading-none"></span>
+                <span class="text-[10px] text-sky-400 font-bold uppercase tracking-widest block mt-1">Paroisse N.D. de la Sagesse</span>
+            </div>
+            </a>
+
+            <!-- Description -->
+            <p class="text-xs text-slate-400 leading-relaxed max-w-sm" data-i18n="footer.description">
+            La Commission des Jeunes coordonne et accompagne l'épanouissement spirituel, humain et social de la jeunesse catholique du Campus Universitaire de Kinshasa (UNIKIN).
+            </p>
+
+            <!-- Verset Inspirant -->
+            <blockquote class="p-3.5 rounded-2xl bg-slate-900/90 border border-slate-800/80 text-slate-300 text-xs italic">
+            « Que personne ne méprise ta jeunesse ; mais sois un modèle pour les fidèles. »
+            <cite class="block text-[11px] font-bold text-sky-400 not-italic mt-1">— 1 Timothée 4:12</cite>
+            </blockquote>
+        </div>
+
+        <!-- COLONNE 2 : NAVIGATION RAPIDE (2 COLONNES DESKTOP) -->
+        <div id="bloc-pied-navigation" class="lg:col-span-2 space-y-4">
+            <h3 class="text-xs font-black text-white uppercase tracking-wider text-sky-400" data-i18n="footer.titre_nav">
+            Navigation
+            </h3>
+            <ul class="space-y-2.5 text-xs font-semibold">
+            <li>
+                <a href="/index.html#section-hero" class="hover:text-white transition-colors flex items-center gap-1.5">
+                <span>›</span> <span data-i18n="footer.lien_accueil">Accueil</span>
+                </a>
+            </li>
+            <li>
+                <a href="/index.html#carte-mot-president" class="hover:text-white transition-colors flex items-center gap-1.5">
+                <span>›</span> <span data-i18n="footer.lien_mot">Mot du Président</span>
+                </a>
+            </li>
+            <li>
+                <a href="/index.html#section-groupes-vie" class="hover:text-white transition-colors flex items-center gap-1.5">
+                <span>›</span> <span data-i18n="footer.lien_groupes">Groupes de Vie</span>
+                </a>
+            </li>
+            <li>
+                <a href="/index.html#section-agenda" class="hover:text-white transition-colors flex items-center gap-1.5">
+                <span>›</span> <span data-i18n="footer.lien_agenda">Agenda & Événements</span>
+                </a>
+            </li>
+            <li>
+                <a href="/index.html#grille-actualites" class="hover:text-white transition-colors flex items-center gap-1.5">
+                <span>›</span> <span data-i18n="footer.lien_actualites">Actualités</span>
+                </a>
+            </li>
+            <li>
+                <a href="/index.html#section-comment-rejoindre" class="hover:text-white transition-colors flex items-center gap-1.5">
+                <span>›</span> <span data-i18n="footer.lien_rejoindre">Nous Rejoindre</span>
+                </a>
+            </li>
+            </ul>
+        </div>
+
+        <!-- COLONNE 3 : LIENS DIRECTS VERS LES 8 GROUPES (3 COLONNES DESKTOP) -->
+        <div id="bloc-pied-groupes" class="lg:col-span-3 space-y-4">
+            <h3 class="text-xs font-black text-white uppercase tracking-wider text-sky-400" data-i18n="footer.titre_mouvements">
+            Nos 8 Groupes de Vie
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-2 gap-y-2 text-xs font-medium text-slate-400">
+            <a href="/SRC/html/Groupes_vies/ka.html" class="hover:text-amber-400 transition-colors">Kizito - Anuarite</a>
+            <a href="/SRC/html/Groupes_vies/scouts.html" class="hover:text-emerald-400 transition-colors">Scouts</a>
+            <a href="/SRC/html/Groupes_vies/bym.html" class="hover:text-sky-400 transition-colors">Bilenge Ya Mwinda</a>
+            <a href="/SRC/html/Groupes_vies/jefac.html" class="hover:text-purple-400 transition-colors">JEFAC</a>
+            <a href="/SRC/html/Groupes_vies/mijerca.html" class="hover:text-rose-400 transition-colors">MIJERCA</a>
+            <a href="/SRC/html/Groupes_vies/apa.html" class="hover:text-blue-400 transition-colors">APA</a>
+            <a href="/SRC/html/Groupes_vies/legion.html" class="hover:text-indigo-400 transition-colors">Légion de Marie</a>
+            <a href="/SRC/html/Groupes_vies/emc.html" class="hover:text-amber-300 transition-colors">ECM</a>
+            </div>
+        </div>
+
+        <!-- COLONNE 4 : PERMANENCE & CANAUX SOCIAUX (3 COLONNES DESKTOP) -->
+        <div id="bloc-pied-contact" class="lg:col-span-3 space-y-4">
+            <h3 class="text-xs font-black text-white uppercase tracking-wider text-sky-400" data-i18n="footer.titre_permanence">
+            Permanence & Réseaux
+            </h3>
+
+            <!-- Badge Horaires -->
+            <div class="p-3.5 rounded-2xl bg-slate-900 border border-slate-800 space-y-1.5">
+            <p class="text-[11px] font-bold text-slate-200 flex items-center gap-1.5">
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"> 
+                    <path d="M0 0h24v24H0z" fill="none" /> 
+                    <path fill="currentColor" d="M12 20a8 8 0 0 0 8-8a8 8 0 0 0-8-8a8 8 0 0 0-8 8a8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10a10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67l-.75 1.23L11 13V7z" /> 
+                </svg> 
+                <span data-i18n="footer.permanence_titre">Permanence du Dimanche</span>
+            </p>
+            <p class="text-xs text-slate-400">11h00 - 13h00 (À la sortie des messes)</p>
+            <p class="text-[10px] text-sky-400 font-semibold">Cour Paroissiale NODASA</p>
+            </div>
+
+            <!-- Boutons Réseaux Sociaux -->
+            <div class="space-y-2">
+            <p class="text-[11px] font-bold text-slate-400" data-i18n="footer.suivre">Restez connectés :</p>
+            <div class="flex items-center gap-2">
+                <a id="lienFacebook" aria-label="Facebook" class="p-2.5 rounded-xl bg-slate-900 hover:bg-blue-600 text-slate-300 hover:text-white transition-all border border-slate-800">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a id="lienWhatapp" aria-label="WhatsApp" class="p-2.5 rounded-xl bg-slate-900 hover:bg-emerald-600 text-slate-300 hover:text-white transition-all border border-slate-800">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                </a>
+                <a id="lienYoutube" aria-label="YouTube" class="p-2.5 rounded-xl bg-slate-900 hover:bg-red-600 text-slate-300 hover:text-white transition-all border border-slate-800">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </a>
+            </div>
+            </div>
+        </div>
+
+        </div>
+
+        <!-- BAS DE PAGE : COPYRIGHT, CRÉDITS & BOUTON RETOUR EN HAUT -->
+        <div id="barre-copyright" class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 font-medium">
+        
+        <!-- Copyright -->
+        <p id="texte-copyright">
+            © 2026 <strong class="text-slate-200">CDJ NODASA</strong>. Tous droits réservés.
+        </p>
+
+        <!-- Crédit de Conception -->
+        <a href="https://joelmitondo.github.io/Mon-Portfolio/" aria-label="YouTube" class="text-[11px] text-slate-400">
+            Conçu & développé par Joel MITONDO
+        </a>
+
+        <!-- Bouton Flottant / Ancre Retour en Haut -->
+        <button 
+            id="bouton-retour-haut" 
+            onclick="window.scrollTo({top: 0, behavior: 'smooth'})" 
+            aria-label="Remonter en haut" 
+            class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-900 hover:bg-cdj-primary text-slate-300 hover:text-white border border-slate-800 transition-all shadow-md">
+            <span>Haut de page</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+        </button>
+
+        </div>
+
+    </div>
+
+    </footer>
 </body>
 </html>

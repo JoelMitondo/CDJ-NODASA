@@ -5,11 +5,13 @@ const informationCommission = {
     "Une jeunesse unie dans la foi et l'action",
     "Savoir, Foi et Service au cœur du Campus"
   ],
-  "logoClair": "./publics/logo_icones/mode clair.png",
-  "logoSombre": "./publics/logo_icones/mode sombre.png",
+  "logoClair": "/publics/logo_icones/mode clair.png",
+  "logoSombre": "/publics/logo_icones/mode sombre.png",
   "verset_accroche": "Que personne ne méprise ta jeunesse ; mais sois un modèle pour les fidèles, en parole, en conduite, en charité, en foi, en pureté.",
   "reference_biblique": "1 Timothée 4:12",
   "adresse_gmail": "cdj.nodasa.unikin@gmail.com",
+  "lien_facebook" : "https://www.facebook.com",
+  "lien_whatsapp" : "https://www.whatsapp.com",
   "lien_youtube": "https://www.youtube.com/@cdjnodasa",
   "membres_bureau": [
     {
