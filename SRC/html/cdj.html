@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CDJ NODASA</title>
-    <link rel="stylesheet" href="./../output.css">
-    <script type="module" src="./../JS/app.js"></script>
-    <script type="module" src="./../JS/scripts.js"></script>
-    <script src="/../JS/donnees.js" defer></script>
+    <link rel="stylesheet" href="/SRC/output.css">
+    <script type="module" src="/SRC/JS/app.js"></script>
+    <script type="module" src="/SRC/JS/scripts.js"></script>
+    <script src="/SRC/JS/donnees.js" defer></script>
+    <script src="/SRC/JS/jsParPage/pageCdj.js" defer></script>
 </head>
 <body class="w-full max-w-full mx-auto overflow-x-hidden bg-cdj-bg text-cdj-text transition-colors duration-300">
       <!--L'en-tête de la page-->
@@ -180,386 +181,227 @@
 
         </div>
     </header>
-  <!-- PAGE CDJ : SECTION PRÉSENTATION -->
-  <main class="min-h-screen bg-cdj-bg text-cdj-text transition-colors duration-300 pb-12">
 
-    <!-- HERO BANNER CDJ -->
-    <section class="bg-gradient-to-br from-sky-500/10 via-cdj-card to-cdj-card border-b border-sky-400/20 py-10 px-4 sm:px-6 transition-colors duration-300">
-      <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
-        
-        <!-- LOGO / EMBLÈME CDJ -->
-        <div class="w-28 h-28 sm:w-36 sm:h-36 rounded-3xl bg-cdj-card border-2 border-sky-400/40 p-2.5 shadow-xl shrink-0 flex items-center justify-center relative group">
-          <img 
-            src="assets/logos/cdj-logo.png" 
-            alt="Logo Commission des Jeunes" 
-            class="w-full h-full object-contain rounded-2xl transition-transform duration-300 group-hover:scale-105"
-          />
-        </div>
+    <!-- PAGE CDJ : SECTION PRÉSENTATION -->
+    <main class="min-h-screen bg-cdj-bg text-cdj-text transition-colors duration-300 pb-12">
 
-        <!-- INFOS D'EN-TÊTE -->
-        <div class="text-center sm:text-left space-y-2">
-          <div class="flex items-center justify-center sm:justify-start gap-2 flex-wrap">
-            <span class="px-3 py-1 rounded-full bg-sky-500/15 text-sky-500 font-black text-xs uppercase tracking-wider border border-sky-400/30">
-              Organe Central
-            </span>
-            <span class="text-xs text-cdj-muted font-bold uppercase tracking-wide">
-              • Paroisse NODASA
-            </span>
+      <!-- HERO BANNER CDJ -->
+      <section class="bg-gradient-to-br from-sky-500/10 via-cdj-card to-cdj-card border-b border-sky-400/20 py-10 px-4 sm:px-6 transition-colors duration-300">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
+          
+          <!-- LOGO / EMBLÈME CDJ -->
+          <div class="w-28 h-28 sm:w-36 sm:h-36 rounded-3xl bg-cdj-card border-2 border-sky-400/40 p-2.5 shadow-xl shrink-0 flex items-center justify-center relative group">
+            <div class="logoCdj w-full h-full object-contain rounded-2xl transition-transform duration-300 group-hover:scale-105"></div>
+      
           </div>
 
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-cdj-text tracking-tight">
-            Commission des Jeunes
-          </h1>
+          <!-- INFOS D'EN-TÊTE -->
+          <div class="text-center sm:text-left space-y-2">
+            <div class="flex items-center justify-center sm:justify-start gap-2 flex-wrap">
+              <span class="px-3 py-1 rounded-full bg-sky-500/15 text-sky-500 font-black text-xs uppercase tracking-wider border border-sky-400/30">
+                Organe Central
+              </span>
+              <span class="text-xs text-cdj-muted font-bold uppercase tracking-wide">
+                • Paroisse NODASA
+              </span>
+            </div>
 
-          <p class="text-sm sm:text-base font-bold italic text-sky-500">
-            « Une jeunesse unie dans la foi et l'action »
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-cdj-text tracking-tight">
+              Commission de Jeunes
+            </h1>
+
+            <div id="slogan">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CONTENEUR DES CARTES DE PRÉSENTATION -->
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-8 space-y-6">
+
+        <!-- 1. CARTE VERSET D'ACCROCHE & DEVISE / SLOGAN -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          
+          <!-- Verset Biblique d'Accroche (Prend 2 colonnes sur grand écran) -->
+          <article class="lg:col-span-2 bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl transition-colors duration-300 flex flex-col justify-between relative overflow-hidden">
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <span class="p-2 rounded-xl bg-sky-500/10 text-sky-500 text-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path fill="currentColor" d="M7.833 18c1.4 0 2.62.819 3.195 2.028a1 1 0 0 1-1.806.86A1.54 1.54 0 0 0 7.833 20H3a1 1 0 1 1 0-2zM21 18a1 1 0 1 1 0 2h-4.833c-.567 0-1.135.357-1.389.889a1 1 0 0 1-1.806-.86A3.58 3.58 0 0 1 16.167 18z" />
+                        <path fill="currentColor" fill-rule="evenodd" d="M8.889 3.006a4.33 4.33 0 0 1 3.11 1.564A4.33 4.33 0 0 1 15.333 3H22a1 1 0 0 1 1 1v12.001a1 1 0 0 1-1 1L15.333 17c-.658 0-1.085.162-1.372.354a1.93 1.93 0 0 0-.65.76A3.1 3.1 0 0 0 13 19.33v.009l-.005.097a1 1 0 0 1-1.99 0L11 19.334v-.005l-.004-.068a3.1 3.1 0 0 0-.305-1.151a1.9 1.9 0 0 0-.64-.76c-.28-.19-.698-.35-1.343-.35H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h6.667zM11 5v12.334h2V5z" clip-rule="evenodd" />
+                    </svg>
+                </span>
+                <h2 class="text-lg sm:text-xl font-black text-cdj-text">
+                  Verset d'Accroche
+                </h2>
+              </div>
+
+              <blockquote class="phraseAcroche text-base sm:text-lg font-bold text-cdj-text italic leading-relaxed border-l-4 border-sky-500 pl-4 py-1">
+                
+              </blockquote>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-cdj-border/60 flex items-center justify-end">
+              <span class="versetBiblique px-3 py-1 rounded-xl bg-sky-500/10 text-sky-500 font-black text-xs border border-sky-400/20">
+                
+              </span>
+            </div>
+          </article>
+
+          <!-- Devise & Slogan (1 colonne) -->
+          <article class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl transition-colors duration-300 flex flex-col justify-between space-y-6">
+            
+            <!-- Devise -->
+            <div class="space-y-2">
+              <div class="flex items-center gap-2">
+                <span class="p-1.5 rounded-lg bg-sky-500/10 text-sky-500 text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path fill="currentColor" d="M9 5a2 2 0 0 1 2 2v6c0 3.13-1.65 5.193-4.757 5.97a1 1 0 1 1-.486-1.94C7.984 16.473 9 15.203 9 13v-1H6a2 2 0 0 1-1.995-1.85L4 10V7a2 2 0 0 1 2-2zm9 0a2 2 0 0 1 2 2v6c0 3.13-1.65 5.193-4.757 5.97a1 1 0 1 1-.486-1.94C16.984 16.473 18 15.203 18 13v-1h-3a2 2 0 0 1-1.995-1.85L13 10V7a2 2 0 0 1 2-2z" />
+                    </svg>
+                </span>
+                <h3 class="text-xs uppercase font-black tracking-wider text-sky-500">Devise</h3>
+              </div>
+              <p class="deviseCdj font-bold text-cdj-text text-sm sm:text-base">
+                
+              </p>
+            </div>
+
+            <!-- Slogan -->
+            <div class="space-y-2 pt-4 border-t border-cdj-border/60">
+              <div class="flex items-center gap-2">
+                <span class="p-1.5 rounded-lg bg-sky-500/10 text-sky-500 text-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path fill="currentColor" d="M12 8H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h1v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h3l5 4V4zm9.5 4c0 1.71-.96 3.26-2.5 4V8c1.53.75 2.5 2.3 2.5 4" />
+                        </svg>
+                </span>
+                <h3 class="text-xs uppercase font-black tracking-wider text-sky-500">Slogan</h3>
+              </div>
+              <p class="font-bold text-cdj-text text-sm sm:text-base">
+                Lève-toi, resplendis et sers !
+              </p>
+            </div>
+
+          </article>
+
+        </div>
+        <!-- 2. CARTE BUT ET ROLE  DE LA COMMISSION -->
+        <article class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl transition-colors duration-300 space-y-6">
+          
+          <div class="flex items-center gap-3">
+            <h2 class="text-xl sm:text-2xl font-black text-cdj-text">
+              Notre But
+            </h2>
+          </div>
+
+          <p class="butCdj text-sm text-cdj-muted leading-relaxed"></p>
+
+        </article>
+        <article class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl transition-colors duration-300 space-y-6">
+          
+          <div class="flex items-center gap-3">
+            <h2 class="text-xl sm:text-2xl font-black text-cdj-text">
+              Notre Rôle
+            </h2>
+          </div>
+
+          <p class="roleCdj text-sm text-cdj-muted leading-relaxed"></p>
+
+        </article>
+        <!-- 3. CARTE OBJECTIFS DE LA COMMISSION -->
+        <article class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl transition-colors duration-300 space-y-6">
+          
+          <div class="flex items-center gap-3">
+            <h2 class="text-xl sm:text-2xl font-black text-cdj-text">
+              Nos Objectifs Principaux
+            </h2>
+          </div>
+
+          <p class="text-sm text-cdj-muted leading-relaxed">
+            La Commission des Jeunes (CDJ) est la structure faîtière chargée d'orienter, d'harmoniser et de dynamiser la vie pastorale de la jeunesse au sein de la Paroisse Notre-Dame de la Sagesse.
           </p>
+
+          <!-- Grille des 4 Objectifs -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            
+            <!-- Objectif 1 -->
+            <div class="p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20 space-y-2">
+              <span class="flex items-center justify-center w-8 h-8 rounded-xl bg-sky-500/15 text-sky-500 font-black text-xs">
+                01
+              </span>
+              <h3 class="font-black text-cdj-text text-sm">Unification</h3>
+              <p class="text-xs text-cdj-muted leading-relaxed">
+                Fédérer et coordonner les actions des 8 groupes de vie pour une pastorale paroissiale harmonieuse.
+              </p>
+            </div>
+
+            <!-- Objectif 2 -->
+            <div class="p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20 space-y-2">
+              <span class="flex items-center justify-center w-8 h-8 rounded-xl bg-sky-500/15 text-sky-500 font-black text-xs">
+                02
+              </span>
+              <h3 class="font-black text-cdj-text text-sm">Formation Intégrale</h3>
+              <p class="text-xs text-cdj-muted leading-relaxed">
+                Accompagner la maturité spirituelle, intellectuelle et humaine de la jeunesse étudiante et paroissiale.
+              </p>
+            </div>
+
+            <!-- Objectif 3 -->
+            <div class="p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20 space-y-2">
+              <span class="flex items-center justify-center w-8 h-8 rounded-xl bg-sky-500/15 text-sky-500 font-black text-xs">
+                03
+              </span>
+              <h3 class="font-black text-cdj-text text-sm">Évangélisation</h3>
+              <p class="text-xs text-cdj-muted leading-relaxed">
+                Organiser des rassemblements majeurs, résessions, messes des jeunes et temps forts de louange.
+              </p>
+            </div>
+
+            <!-- Objectif 4 -->
+            <div class="p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20 space-y-2">
+              <span class="flex items-center justify-center w-8 h-8 rounded-xl bg-sky-500/15 text-sky-500 font-black text-xs">
+                04
+              </span>
+              <h3 class="font-black text-cdj-text text-sm">Engagement Social</h3>
+              <p class="text-xs text-cdj-muted leading-relaxed">
+                Promouvoir le leadership chrétien, le civisme et le service communautaire au sein de l'université.
+              </p>
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+      <!-- PAGE CDJ : SECTION STRUCTURE & BUREAU DIRECTEUR -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-12">
+      <div class="space-y-6">
+        
+        <!-- En-tête de section -->
+        <div class="flex items-center gap-3">
+          <div>
+            <h2 class="text-xl sm:text-2xl font-black text-cdj-text">
+              Structure & Bureau Directeur
+            </h2>
+            <p class="text-xs sm:text-sm text-cdj-muted font-medium">
+              Les responsables coordinateurs de la Commission des Jeunes
+            </p>
+          </div>
+        </div>
+
+        <!-- Grille des membres du Bureau (Données de démonstration) -->
+        <div id="grille-membres-cdj" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!--la liste est gérée par le js -->
         </div>
 
       </div>
     </section>
-
-    <!-- CONTENEUR DES CARTES DE PRÉSENTATION -->
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-8 space-y-6">
-
-      <!-- 1. CARTE VERSET D'ACCROCHE & DEVISE / SLOGAN -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        
-        <!-- Verset Biblique d'Accroche (Prend 2 colonnes sur grand écran) -->
-        <article class="lg:col-span-2 bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl transition-colors duration-300 flex flex-col justify-between relative overflow-hidden">
-          <div class="space-y-4">
-            <div class="flex items-center gap-3">
-              <span class="p-2 rounded-xl bg-sky-500/10 text-sky-500 text-lg">📖</span>
-              <h2 class="text-lg sm:text-xl font-black text-cdj-text">
-                Verset d'Accroche
-              </h2>
-            </div>
-
-            <blockquote class="text-base sm:text-lg font-bold text-cdj-text italic leading-relaxed border-l-4 border-sky-500 pl-4 py-1">
-              « Que personne ne méprise ta jeunesse ; mais sois un modèle pour les fidèles, en parole, en conduite, en charité, en foi, en pureté. »
-            </blockquote>
-          </div>
-
-          <div class="mt-6 pt-4 border-t border-cdj-border/60 flex items-center justify-end">
-            <span class="px-3 py-1 rounded-xl bg-sky-500/10 text-sky-500 font-black text-xs border border-sky-400/20">
-              1 Timothée 4:12
-            </span>
-          </div>
-        </article>
-
-        <!-- Devise & Slogan (1 colonne) -->
-        <article class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl transition-colors duration-300 flex flex-col justify-between space-y-6">
-          
-          <!-- Devise -->
-          <div class="space-y-2">
-            <div class="flex items-center gap-2">
-              <span class="p-1.5 rounded-lg bg-sky-500/10 text-sky-500 text-sm">⚓</span>
-              <h3 class="text-xs uppercase font-black tracking-wider text-sky-500">Devise</h3>
-            </div>
-            <p class="font-bold text-cdj-text text-sm sm:text-base">
-              Savoir, Foi et Service au cœur du Campus
-            </p>
-          </div>
-
-          <!-- Slogan -->
-          <div class="space-y-2 pt-4 border-t border-cdj-border/60">
-            <div class="flex items-center gap-2">
-              <span class="p-1.5 rounded-lg bg-sky-500/10 text-sky-500 text-sm">📣</span>
-              <h3 class="text-xs uppercase font-black tracking-wider text-sky-500">Slogan</h3>
-            </div>
-            <p class="font-bold text-cdj-text text-sm sm:text-base">
-              Lève-toi, resplendis et sers !
-            </p>
-          </div>
-
-        </article>
-
-      </div>
-
-      <!-- 2. CARTE OBJECTIFS DE LA COMMISSION -->
-      <article class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl transition-colors duration-300 space-y-6">
-        
-        <div class="flex items-center gap-3">
-          <span class="p-2 rounded-xl bg-sky-500/10 text-sky-500 text-lg">🎯</span>
-          <h2 class="text-xl sm:text-2xl font-black text-cdj-text">
-            Nos Objectifs Principaux
-          </h2>
-        </div>
-
-        <p class="text-sm text-cdj-muted leading-relaxed">
-          La Commission des Jeunes (CDJ) est la structure faîtière chargée d'orienter, d'harmoniser et de dynamiser la vie pastorale de la jeunesse au sein de la Paroisse Notre-Dame de la Sagesse.
-        </p>
-
-        <!-- Grille des 4 Objectifs -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          
-          <!-- Objectif 1 -->
-          <div class="p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20 space-y-2">
-            <span class="flex items-center justify-center w-8 h-8 rounded-xl bg-sky-500/15 text-sky-500 font-black text-xs">
-              01
-            </span>
-            <h3 class="font-black text-cdj-text text-sm">Unification</h3>
-            <p class="text-xs text-cdj-muted leading-relaxed">
-              Fédérer et coordonner les actions des 8 groupes de vie pour une pastorale paroissiale harmonieuse.
-            </p>
-          </div>
-
-          <!-- Objectif 2 -->
-          <div class="p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20 space-y-2">
-            <span class="flex items-center justify-center w-8 h-8 rounded-xl bg-sky-500/15 text-sky-500 font-black text-xs">
-              02
-            </span>
-            <h3 class="font-black text-cdj-text text-sm">Formation Intégrale</h3>
-            <p class="text-xs text-cdj-muted leading-relaxed">
-              Accompagner la maturité spirituelle, intellectuelle et humaine de la jeunesse étudiante et paroissiale.
-            </p>
-          </div>
-
-          <!-- Objectif 3 -->
-          <div class="p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20 space-y-2">
-            <span class="flex items-center justify-center w-8 h-8 rounded-xl bg-sky-500/15 text-sky-500 font-black text-xs">
-              03
-            </span>
-            <h3 class="font-black text-cdj-text text-sm">Évangélisation</h3>
-            <p class="text-xs text-cdj-muted leading-relaxed">
-              Organiser des rassemblements majeurs, résessions, messes des jeunes et temps forts de louange.
-            </p>
-          </div>
-
-          <!-- Objectif 4 -->
-          <div class="p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20 space-y-2">
-            <span class="flex items-center justify-center w-8 h-8 rounded-xl bg-sky-500/15 text-sky-500 font-black text-xs">
-              04
-            </span>
-            <h3 class="font-black text-cdj-text text-sm">Engagement Social</h3>
-            <p class="text-xs text-cdj-muted leading-relaxed">
-              Promouvoir le leadership chrétien, le civisme et le service communautaire au sein de l'université.
-            </p>
-          </div>
-
-        </div>
-
-      </article>
-
-    </div>
-
-    <!-- PAGE CDJ : SECTION STRUCTURE & BUREAU DIRECTEUR -->
-  <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-8 pb-12">
-    <div class="space-y-6">
-      
-      <!-- En-tête de section -->
-      <div class="flex items-center gap-3">
-        <span class="p-2 rounded-xl bg-sky-500/10 text-sky-500 text-lg">🏛️</span>
-        <div>
-          <h2 class="text-xl sm:text-2xl font-black text-cdj-text">
-            Structure & Bureau Directeur
-          </h2>
-          <p class="text-xs sm:text-sm text-cdj-muted font-medium">
-            Les responsables coordinateurs de la Commission des Jeunes
-          </p>
-        </div>
-      </div>
-
-      <!-- Grille des membres du Bureau (Données de démonstration) -->
-      <div id="grille-membres-cdj" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        
-        <!-- Membre 1 : Président -->
-        <article class="bg-cdj-card border border-cdj-border rounded-3xl p-5 shadow-xl transition-all duration-300 hover:border-sky-400/50 flex flex-col justify-between group">
-          <div class="flex items-start gap-4">
-            <img 
-              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200" 
-              alt="Joël Mitondo" 
-              class="w-20 h-20 rounded-2xl object-cover bg-sky-500/10 border border-sky-400/30 shrink-0 transition-transform duration-300 group-hover:scale-105"
-            />
-            <div class="space-y-1.5 min-w-0 flex-1">
-              <span class="inline-block px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-500 font-bold text-[10px] uppercase border border-sky-400/20">
-                Président
-              </span>
-              <h3 class="font-black text-cdj-text text-base truncate">
-                Joël Mitondo
-              </h3>
-              <p class="text-cdj-muted font-semibold text-xs truncate">
-                Bureau Directeur CDJ
-              </p>
-            </div>
-          </div>
-
-          <!-- Groupe de provenance & Contact -->
-          <div class="mt-4 pt-3 border-t border-cdj-border/60 flex items-center justify-between text-xs">
-            <span class="px-2.5 py-1 rounded-xl bg-sky-500/5 text-cdj-muted font-bold text-[11px] border border-sky-400/10 flex items-center gap-1">
-              🌱 <strong class="text-sky-500">K.A</strong>
-            </span>
-            <a href="tel:+243820000111" class="inline-flex items-center gap-1 text-sky-500 hover:underline font-bold text-xs">
-              📞 +243 820 000 111
-            </a>
-          </div>
-        </article>
-
-        <!-- Membre 2 : Vice-Présidente -->
-        <article class="bg-cdj-card border border-cdj-border rounded-3xl p-5 shadow-xl transition-all duration-300 hover:border-sky-400/50 flex flex-col justify-between group">
-          <div class="flex items-start gap-4">
-            <img 
-              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=200" 
-              alt="Sarah Ilunga" 
-              class="w-20 h-20 rounded-2xl object-cover bg-sky-500/10 border border-sky-400/30 shrink-0 transition-transform duration-300 group-hover:scale-105"
-            />
-            <div class="space-y-1.5 min-w-0 flex-1">
-              <span class="inline-block px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-500 font-bold text-[10px] uppercase border border-sky-400/20">
-                Vice-Présidente
-              </span>
-              <h3 class="font-black text-cdj-text text-base truncate">
-                Sarah Ilunga
-              </h3>
-              <p class="text-cdj-muted font-semibold text-xs truncate">
-                Coordinatrice des Projets
-              </p>
-            </div>
-          </div>
-
-          <!-- Groupe de provenance & Contact -->
-          <div class="mt-4 pt-3 border-t border-cdj-border/60 flex items-center justify-between text-xs">
-            <span class="px-2.5 py-1 rounded-xl bg-sky-500/5 text-cdj-muted font-bold text-[11px] border border-sky-400/10 flex items-center gap-1">
-              🌱 <strong class="text-sky-500">B.J.M</strong>
-            </span>
-            <a href="tel:+243810000222" class="inline-flex items-center gap-1 text-sky-500 hover:underline font-bold text-xs">
-              📞 +243 810 000 222
-            </a>
-          </div>
-        </article>
-
-        <!-- Membre 3 : Secrétaire Général -->
-        <article class="bg-cdj-card border border-cdj-border rounded-3xl p-5 shadow-xl transition-all duration-300 hover:border-sky-400/50 flex flex-col justify-between group">
-          <div class="flex items-start gap-4">
-            <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200" 
-              alt="Marc Mbayo" 
-              class="w-20 h-20 rounded-2xl object-cover bg-sky-500/10 border border-sky-400/30 shrink-0 transition-transform duration-300 group-hover:scale-105"
-            />
-            <div class="space-y-1.5 min-w-0 flex-1">
-              <span class="inline-block px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-500 font-bold text-[10px] uppercase border border-sky-400/20">
-                Secrétaire Général
-              </span>
-              <h3 class="font-black text-cdj-text text-base truncate">
-                Marc Mbayo
-              </h3>
-              <p class="text-cdj-muted font-semibold text-xs truncate">
-                Administration & Archives
-              </p>
-            </div>
-          </div>
-
-          <!-- Groupe de provenance & Contact -->
-          <div class="mt-4 pt-3 border-t border-cdj-border/60 flex items-center justify-between text-xs">
-            <span class="px-2.5 py-1 rounded-xl bg-sky-500/5 text-cdj-muted font-bold text-[11px] border border-sky-400/10 flex items-center gap-1">
-              🌱 <strong class="text-sky-500">Scouts</strong>
-            </span>
-            <a href="tel:+243990000333" class="inline-flex items-center gap-1 text-sky-500 hover:underline font-bold text-xs">
-              📞 +243 990 000 333
-            </a>
-          </div>
-        </article>
-
-        <!-- Membre 4 : Trésorière -->
-        <article class="bg-cdj-card border border-cdj-border rounded-3xl p-5 shadow-xl transition-all duration-300 hover:border-sky-400/50 flex flex-col justify-between group">
-          <div class="flex items-start gap-4">
-            <img 
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200" 
-              alt="Clarisse Kabedi" 
-              class="w-20 h-20 rounded-2xl object-cover bg-sky-500/10 border border-sky-400/30 shrink-0 transition-transform duration-300 group-hover:scale-105"
-            />
-            <div class="space-y-1.5 min-w-0 flex-1">
-              <span class="inline-block px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-500 font-bold text-[10px] uppercase border border-sky-400/20">
-                Trésorière Générale
-              </span>
-              <h3 class="font-black text-cdj-text text-base truncate">
-                Clarisse Kabedi
-              </h3>
-              <p class="text-cdj-muted font-semibold text-xs truncate">
-                Finances & Logistique
-              </p>
-            </div>
-          </div>
-
-          <!-- Groupe de provenance & Contact -->
-          <div class="mt-4 pt-3 border-t border-cdj-border/60 flex items-center justify-between text-xs">
-            <span class="px-2.5 py-1 rounded-xl bg-sky-500/5 text-cdj-muted font-bold text-[11px] border border-sky-400/10 flex items-center gap-1">
-              🌱 <strong class="text-sky-500">Légion de Marie</strong>
-            </span>
-            <a href="tel:+243850000444" class="inline-flex items-center gap-1 text-sky-500 hover:underline font-bold text-xs">
-              📞 +243 850 000 444
-            </a>
-          </div>
-        </article>
-
-        <!-- Membre 5 : Chargé de Communication -->
-        <article class="bg-cdj-card border border-cdj-border rounded-3xl p-5 shadow-xl transition-all duration-300 hover:border-sky-400/50 flex flex-col justify-between group">
-          <div class="flex items-start gap-4">
-            <img 
-              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200" 
-              alt="Alain Mukeba" 
-              class="w-20 h-20 rounded-2xl object-cover bg-sky-500/10 border border-sky-400/30 shrink-0 transition-transform duration-300 group-hover:scale-105"
-            />
-            <div class="space-y-1.5 min-w-0 flex-1">
-              <span class="inline-block px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-500 font-bold text-[10px] uppercase border border-sky-400/20">
-                Chargé de Com
-              </span>
-              <h3 class="font-black text-cdj-text text-base truncate">
-                Alain Mukeba
-              </h3>
-              <p class="text-cdj-muted font-semibold text-xs truncate">
-                Médias & Communication
-              </p>
-            </div>
-          </div>
-
-          <!-- Groupe de provenance & Contact -->
-          <div class="mt-4 pt-3 border-t border-cdj-border/60 flex items-center justify-between text-xs">
-            <span class="px-2.5 py-1 rounded-xl bg-sky-500/5 text-cdj-muted font-bold text-[11px] border border-sky-400/10 flex items-center gap-1">
-              🌱 <strong class="text-sky-500">K.A</strong>
-            </span>
-            <a href="tel:+243840000555" class="inline-flex items-center gap-1 text-sky-500 hover:underline font-bold text-xs">
-              📞 +243 840 000 555
-            </a>
-          </div>
-        </article>
-
-        <!-- Membre 6 : Aumônier des Jeunes -->
-        <article class="bg-cdj-card border border-cdj-border rounded-3xl p-5 shadow-xl transition-all duration-300 hover:border-sky-400/50 flex flex-col justify-between group">
-          <div class="flex items-start gap-4">
-            <img 
-              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200" 
-              alt="Père Jean-Marc" 
-              class="w-20 h-20 rounded-2xl object-cover bg-sky-500/10 border border-sky-400/30 shrink-0 transition-transform duration-300 group-hover:scale-105"
-            />
-            <div class="space-y-1.5 min-w-0 flex-1">
-              <span class="inline-block px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-500 font-bold text-[10px] uppercase border border-sky-400/20">
-                Aumônier
-              </span>
-              <h3 class="font-black text-cdj-text text-base truncate">
-                Père Jean-Marc
-              </h3>
-              <p class="text-cdj-muted font-semibold text-xs truncate">
-                Accompagnateur Spirituel
-              </p>
-            </div>
-          </div>
-
-          <!-- Groupe de provenance & Contact -->
-          <div class="mt-4 pt-3 border-t border-cdj-border/60 flex items-center justify-between text-xs">
-            <span class="px-2.5 py-1 rounded-xl bg-sky-500/5 text-cdj-muted font-bold text-[11px] border border-sky-400/10 flex items-center gap-1">
-              ⛪ <strong class="text-sky-500">Paroisse NODASA</strong>
-            </span>
-            <a href="tel:+243900000666" class="inline-flex items-center gap-1 text-sky-500 hover:underline font-bold text-xs">
-              📞 +243 900 000 666
-            </a>
-          </div>
-        </article>
-
-      </div>
-
-    </div>
-  </section>
-  </main>
+    </main>
 
   <!-- FENÊTRE MODALE DE RECHERCHE -->
   <div id="search-modal" class="fixed inset-0 z-500 hidden bg-slate-900/60 backdrop-blur-sm flex items-start justify-center p-4 sm:p-6 md:p-20 transition-all duration-200">

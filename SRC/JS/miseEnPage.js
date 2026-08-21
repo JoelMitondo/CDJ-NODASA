@@ -750,5 +750,5 @@ export function affichageIcone(){
     const iconeLieu = document.querySelectorAll(".iconeLieu")
     iconeLieu.forEach(svg => {svg.innerHTML=svgIconeLieu});
     const iconeMaison = document.querySelectorAll(".iconeMaison")
-    iconeMaison.forEach(svg => {svg.innerHTML=svgHouse})
+    iconeMaison.forEach(svg => {svg.innerHTML=svgHouse});
 }

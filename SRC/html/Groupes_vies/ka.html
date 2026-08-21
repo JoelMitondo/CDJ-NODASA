@@ -8,6 +8,7 @@
     <script type="module" src="/SRC/JS/app.js"></script>
     <script type="module" src="/SRC/JS/scripts.js"></script>
     <script src="/SRC/JS/donnees.js" defer></script>
+    <script src="/SRC/JS/jsParPage/jsPageGr.js" defer></script>
 </head>
 <body class="w-full max-w-full mx-auto overflow-x-hidden bg-cdj-bg text-cdj-text transition-colors duration-300">
     <!--L'en-tête de la page-->
@@ -181,7 +182,6 @@
         </div>
     </header>
     <!-- CONTENEUR PRINCIPAL DE LA PAGE GROUPE -->
-<!-- CONTENEUR PRINCIPAL DE LA PAGE GROUPE (MODE DÉMO AVEC TEXTE) -->
 <main class="min-h-screen bg-cdj-bg text-cdj-text transition-colors duration-300 pb-12">
 
   <!-- 1. SECTION PRINCIPALE (HERO BANNER) -->
@@ -189,20 +189,14 @@
     <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
       
       <!-- LOGO DU GROUPE -->
-      <div class="w-28 h-28 sm:w-36 sm:h-36 rounded-3xl bg-cdj-card border-2 border-sky-400/40 p-2.5 shadow-xl shrink-0 flex items-center justify-center relative group">
-        <img 
-          id="logo-groupe" 
-          src="assets/logos/kizito-anuarite.png" 
-          alt="Logo Kizito - Anuarite" 
-          class="w-full h-full object-contain rounded-2xl transition-transform duration-300 group-hover:scale-105"
-        />
+      <div id="logo_groupe" class="w-28 h-28 sm:w-36 sm:h-36 rounded-3xl bg-cdj-card border-2 border-sky-400/40 p-2 shadow-xl shrink-0 flex items-center justify-center relative group">
       </div>
 
       <!-- INFOS D'EN-TÊTE -->
       <div class="text-center sm:text-left space-y-2">
         <div class="flex items-center justify-center sm:justify-start gap-2 flex-wrap">
-          <span id="sigle-badge" class="px-3 py-1 rounded-full bg-sky-500/15 text-sky-500 font-black text-xs uppercase tracking-wider border border-sky-400/30">
-            K.A
+          <span id="sigle_badge" class="px-3 py-1 rounded-full bg-sky-500/15 text-sky-500 font-black text-xs uppercase tracking-wider border border-sky-400/30">
+            
           </span>
           <span class="text-xs text-cdj-muted font-bold uppercase tracking-wide">
             • Groupe de Vie
@@ -210,11 +204,10 @@
         </div>
 
         <h1 id="nom-groupe" class="text-3xl sm:text-4xl lg:text-5xl font-black text-cdj-text tracking-tight">
-          Kizito - Anuarite
         </h1>
 
         <p id="devise-groupe" class="text-sm sm:text-base font-bold italic text-sky-500">
-          « Servir et Faire Servir »
+          
         </p>
       </div>
 
@@ -226,14 +219,13 @@
     <div class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl transition-colors duration-300 relative overflow-hidden">
       
       <div class="flex items-center gap-3 mb-4">
-        <span class="p-2 rounded-xl bg-sky-500/10 text-sky-500 text-lg">📌</span>
         <h2 class="text-xl sm:text-2xl font-black text-cdj-text">
           Présentation Générale
         </h2>
       </div>
 
       <p id="presentation-generale" class="text-sm sm:text-base text-cdj-muted leading-relaxed font-normal">
-        Le groupe Kizito-Anuarite est un mouvement d'action catholique dédié à la formation spirituelle, humaine et civique des enfants et adolescents de la paroisse Notre-Dame de la Sagesse. Il vise à inculquer des valeurs chrétiennes solides dès le plus jeune âge à travers le jeu, la prière, le témoignage de vie et la camaraderie joyeuse.
+        
       </p>
 
     </div>
@@ -244,83 +236,16 @@
     
     <!-- En-tête de section -->
     <div class="flex items-center gap-3">
-      <span class="p-2 rounded-xl bg-sky-500/10 text-sky-500 text-lg">👥</span>
       <h2 class="text-xl sm:text-2xl font-black text-cdj-text">
         Structure & Comité d'Encadrement
       </h2>
     </div>
 
     <!-- Grille des encadreurs (Données fictives de démonstration) -->
-    <div id="grille-encadreurs" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div id="grille_encadreurs" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       
-      <!-- Carte Encadreur 1 -->
-      <article class="bg-cdj-card border border-cdj-border rounded-3xl p-5 shadow-xl transition-all duration-300 hover:border-sky-400/50 flex items-center gap-4 group">
-        <img 
-          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200" 
-          alt="Emmanuel Mukendi" 
-          class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl object-cover bg-sky-500/10 border border-sky-400/30 shrink-0 transition-transform duration-300 group-hover:scale-105"
-        />
-        <div class="space-y-1 min-w-0 flex-1">
-          <span class="inline-block px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-500 font-bold text-[10px] uppercase border border-sky-400/20">
-            Encadreur Principal
-          </span>
-          <h3 class="font-black text-cdj-text text-base truncate">
-            Emmanuel Mukendi
-          </h3>
-          <p class="text-cdj-muted font-semibold text-xs truncate">
-            Président de section K.A
-          </p>
-          <a href="tel:+243820000777" class="inline-flex items-center gap-1 text-sky-500 hover:underline font-bold text-xs pt-1">
-            📞 +243 820 000 777
-          </a>
-        </div>
-      </article>
-
-      <!-- Carte Encadreur 2 -->
-      <article class="bg-cdj-card border border-cdj-border rounded-3xl p-5 shadow-xl transition-all duration-300 hover:border-sky-400/50 flex items-center gap-4 group">
-        <img 
-          src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=200" 
-          alt="Bénédicte Kalonji" 
-          class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl object-cover bg-sky-500/10 border border-sky-400/30 shrink-0 transition-transform duration-300 group-hover:scale-105"
-        />
-        <div class="space-y-1 min-w-0 flex-1">
-          <span class="inline-block px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-500 font-bold text-[10px] uppercase border border-sky-400/20">
-            Vice-Présidente
-          </span>
-          <h3 class="font-black text-cdj-text text-base truncate">
-            Bénédicte Kalonji
-          </h3>
-          <p class="text-cdj-muted font-semibold text-xs truncate">
-            Responsable Section Anuarite
-          </p>
-          <a href="tel:+243810000888" class="inline-flex items-center gap-1 text-sky-500 hover:underline font-bold text-xs pt-1">
-            📞 +243 810 000 888
-          </a>
-        </div>
-      </article>
-
-      <!-- Carte Encadreur 3 -->
-      <article class="bg-cdj-card border border-cdj-border rounded-3xl p-5 shadow-xl transition-all duration-300 hover:border-sky-400/50 flex items-center gap-4 group">
-        <img 
-          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200" 
-          alt="Christian Mbuyi" 
-          class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl object-cover bg-sky-500/10 border border-sky-400/30 shrink-0 transition-transform duration-300 group-hover:scale-105"
-        />
-        <div class="space-y-1 min-w-0 flex-1">
-          <span class="inline-block px-2.5 py-0.5 rounded-full bg-sky-500/15 text-sky-500 font-bold text-[10px] uppercase border border-sky-400/20">
-            Chargé de Formation
-          </span>
-          <h3 class="font-black text-cdj-text text-base truncate">
-            Christian Mbuyi
-          </h3>
-          <p class="text-cdj-muted font-semibold text-xs truncate">
-            Encadreur Section Kizito
-          </p>
-          <a href="tel:+243990000999" class="inline-flex items-center gap-1 text-sky-500 hover:underline font-bold text-xs pt-1">
-            📞 +243 990 000 999
-          </a>
-        </div>
-      </article>
+      <!-- Carte Encadreur  -->
+      
 
     </div>
 
@@ -334,21 +259,22 @@
     <article class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl transition-colors duration-300 flex flex-col justify-between">
       <div>
         <div class="flex items-center gap-3 mb-4">
-          <span class="p-2 rounded-xl bg-sky-500/10 text-sky-500 text-lg">📜</span>
           <h2 class="text-xl sm:text-2xl font-black text-cdj-text">
             Historique du Groupe
           </h2>
         </div>
 
-        <p class="text-sm sm:text-base text-cdj-muted leading-relaxed">
-          Fondé dans les années 1980 en République Démocratique du Congo et inspiré par le témoignage héroïque du jeune martyr Saint Kizito et de la Sainte Anuarite Nengapeta, le mouvement s'est implanté au sein de la paroisse NODASA pour offrir un cadre d'encadrement spirituel et humain adapté aux enfants et adolescents.
+        <p id="histoire" class="text-sm sm:text-base text-cdj-muted leading-relaxed">
+
         </p>
       </div>
 
       <!-- Accentuation visuelle bas de carte -->
       <div class="mt-6 pt-4 border-t border-cdj-border/60 flex items-center justify-between text-xs text-cdj-muted font-bold">
         <span>Ancrage paroissial</span>
-        <span class="text-sky-500 font-semibold">Depuis plus de 30 ans</span>
+        <span class="text-sky-500 font-semibold">
+          Depuis <span id="ancrage_paroissial"></span>
+        </span>
       </div>
     </article>
 
@@ -356,21 +282,20 @@
     <article class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-8 shadow-xl transition-colors duration-300 flex flex-col justify-between">
       <div>
         <div class="flex items-center gap-3 mb-4">
-          <span class="p-2 rounded-xl bg-sky-500/10 text-sky-500 text-lg">⚙️</span>
           <h2 class="text-xl sm:text-2xl font-black text-cdj-text">
             Organisation Interne
           </h2>
         </div>
 
-        <p class="text-sm sm:text-base text-cdj-muted leading-relaxed">
-          Le groupe est structuré en deux grandes sections : la section Kizito pour les garçons et la section Anuarite pour les filles. Elles sont elles-mêmes subdivisées en petites équipes appelées « Noyaux » d'une dizaine de membres, dirigées et animées par des encadreurs (Yaya / Mbotama).
-        </p>
+        <p id="paragraphe_organisation interne" class="text-sm sm:text-base text-cdj-muted leading-relaxed"></p>
       </div>
 
       <!-- Informations clés sur la routine -->
       <div class="mt-6 pt-4 border-t border-cdj-border/60 flex items-center justify-between text-xs text-cdj-muted font-bold">
         <span>Rencontres ordinaires</span>
-        <span class="text-sky-500 font-semibold">Tous les samedis de 14h à 16h</span>
+        <span class="text-sky-500 font-semibold">
+          Chaque <span id="rencontre_ordinaire"></span>
+        </span>
       </div>
     </article>
 
@@ -382,55 +307,18 @@
     
     <!-- En-tête de section -->
     <div class="flex items-center gap-3 mb-6">
-      <span class="p-2 rounded-xl bg-sky-500/10 text-sky-500 text-lg">✨</span>
       <h2 class="text-xl sm:text-2xl font-black text-cdj-text">
         Charisme Propre & Spiritualité
       </h2>
     </div>
 
     <!-- Description globale -->
-    <p class="text-sm sm:text-base text-cdj-muted leading-relaxed mb-6">
-      Le charisme du groupe Kizito-Anuarite repose sur l'imitation du courage spirituel, de la pureté et de la fidélité des jeunes martyrs. Il vise à former la conscience des plus jeunes pour en faire des témoins audacieux et joyeux du Christ dans leurs milieux de vie.
-    </p>
+    <p id="paragraphe_charisme_propre" class="text-sm sm:text-base text-cdj-muted leading-relaxed mb-6"></p>
 
     <!-- Grille des piliers du charisme -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div id="grille_charisme" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       
-      <!-- Pilier 1 -->
-      <div class="p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20 space-y-2 flex flex-col justify-between">
-        <div>
-          <span class="text-2xl block mb-2">🕊️</span>
-          <h3 class="font-black text-cdj-text text-sm">Pureté & Intégrité</h3>
-          <p class="text-xs text-cdj-muted leading-relaxed mt-1">Inculquer le respect de soi, l'honnêteté et la chasteté à l'exemple de Sainte Anuarite.</p>
-        </div>
-      </div>
-
-      <!-- Pilier 2 -->
-      <div class="p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20 space-y-2 flex flex-col justify-between">
-        <div>
-          <span class="text-2xl block mb-2">🔥</span>
-          <h3 class="font-black text-cdj-text text-sm">Courage de la Foi</h3>
-          <p class="text-xs text-cdj-muted leading-relaxed mt-1">Affirmer son identité chrétienne avec fierté à l'image du jeune martyr Saint Kizito.</p>
-        </div>
-      </div>
-
-      <!-- Pilier 3 -->
-      <div class="p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20 space-y-2 flex flex-col justify-between">
-        <div>
-          <span class="text-2xl block mb-2">🤝</span>
-          <h3 class="font-black text-cdj-text text-sm">Service & Fraternité</h3>
-          <p class="text-xs text-cdj-muted leading-relaxed mt-1">Apprendre à servir son prochain avec joie, bienveillance et esprit d'entraide.</p>
-        </div>
-      </div>
-
-      <!-- Pilier 4 -->
-      <div class="p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20 space-y-2 flex flex-col justify-between">
-        <div>
-          <span class="text-2xl block mb-2">⭐</span>
-          <h3 class="font-black text-cdj-text text-sm">Leadership Jeune</h3>
-          <p class="text-xs text-cdj-muted leading-relaxed mt-1">Développer l'autonomie et l'esprit de responsabilité dès le plus jeune âge.</p>
-        </div>
-      </div>
+      <!-- GERER AU NIVEAU DE JS -->
 
     </div>
 
@@ -442,7 +330,6 @@
     
     <!-- En-tête de section -->
     <div class="flex items-center gap-3 mb-6">
-      <span class="p-2 rounded-xl bg-sky-500/10 text-sky-500 text-lg">🎓</span>
       <h2 class="text-xl sm:text-2xl font-black text-cdj-text">
         Types de Formations Dispensées
       </h2>
@@ -454,59 +341,8 @@
     </p>
 
     <!-- Grille des formations -->
-    <div id="liste-formations" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      
-      <!-- Module 1 -->
-      <div class="flex items-start gap-3 p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20">
-        <span class="flex items-center justify-center w-7 h-7 rounded-xl bg-sky-500/15 text-sky-500 font-black text-xs shrink-0 mt-0.5">
-          ✓
-        </span>
-        <div class="space-y-1">
-          <h3 class="font-bold text-cdj-text text-sm">Spiritualité & Catéchèse</h3>
-          <p class="text-xs text-cdj-muted leading-relaxed">
-            Formation spirituelle et enseignements approfondis sur la vie des Saints Martyrs.
-          </p>
-        </div>
-      </div>
-
-      <!-- Module 2 -->
-      <div class="flex items-start gap-3 p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20">
-        <span class="flex items-center justify-center w-7 h-7 rounded-xl bg-sky-500/15 text-sky-500 font-black text-xs shrink-0 mt-0.5">
-          ✓
-        </span>
-        <div class="space-y-1">
-          <h3 class="font-bold text-cdj-text text-sm">Développement Personnel & Leadership</h3>
-          <p class="text-xs text-cdj-muted leading-relaxed">
-            Ateliers interactifs axés sur la confiance en soi, la prise de parole et l'initiative.
-          </p>
-        </div>
-      </div>
-
-      <!-- Module 3 -->
-      <div class="flex items-start gap-3 p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20">
-        <span class="flex items-center justify-center w-7 h-7 rounded-xl bg-sky-500/15 text-sky-500 font-black text-xs shrink-0 mt-0.5">
-          ✓
-        </span>
-        <div class="space-y-1">
-          <h3 class="font-bold text-cdj-text text-sm">Valeurs Civiques & Secourisme</h3>
-          <p class="text-xs text-cdj-muted leading-relaxed">
-            Sensibilisation au respect du bien commun, citoyenneté et gestes de premiers secours.
-          </p>
-        </div>
-      </div>
-
-      <!-- Module 4 -->
-      <div class="flex items-start gap-3 p-4 rounded-2xl bg-sky-500/5 border border-sky-400/20">
-        <span class="flex items-center justify-center w-7 h-7 rounded-xl bg-sky-500/15 text-sky-500 font-black text-xs shrink-0 mt-0.5">
-          ✓
-        </span>
-        <div class="space-y-1">
-          <h3 class="font-bold text-cdj-text text-sm">Expression Artistique & Culturelle</h3>
-          <p class="text-xs text-cdj-muted leading-relaxed">
-            Activités manuelles, apprentissage des chants liturgiques et expression théâtrale.
-          </p>
-        </div>
-      </div>
+    <div id="liste_formations" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <!-- gerer par js -->
 
     </div>
 

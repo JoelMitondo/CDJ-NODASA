@@ -5,8 +5,11 @@ const informationCommission = {
     "Une jeunesse unie dans la foi et l'action",
     "Savoir, Foi et Service au cœur du Campus"
   ],
+  "devise" : "Piété, Foi, Honnêteté, Engagement",
   "logoClair": "/publics/logo_icones/mode clair.png",
   "logoSombre": "/publics/logo_icones/mode sombre.png",
+  "role_cdj" : "La CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l’épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesse.",
+  "but_cdj" : "Le but principal de la commission de jeunes Nodasa, c’est de coordonné toutes les activités de jeunes à la paroisse, activité visant l’épanouissement des jeunes, à court terme la commission suit au quotidien la vie de chaque groupe de formation, et fait le pont entre ces groupes et l’équipe pastorale paroissiale. ",
   "verset_accroche": "Que personne ne méprise ta jeunesse ; mais sois un modèle pour les fidèles, en parole, en conduite, en charité, en foi, en pureté.",
   "reference_biblique": "1 Timothée 4:12",
   "adresse_gmail": "cdj.nodasa.unikin@gmail.com",
@@ -18,37 +21,49 @@ const informationCommission = {
       "id": "president",
       "poste": "Président",
       "nom": "Gratien MBEY",
-      "telephone": "+243 825 042 011"
+      "telephone": "+243 825 042 011",
+      "groupe_provenance" : "Gr K.A",
+      "avatar" : "/publics/logo_icones/mode sombre.png"
     },
     {
       "id": "vice-president",
       "poste": "Vice-Président",
       "nom": "Amos",
-      "telephone": "+243 813 220 969"
+      "telephone": "+243 813 220 969",
+      "groupe_provenance" : "Gr K.A",
+      "avatar" : "/publics/logo_icones/mode sombre.png"
     },
     {
       "id": "secretaire",
       "poste": "Secrétaire Général",
       "nom": "Rosario KASSONGO",
-      "telephone": "+243 816 678 703"
+      "telephone": "+243 816 678 703",
+      "groupe_provenance" : "Gr K.A",
+      "avatar" : "/publics/logo_icones/mode sombre.png"
     },
     {
       "id": "vice-secretaire",
       "poste": "Vice-Secrétaire",
       "nom": "Amerack MAVINGA",
-      "telephone": "+243 823 261 477"
+      "telephone": "+243 823 261 477",
+      "groupe_provenance" : "Gr K.A",
+      "avatar" : "/publics/logo_icones/mode sombre.png"
     },
     {
       "id": "tresorier",
       "poste": "Trésorier",
       "nom": "Christian Lukusa",
-      "telephone": "+243 900 000 555"
+      "telephone": "+243 900 000 555",
+      "groupe_provenance" : "Gr K.A",
+      "avatar" : "/publics/logo_icones/mode sombre.png"
     },
     {
       "id": "tresorier-adjoint",
       "poste": "Trésorier Adjoint",
       "nom": "Sarah Kanyinda",
-      "telephone": "+243 840 000 666"
+      "telephone": "+243 840 000 666",
+      "groupe_provenance" : "Gr K.A",
+      "avatar" : "/publics/logo_icones/mode sombre.png"
     }
   ]
 }
@@ -59,14 +74,73 @@ const tousGroupeDeVie = [
     "id": "ka",
     "nom_groupe": "Kizito - Anuarite",
     "sigle": "K.A",
-    "devise": "Servir et Faire Servir",
+    "devise": "Prenons Courage / Aime et Fait Plaisir",
     "categorie": "Encadrement & Éducation Spirituelle",
     "lien_logo": "https://votre-domaine.org/assets/logos/kizito-anuarite.png",
     "description": "Mouvement d'encadrement des enfants et adolescents pour leur éducation chrétienne, humaine et civique, inspiré par la vie des saints martyrs.",
     "jour_reunion": "Dimanche de 10h00 à 13h00",
-    "lien_page" : "./SRC/html/Groupes_vies/ka.html",
+    "lien_page" : "/SRC/html/Groupes_vies/ka.html",
     "lieu_de_rencontre" : "Paroisse NODASA",
-    "logo": "./publics/img/logo_grKa.jpeg"
+    "logo": "/publics/img/logo_grKa.jpeg", 
+    "presentation_generale": "Le groupe Kizito-Anuarite est un mouvement d'action catholique dédié à la formation spirituelle, humaine et civique des enfants et adolescents de la paroisse Notre-Dame de la Sagesse. Il vise à inculquer des valeurs chrétiennes solides dès le plus jeune âge à travers le jeu, la prière et la vie communautaire.",
+    "historique": "Fondé dans les années 1980 en République Démocratique du Congo et inspiré par la vie du jeune martyr Saint Kizito et de la Sainte Anuarite Nengapeta, le mouvement s'est implanté au sein de la paroisse NODASA pour répondre au besoin d'un encadrement spirituel adapté à la jeunesse d'âge scolaire.",
+    "charisme": "Le charisme du mouvement repose sur la pureté, le témoignage de foi joyeux, le leadership chrétien et le service désintéressé en milieu scolaire et familial.",
+    "organisation": "Le groupe est structuré en deux sections (Kizito pour les garçons et Anuarite pour les filles), elles-mêmes divisées en petites équipes appelées « Noyaux » animées par des encadreurs (Yaya/Mbotama). Les réunions se tiennent tous les samedis.",
+    "ancrage_paroissial" : "2000",
+    "types_formations": [
+      {"description_type" : "Pureté & Intégrité",
+        "description" : "Formation spirituelle et catéchèse sur la vie des Saints Martyrs"
+      },
+      {"description_type" : "Courage de la Foi",
+        "description" : "Ateliers de développement personnel et leadership jeune"
+      },
+      {"description_type" : "Service & Fraternité",
+        "description" : "Apprentissage des valeurs civiques, du respect et du secourisme"
+      },
+      {"description_type" : "Leadership Jeune",
+        "description" : "Activités manuelles, chants liturgiques et expression théâtrale"
+      }
+    ],
+    "liste_charisme": [
+      {"description_type" : "Pureté & Intégrité",
+        "description" : "Formation spirituelle et catéchèse sur la vie des Saints Martyrs"
+      },
+      {"description_type" : "Courage de la Foi",
+        "description" : "Ateliers de développement personnel et leadership jeune"
+      },
+      {"description_type" : "Service & Fraternité",
+        "description" : "Apprentissage des valeurs civiques, du respect et du secourisme"
+      },
+      {"description_type" : "Leadership Jeune",
+        "description" : "Activités manuelles, chants liturgiques et expression théâtrale"
+      }
+    ],
+    "encadreurs": [
+      {
+        "nom": "Mukendi",
+        "prenom": "Emmanuel",
+        "telephone": "+243 820 000 777",
+        "role": "Ya Mukasa",
+        "poste": "Président de section K.A",
+        "lien_photo": "/publics/img/22 (1).jpg"
+      },
+      {
+        "nom": "Kalonji",
+        "prenom": "Bénédicte",
+        "telephone": "+243 810 000 888",
+        "role": "Ya Kasima",
+        "poste": "Responsable de la section Anuarite",
+        "lien_photo": "/publics/img/22 (2).jpg"
+      },
+      {
+        "nom": "Mbuyi",
+        "prenom": "Christian",
+        "telephone": "+243 990 000 999",
+        "role": "Ya Kaggwa",
+        "poste": "Encadreur de la section Kizito",
+        "lien_photo": "/publics/img/22 (3).jpg"
+      }
+    ]
   },
   {
     "id": "scout",
@@ -79,7 +153,58 @@ const tousGroupeDeVie = [
     "jour_reunion": "Dimanche de 09h30 à 13h00",
     "lien_page" : "./SRC/html/Groupes_vies/scouts.html",
     "lieu_de_rencontre" : "Paroisse NODASA",
-    "logo": "./publics/img/logo_scout.png"
+    "logo": "./publics/img/logo_scout.png",
+    "presentation_generale": "Mouvement éducatif pour les jeunes reposant sur le volontariat, à caractère non politique et ouvert à tous. Le scoutisme paroissial vise le développement physique, mental et spirituel des jeunes pour qu'ils jouent un rôle constructif dans la société.",
+    "historique": "Fondé mondialement par Robert Baden-Powell en 1907 et implanté en RDC au début du XXe siècle, le groupe scout de la paroisse éduque la jeunesse à travers la vie active en plein air, le civisme et le respect de la promesse scout.",
+    "charisme": "Débrouillardise, fraternité universelle, civisme, respect de la nature et sens poussé du service gratuit envers la communauté.",
+    "organisation": "Organisé en patrouilles regroupées au sein d'une Troupe (éclaireurs) ou d'une Meute (louveteaux). Les activités sont encadrées par des chefs de troupe et assistants formés aux pédagogies scout.",
+    "ancrage_paroissial" : "2000",
+    "types_formations": [
+      {"description_type" : "Pureté & Intégrité",
+        "description" : "Formation spirituelle et catéchèse sur la vie des Saints Martyrs"
+      },
+      {"description_type" : "Courage de la Foi",
+        "description" : "Ateliers de développement personnel et leadership jeune"
+      },
+      {"description_type" : "Service & Fraternité",
+        "description" : "Apprentissage des valeurs civiques, du respect et du secourisme"
+      },
+      {"description_type" : "Leadership Jeune",
+        "description" : "Activités manuelles, chants liturgiques et expression théâtrale"
+      }
+    ],
+    "liste_charisme": [
+      {"description_type" : "Pureté & Intégrité",
+        "description" : "Formation spirituelle et catéchèse sur la vie des Saints Martyrs"
+      },
+      {"description_type" : "Courage de la Foi",
+        "description" : "Ateliers de développement personnel et leadership jeune"
+      },
+      {"description_type" : "Service & Fraternité",
+        "description" : "Apprentissage des valeurs civiques, du respect et du secourisme"
+      },
+      {"description_type" : "Leadership Jeune",
+        "description" : "Activités manuelles, chants liturgiques et expression théâtrale"
+      }
+    ],
+    "encadreurs": [
+      {
+        "nom": "Kassoma",
+        "prenom": "David",
+        "telephone": "+243 820 111 222",
+        "role": "Chef de Troupe",
+        "poste": "Responsable Unité Scout",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/david.jpg"
+      },
+      {
+        "nom": "Tshilombo",
+        "prenom": "Nathalie",
+        "telephone": "+243 810 222 333",
+        "role": "Assistante Chef de Troupe",
+        "poste": "Encadreuse Meute Louveteaux",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/nathalie.jpg"
+      }
+    ]
   },
   {
     "id": "bym",
@@ -92,7 +217,58 @@ const tousGroupeDeVie = [
     "jour_reunion": "Dimanche de 11h30 à 13h00",
     "lien_page" : "./SRC/html/Groupes_vies/bym.html",
     "lieu_de_rencontre" : "Paroisse NODASA",
-    "logo": "./publics/img/logo_bym.jpeg"
+    "logo": "./publics/img/logo_bym.jpeg",
+    "presentation_generale": "Mouvement d'action catholique et d'épanouissement intégral des jeunes, visant à en faire des hommes et des femmes conscients, autonomes et engagés dans l'Église et la société selon les valeurs de l'Évangile.",
+    "historique": "Initiative née en RDC sous l'impulsion des évêques dans les années 1980 pour offrir un cadre d'épanouissement humain et spirituel à la jeunesse face aux défis sociaux et aux quêtes de sens.",
+    "charisme": "Éveil de la conscience chrétienne, auto-prise en charge, témoignage de vie lumineux et recherche d'une excellence intégrale (spirituelle, morale et intellectuelle).",
+    "organisation": "Structuré en équipes de fraternité par tranche d'âge, dirigées par un berger de groupe et des encadreurs expérimentés qui animent les carrefours de réflexion hebdomadaires.",
+    "ancrage_paroissial" : "2000",
+    "types_formations": [
+      {"description_type" : "Pureté & Intégrité",
+        "description" : "Formation spirituelle et catéchèse sur la vie des Saints Martyrs"
+      },
+      {"description_type" : "Courage de la Foi",
+        "description" : "Ateliers de développement personnel et leadership jeune"
+      },
+      {"description_type" : "Service & Fraternité",
+        "description" : "Apprentissage des valeurs civiques, du respect et du secourisme"
+      },
+      {"description_type" : "Leadership Jeune",
+        "description" : "Activités manuelles, chants liturgiques et expression théâtrale"
+      }
+    ],
+    "liste_charisme": [
+      {"description_type" : "Pureté & Intégrité",
+        "description" : "Formation spirituelle et catéchèse sur la vie des Saints Martyrs"
+      },
+      {"description_type" : "Courage de la Foi",
+        "description" : "Ateliers de développement personnel et leadership jeune"
+      },
+      {"description_type" : "Service & Fraternité",
+        "description" : "Apprentissage des valeurs civiques, du respect et du secourisme"
+      },
+      {"description_type" : "Leadership Jeune",
+        "description" : "Activités manuelles, chants liturgiques et expression théâtrale"
+      }
+    ],
+    "encadreurs": [
+      {
+        "nom": "Bondo",
+        "prenom": "Patrick",
+        "telephone": "+243 990 333 444",
+        "role": "Berger de Groupe",
+        "poste": "Responsable Général B.J.M",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/patrick.jpg"
+      },
+      {
+        "nom": "Mwamba",
+        "prenom": "Clarisse",
+        "telephone": "+243 850 444 555",
+        "role": "Encadreuse",
+        "poste": "Chargée de la Formation Féminine",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/clarisse.jpg"
+      }
+    ]
   },
   {
     "id": "jefac",
@@ -105,7 +281,58 @@ const tousGroupeDeVie = [
     "jour_reunion": "Dimanche de 12h00 à 13h30",
     "lien_page" : "./SRC/html/Groupes_vies/jefac.html",
     "lieu_de_rencontre" : "Paroisse NODASA",
-    "logo": "./publics/img/logo_jefac.jpg"
+    "logo": "./publics/img/logo_jefac.jpg",
+    "presentation_generale": "Association internationale de laïcs catholiques qui servent l'Église volontairement. Le praesidium des jeunes de la paroisse se consacre à la prière du chapelet, à l'apostolat de proximité et au soutien des personnes seules ou malades.",
+    "historique": "Fondée à Dublin en 1921 par Frank Duff, la Légion de Marie s'est étendue dans le monde entier. Le praesidium jeune de la paroisse rassemble les jeunes désireux d'imiter la foi, la pureté et l'humilité de la Sainte Vierge.",
+    "charisme": "Spiritualité mariale profonde, docilité à l'Esprit Saint, foi agissante, apostolat direct et prière quotidienne du Chapelet.",
+    "organisation": "Structure hiérarchique appelée Praesidium au niveau paroissial, dirigée par un bureau restreint (Président, Vice-Président, Secrétaire, Trésorier) guidé spirituellement par l'aumônier.",
+    "ancrage_paroissial" : "2000",
+    "types_formations": [
+      {"description_type" : "Pureté & Intégrité",
+        "description" : "Formation spirituelle et catéchèse sur la vie des Saints Martyrs"
+      },
+      {"description_type" : "Courage de la Foi",
+        "description" : "Ateliers de développement personnel et leadership jeune"
+      },
+      {"description_type" : "Service & Fraternité",
+        "description" : "Apprentissage des valeurs civiques, du respect et du secourisme"
+      },
+      {"description_type" : "Leadership Jeune",
+        "description" : "Activités manuelles, chants liturgiques et expression théâtrale"
+      }
+    ],
+    "liste_charisme": [
+      {"description_type" : "Pureté & Intégrité",
+        "description" : "Formation spirituelle et catéchèse sur la vie des Saints Martyrs"
+      },
+      {"description_type" : "Courage de la Foi",
+        "description" : "Ateliers de développement personnel et leadership jeune"
+      },
+      {"description_type" : "Service & Fraternité",
+        "description" : "Apprentissage des valeurs civiques, du respect et du secourisme"
+      },
+      {"description_type" : "Leadership Jeune",
+        "description" : "Activités manuelles, chants liturgiques et expression théâtrale"
+      }
+    ],
+    "encadreurs": [
+      {
+        "nom": "Ngalula",
+        "prenom": "Thérèse",
+        "telephone": "+243 900 555 666",
+        "role": "Présidente de Praesidium",
+        "poste": "Responsable Légion Jeunes",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/therese.jpg"
+      },
+      {
+        "nom": "Ilunga",
+        "prenom": "Marc",
+        "telephone": "+243 840 666 777",
+        "role": "Vice-Président",
+        "poste": "Chargé de l'Apostolat",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/marc.jpg"
+      }
+    ]
   },
   {
     "id": "mijercha",
@@ -118,7 +345,58 @@ const tousGroupeDeVie = [
     "jour_reunion": "Jeudi de 16h30 à 18h00",
     "lien_page" : "./SRC/html/Groupes_vies/mijerca.html",
     "lieu_de_rencontre" : "Paroisse NODASA",
-    "logo": "./publics/img/logo_mijerca.jpeg"
+    "logo": "./publics/img/logo_mijerca.jpeg",
+    "presentation_generale": "Association internationale de laïcs catholiques qui servent l'Église volontairement. Le praesidium des jeunes de la paroisse se consacre à la prière du chapelet, à l'apostolat de proximité et au soutien des personnes seules ou malades.",
+    "historique": "Fondée à Dublin en 1921 par Frank Duff, la Légion de Marie s'est étendue dans le monde entier. Le praesidium jeune de la paroisse rassemble les jeunes désireux d'imiter la foi, la pureté et l'humilité de la Sainte Vierge.",
+    "charisme": "Spiritualité mariale profonde, docilité à l'Esprit Saint, foi agissante, apostolat direct et prière quotidienne du Chapelet.",
+    "organisation": "Structure hiérarchique appelée Praesidium au niveau paroissial, dirigée par un bureau restreint (Président, Vice-Président, Secrétaire, Trésorier) guidé spirituellement par l'aumônier.",
+    "ancrage_paroissial" : "2000",
+    "types_formations": [
+      {"description_type" : "Pureté & Intégrité",
+        "description" : "Formation spirituelle et catéchèse sur la vie des Saints Martyrs"
+      },
+      {"description_type" : "Courage de la Foi",
+        "description" : "Ateliers de développement personnel et leadership jeune"
+      },
+      {"description_type" : "Service & Fraternité",
+        "description" : "Apprentissage des valeurs civiques, du respect et du secourisme"
+      },
+      {"description_type" : "Leadership Jeune",
+        "description" : "Activités manuelles, chants liturgiques et expression théâtrale"
+      }
+    ],
+    "liste_charisme": [
+      {"description_type" : "Pureté & Intégrité",
+        "description" : "Formation spirituelle et catéchèse sur la vie des Saints Martyrs"
+      },
+      {"description_type" : "Courage de la Foi",
+        "description" : "Ateliers de développement personnel et leadership jeune"
+      },
+      {"description_type" : "Service & Fraternité",
+        "description" : "Apprentissage des valeurs civiques, du respect et du secourisme"
+      },
+      {"description_type" : "Leadership Jeune",
+        "description" : "Activités manuelles, chants liturgiques et expression théâtrale"
+      }
+    ],
+    "encadreurs": [
+      {
+        "nom": "Ngalula",
+        "prenom": "Thérèse",
+        "telephone": "+243 900 555 666",
+        "role": "Présidente de Praesidium",
+        "poste": "Responsable Légion Jeunes",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/therese.jpg"
+      },
+      {
+        "nom": "Ilunga",
+        "prenom": "Marc",
+        "telephone": "+243 840 666 777",
+        "role": "Vice-Président",
+        "poste": "Chargé de l'Apostolat",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/marc.jpg"
+      }
+    ]
   },
   {
     "id": "apa",
@@ -131,7 +409,58 @@ const tousGroupeDeVie = [
     "jour_reunion": "Dimanche de 10h00 à 11h30",
     "lien_page" : "./SRC/html/Groupes_vies/apa.html",
     "lieu_de_rencontre" : "Paroisse NODASA",
-    "logo": "./publics/img/logo_apa.jpeg"
+    "logo": "./publics/img/logo_apa.jpeg",
+    "presentation_generale": "Association internationale de laïcs catholiques qui servent l'Église volontairement. Le praesidium des jeunes de la paroisse se consacre à la prière du chapelet, à l'apostolat de proximité et au soutien des personnes seules ou malades.",
+    "historique": "Fondée à Dublin en 1921 par Frank Duff, la Légion de Marie s'est étendue dans le monde entier. Le praesidium jeune de la paroisse rassemble les jeunes désireux d'imiter la foi, la pureté et l'humilité de la Sainte Vierge.",
+    "charisme": "Spiritualité mariale profonde, docilité à l'Esprit Saint, foi agissante, apostolat direct et prière quotidienne du Chapelet.",
+    "organisation": "Structure hiérarchique appelée Praesidium au niveau paroissial, dirigée par un bureau restreint (Président, Vice-Président, Secrétaire, Trésorier) guidé spirituellement par l'aumônier.",
+    "ancrage_paroissial" : "2000",
+    "types_formations": [
+      {"description_type" : "Pureté & Intégrité",
+        "description" : "Formation spirituelle et catéchèse sur la vie des Saints Martyrs"
+      },
+      {"description_type" : "Courage de la Foi",
+        "description" : "Ateliers de développement personnel et leadership jeune"
+      },
+      {"description_type" : "Service & Fraternité",
+        "description" : "Apprentissage des valeurs civiques, du respect et du secourisme"
+      },
+      {"description_type" : "Leadership Jeune",
+        "description" : "Activités manuelles, chants liturgiques et expression théâtrale"
+      }
+    ],
+    "liste_charisme": [
+      {"description_type" : "Pureté & Intégrité",
+        "description" : "Formation spirituelle et catéchèse sur la vie des Saints Martyrs"
+      },
+      {"description_type" : "Courage de la Foi",
+        "description" : "Ateliers de développement personnel et leadership jeune"
+      },
+      {"description_type" : "Service & Fraternité",
+        "description" : "Apprentissage des valeurs civiques, du respect et du secourisme"
+      },
+      {"description_type" : "Leadership Jeune",
+        "description" : "Activités manuelles, chants liturgiques et expression théâtrale"
+      }
+    ],
+    "encadreurs": [
+      {
+        "nom": "Ngalula",
+        "prenom": "Thérèse",
+        "telephone": "+243 900 555 666",
+        "role": "Présidente de Praesidium",
+        "poste": "Responsable Légion Jeunes",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/therese.jpg"
+      },
+      {
+        "nom": "Ilunga",
+        "prenom": "Marc",
+        "telephone": "+243 840 666 777",
+        "role": "Vice-Président",
+        "poste": "Chargé de l'Apostolat",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/marc.jpg"
+      }
+    ]
   },
   {
     "id": "legio",
@@ -144,7 +473,58 @@ const tousGroupeDeVie = [
     "jour_reunion": "Samedi de 16h00 à 17h30",
     "lien_page" : "./SRC/html/Groupes_vies/legion.html",
     "lieu_de_rencontre" : "Paroisse NODASA",
-    "logo": "./publics/img/logo_legion.jpg"
+    "logo": "./publics/img/logo_legion.jpg",
+    "presentation_generale": "Association internationale de laïcs catholiques qui servent l'Église volontairement. Le praesidium des jeunes de la paroisse se consacre à la prière du chapelet, à l'apostolat de proximité et au soutien des personnes seules ou malades.",
+    "historique": "Fondée à Dublin en 1921 par Frank Duff, la Légion de Marie s'est étendue dans le monde entier. Le praesidium jeune de la paroisse rassemble les jeunes désireux d'imiter la foi, la pureté et l'humilité de la Sainte Vierge.",
+    "charisme": "Spiritualité mariale profonde, docilité à l'Esprit Saint, foi agissante, apostolat direct et prière quotidienne du Chapelet.",
+    "organisation": "Structure hiérarchique appelée Praesidium au niveau paroissial, dirigée par un bureau restreint (Président, Vice-Président, Secrétaire, Trésorier) guidé spirituellement par l'aumônier.",
+    "ancrage_paroissial" : "2000",
+    "types_formations": [
+      {"description_type" : "Pureté & Intégrité",
+        "description" : "Formation spirituelle et catéchèse sur la vie des Saints Martyrs"
+      },
+      {"description_type" : "Courage de la Foi",
+        "description" : "Ateliers de développement personnel et leadership jeune"
+      },
+      {"description_type" : "Service & Fraternité",
+        "description" : "Apprentissage des valeurs civiques, du respect et du secourisme"
+      },
+      {"description_type" : "Leadership Jeune",
+        "description" : "Activités manuelles, chants liturgiques et expression théâtrale"
+      }
+    ],
+    "liste_charisme": [
+      {"description_type" : "Pureté & Intégrité",
+        "description" : "Formation spirituelle et catéchèse sur la vie des Saints Martyrs"
+      },
+      {"description_type" : "Courage de la Foi",
+        "description" : "Ateliers de développement personnel et leadership jeune"
+      },
+      {"description_type" : "Service & Fraternité",
+        "description" : "Apprentissage des valeurs civiques, du respect et du secourisme"
+      },
+      {"description_type" : "Leadership Jeune",
+        "description" : "Activités manuelles, chants liturgiques et expression théâtrale"
+      }
+    ],
+    "encadreurs": [
+      {
+        "nom": "Ngalula",
+        "prenom": "Thérèse",
+        "telephone": "+243 900 555 666",
+        "role": "Présidente de Praesidium",
+        "poste": "Responsable Légion Jeunes",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/therese.jpg"
+      },
+      {
+        "nom": "Ilunga",
+        "prenom": "Marc",
+        "telephone": "+243 840 666 777",
+        "role": "Vice-Président",
+        "poste": "Chargé de l'Apostolat",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/marc.jpg"
+      }
+    ]
   },
   {
     "id": "ecm",
@@ -157,7 +537,58 @@ const tousGroupeDeVie = [
     "jour_reunion": "Dimanche de 11h30 à 13h00",
     "lien_page" : "./SRC/html/Groupes_vies/emc.html",
     "lieu_de_rencontre" : "Paroisse NODASA",
-    "logo": "./publics/img/logo_ecm.jpg"
+    "logo": "./publics/img/logo_ecm.jpg",
+    "presentation_generale": "Association internationale de laïcs catholiques qui servent l'Église volontairement. Le praesidium des jeunes de la paroisse se consacre à la prière du chapelet, à l'apostolat de proximité et au soutien des personnes seules ou malades.",
+    "historique": "Fondée à Dublin en 1921 par Frank Duff, la Légion de Marie s'est étendue dans le monde entier. Le praesidium jeune de la paroisse rassemble les jeunes désireux d'imiter la foi, la pureté et l'humilité de la Sainte Vierge.",
+    "charisme": "Spiritualité mariale profonde, docilité à l'Esprit Saint, foi agissante, apostolat direct et prière quotidienne du Chapelet.",
+    "organisation": "Structure hiérarchique appelée Praesidium au niveau paroissial, dirigée par un bureau restreint (Président, Vice-Président, Secrétaire, Trésorier) guidé spirituellement par l'aumônier.",
+    "ancrage_paroissial" : "2000",
+    "types_formations": [
+      {"description_type" : "Pureté & Intégrité",
+        "description" : "Formation spirituelle et catéchèse sur la vie des Saints Martyrs"
+      },
+      {"description_type" : "Courage de la Foi",
+        "description" : "Ateliers de développement personnel et leadership jeune"
+      },
+      {"description_type" : "Service & Fraternité",
+        "description" : "Apprentissage des valeurs civiques, du respect et du secourisme"
+      },
+      {"description_type" : "Leadership Jeune",
+        "description" : "Activités manuelles, chants liturgiques et expression théâtrale"
+      }
+    ],
+    "liste_charisme": [
+      {"description_type" : "Pureté & Intégrité",
+        "description" : "Formation spirituelle et catéchèse sur la vie des Saints Martyrs"
+      },
+      {"description_type" : "Courage de la Foi",
+        "description" : "Ateliers de développement personnel et leadership jeune"
+      },
+      {"description_type" : "Service & Fraternité",
+        "description" : "Apprentissage des valeurs civiques, du respect et du secourisme"
+      },
+      {"description_type" : "Leadership Jeune",
+        "description" : "Activités manuelles, chants liturgiques et expression théâtrale"
+      }
+    ],
+    "encadreurs": [
+      {
+        "nom": "Ngalula",
+        "prenom": "Thérèse",
+        "telephone": "+243 900 555 666",
+        "role": "Présidente de Praesidium",
+        "poste": "Responsable Légion Jeunes",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/therese.jpg"
+      },
+      {
+        "nom": "Ilunga",
+        "prenom": "Marc",
+        "telephone": "+243 840 666 777",
+        "role": "Vice-Président",
+        "poste": "Chargé de l'Apostolat",
+        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/marc.jpg"
+      }
+    ]
   }
 ]
 localStorage.setItem("groupeDeVie", JSON.stringify(tousGroupeDeVie))
@@ -262,147 +693,3 @@ const communiqueOfficielCDJ = [
   }
 ]
 localStorage.setItem("communiqueOfficielCDJ", JSON.stringify(communiqueOfficielCDJ))
-
-const detailGroupe = [
-  {
-    "id": "ka",
-    "nom_groupe": "Kizito - Anuarite",
-    "sigle": "K.A",
-    "presentation_generale": "Le groupe Kizito-Anuarite est un mouvement d'action catholique dédié à la formation spirituelle, humaine et civique des enfants et adolescents de la paroisse Notre-Dame de la Sagesse. Il vise à inculquer des valeurs chrétiennes solides dès le plus jeune âge à travers le jeu, la prière et la vie communautaire.",
-    "historique": "Fondé dans les années 1980 en République Démocratique du Congo et inspiré par la vie du jeune martyr Saint Kizito et de la Sainte Anuarite Nengapeta, le mouvement s'est implanté au sein de la paroisse NODASA pour répondre au besoin d'un encadrement spirituel adapté à la jeunesse d'âge scolaire.",
-    "charisme": "Le charisme du mouvement repose sur la pureté, le témoignage de foi joyeux, le leadership chrétien et le service désintéressé en milieu scolaire et familial.",
-    "organisation": "Le groupe est structuré en deux sections (Kizito pour les garçons et Anuarite pour les filles), elles-mêmes divisées en petites équipes appelées « Noyaux » animées par des encadreurs (Yaya/Mbotama). Les réunions se tiennent tous les samedis.",
-    "types_formations": [
-      "Formation spirituelle et catéchèse sur la vie des Saints Martyrs",
-      "Ateliers de développement personnel et leadership jeune",
-      "Apprentissage des valeurs civiques, du respect et du secourisme",
-      "Activités manuelles, chants liturgiques et expression théâtrale"
-    ],
-    "encadreurs": [
-      {
-        "nom": "Mukendi",
-        "prenom": "Emmanuel",
-        "telephone": "+243 820 000 777",
-        "role": "Encadreur Principal",
-        "poste": "Président de section K.A",
-        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/emmanuel.jpg"
-      },
-      {
-        "nom": "Kalonji",
-        "prenom": "Bénédicte",
-        "telephone": "+243 810 000 888",
-        "role": "Vice-Présidente",
-        "poste": "Responsable de la section Anuarite",
-        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/benedicte.jpg"
-      },
-      {
-        "nom": "Mbuyi",
-        "prenom": "Christian",
-        "telephone": "+243 990 000 999",
-        "role": "Chargé de Formation",
-        "poste": "Encadreur de la section Kizito",
-        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/christian.jpg"
-      }
-    ]
-  },
-  {
-    "id": "scout",
-    "nom_groupe": "Fédération des Scouts du Congo",
-    "sigle": "Scouts",
-    "presentation_generale": "Mouvement éducatif pour les jeunes reposant sur le volontariat, à caractère non politique et ouvert à tous. Le scoutisme paroissial vise le développement physique, mental et spirituel des jeunes pour qu'ils jouent un rôle constructif dans la société.",
-    "historique": "Fondé mondialement par Robert Baden-Powell en 1907 et implanté en RDC au début du XXe siècle, le groupe scout de la paroisse éduque la jeunesse à travers la vie active en plein air, le civisme et le respect de la promesse scout.",
-    "charisme": "Débrouillardise, fraternité universelle, civisme, respect de la nature et sens poussé du service gratuit envers la communauté.",
-    "organisation": "Organisé en patrouilles regroupées au sein d'une Troupe (éclaireurs) ou d'une Meute (louveteaux). Les activités sont encadrées par des chefs de troupe et assistants formés aux pédagogies scout.",
-    "types_formations": [
-      "Techniques de survie, secourisme, secourisme appliqué et cartographie",
-      "Éducation au civisme, au leadership et à la responsabilité individuelle",
-      "Protection de l'environnement, campisme et vie en plein air",
-      "Formation à la citoyenneté active et à l'engagement communautaire"
-    ],
-    "encadreurs": [
-      {
-        "nom": "Kassoma",
-        "prenom": "David",
-        "telephone": "+243 820 111 222",
-        "role": "Chef de Troupe",
-        "poste": "Responsable Unité Scout",
-        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/david.jpg"
-      },
-      {
-        "nom": "Tshilombo",
-        "prenom": "Nathalie",
-        "telephone": "+243 810 222 333",
-        "role": "Assistante Chef de Troupe",
-        "poste": "Encadreuse Meute Louveteaux",
-        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/nathalie.jpg"
-      }
-    ]
-  },
-  {
-    "id": "bjm",
-    "nom_groupe": "Bilenge Ya Mwinda",
-    "sigle": "B.J.M",
-    "presentation_generale": "Mouvement d'action catholique et d'épanouissement intégral des jeunes, visant à en faire des hommes et des femmes conscients, autonomes et engagés dans l'Église et la société selon les valeurs de l'Évangile.",
-    "historique": "Initiative née en RDC sous l'impulsion des évêques dans les années 1980 pour offrir un cadre d'épanouissement humain et spirituel à la jeunesse face aux défis sociaux et aux quêtes de sens.",
-    "charisme": "Éveil de la conscience chrétienne, auto-prise en charge, témoignage de vie lumineux et recherche d'une excellence intégrale (spirituelle, morale et intellectuelle).",
-    "organisation": "Structuré en équipes de fraternité par tranche d'âge, dirigées par un berger de groupe et des encadreurs expérimentés qui animent les carrefours de réflexion hebdomadaires.",
-    "types_formations": [
-      "Développement personnel, art oratoire et prise de parole en public",
-      "Éducation à la maturité affective, humaine et spirituelle",
-      "Initiation à l'entrepreneuriat jeune et auto-prise en charge",
-      "Étude et mise en pratique de la Doctrine Sociale de l'Église"
-    ],
-    "encadreurs": [
-      {
-        "nom": "Bondo",
-        "prenom": "Patrick",
-        "telephone": "+243 990 333 444",
-        "role": "Berger de Groupe",
-        "poste": "Responsable Général B.J.M",
-        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/patrick.jpg"
-      },
-      {
-        "nom": "Mwamba",
-        "prenom": "Clarisse",
-        "telephone": "+243 850 444 555",
-        "role": "Encadreuse",
-        "poste": "Chargée de la Formation Féminine",
-        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/clarisse.jpg"
-      }
-    ]
-  },
-  {
-    "id": "legio",
-    "nom_groupe": "Légion de Marie - Praesidium Jeunes",
-    "sigle": "Légion de Marie",
-    "presentation_generale": "Association internationale de laïcs catholiques qui servent l'Église volontairement. Le praesidium des jeunes de la paroisse se consacre à la prière du chapelet, à l'apostolat de proximité et au soutien des personnes seules ou malades.",
-    "historique": "Fondée à Dublin en 1921 par Frank Duff, la Légion de Marie s'est étendue dans le monde entier. Le praesidium jeune de la paroisse rassemble les jeunes désireux d'imiter la foi, la pureté et l'humilité de la Sainte Vierge.",
-    "charisme": "Spiritualité mariale profonde, docilité à l'Esprit Saint, foi agissante, apostolat direct et prière quotidienne du Chapelet.",
-    "organisation": "Structure hiérarchique appelée Praesidium au niveau paroissial, dirigée par un bureau restreint (Président, Vice-Président, Secrétaire, Trésorier) guidé spirituellement par l'aumônier.",
-    "types_formations": [
-      "Spiritualité mariale et méditation approfondie des mystères du Rosaire",
-      "Techniques d'évangélisation directe et d'apostolat de visite à domicile",
-      "Prière d'intercession et soutien moral aux personnes vulnérables",
-      "Formation à la vie de sainteté au quotidien et œuvres de miséricorde"
-    ],
-    "encadreurs": [
-      {
-        "nom": "Ngalula",
-        "prenom": "Thérèse",
-        "telephone": "+243 900 555 666",
-        "role": "Présidente de Praesidium",
-        "poste": "Responsable Légion Jeunes",
-        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/therese.jpg"
-      },
-      {
-        "nom": "Ilunga",
-        "prenom": "Marc",
-        "telephone": "+243 840 666 777",
-        "role": "Vice-Président",
-        "poste": "Chargé de l'Apostolat",
-        "lien_photo": "https://votre-domaine.org/assets/photos/encadreurs/marc.jpg"
-      }
-    ]
-  }
-]
-localStorage.setItem("detailGroupe", JSON.stringify(detailGroupe))
