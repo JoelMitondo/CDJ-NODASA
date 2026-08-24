@@ -325,6 +325,9 @@
   .z-500 {
     z-index: 500;
   }
+  .col-span-full {
+    grid-column: 1 / -1;
+  }
   .mx-auto {
     margin-inline: auto;
   }

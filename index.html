@@ -8,6 +8,7 @@
     <script type="module" src="/SRC/JS/app.js"></script>
     <script type="module" src="/SRC/JS/scripts.js"></script>
     <script src="/SRC/JS/donnees.js" defer></script>
+    <script src="/SRC/JS/acceuil.js" defer></script>
 </head>
 <body class="w-full max-w-full mx-auto overflow-x-hidden bg-cdj-bg text-cdj-text transition-colors duration-300">
       <!--L'en-tête de la page-->
@@ -106,10 +107,13 @@
                     <svg class="block w-4 h-4 text-cdj-primary dark:text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
                 </button>
                 <!-- BOUTON D'ACTION : CONNEXION ESPACE ENGAGÉ -->
-                <a href="/SRC/html/connexion.html" class="hidden sm:inline-flex items-center gap-2 bg-cdj-primary text-white hover:bg-opacity-90 px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm shadow-md transition-all transform active:scale-95">
+                <!-- BOUTON D'ACTIVATION (Exemple dans votre barre de navigation ou en-tête) -->
+                <button 
+                    id="btn-ouvrir-espace-engage" 
+                    class="hidden sm:inline-flex items-center gap-2 bg-cdj-primary text-white hover:bg-opacity-90 px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm shadow-md transition-all transform active:scale-95 cursor-pointer">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"/></svg>
                     <span data-i18n="navigation.connexion">Espace Engagé</span>
-                </a>
+                </button>
                 <!-- BOUTON BURGER MOBILE (3 BARRES SVG) -->
                 <button id="mobile-menu-btn" class="sm:hidden p-2 rounded-xl border border-cdj-border/80 bg-cdj-bg/50 hover:bg-cdj-bg text-cdj-text transition-colors" aria-label="Ouvrir le menu">
                     <svg id="burger-icon" class="w-6 h-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
