@@ -67,6 +67,21 @@ const svgMegaphone = `
                             <path fill="currentColor" d="M12 8H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h1v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h3l5 4V4zm9.5 4c0 1.71-.96 3.26-2.5 4V8c1.53.75 2.5 2.3 2.5 4" />
                         </svg>`
 
+const svgCadenas = `
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
+                <path d="M0 0h48v48H0z" fill="none" />
+                <path fill="currentColor" fill-rule="evenodd" d="M26.959 1.5a12.5 12.5 0 0 1 12.456 11.462l.404 4.847l.185.01c3.202.17 5.86 2.509 6.16 5.807c.182 2.02.336 4.784.336 8.374s-.154 6.353-.337 8.374c-.3 3.298-2.957 5.636-6.16 5.808c-1.341.071-3.015.143-5.045.2c.348-.72.542-1.528.542-2.382v-5a5.5 5.5 0 0 0-5.5-5.5H17.352A9.99 9.99 0 0 0 9 29a10 10 0 0 0-3.477.62c.05-2.46.173-4.445.314-5.994c.3-3.298 2.956-5.637 6.159-5.808l.185-.01l.404-4.846A12.5 12.5 0 0 1 25.042 1.5zm-5.96 16.034q2.285-.033 5-.034q2.718.001 5.002.034l-.206-3.513a4.803 4.803 0 0 0-9.59 0zM9 46a7 7 0 1 1 6.54-9.5H30a2.5 2.5 0 0 1 2.5 2.5v5a2.5 2.5 0 0 1-5 0v-2.5H25V44a2.5 2.5 0 0 1-5 0v-2.5h-4.46A7 7 0 0 1 9 46m-2.5-7A1.5 1.5 0 0 0 8 40.5h2a1.5 1.5 0 0 0 0-3H8A1.5 1.5 0 0 0 6.5 39" clip-rule="evenodd" />
+            </svg>`;
+const svgEpingler = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+        <path d="M0 0h16v16H0z" fill="none" />
+        <path fill="currentColor" d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588c-.177 0-.335-.018-.46-.039l-3.134 3.134a6 6 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828l-3.182 3.182c-.195.195-1.219.902-1.414.707s.512-1.22.707-1.414l3.182-3.182l-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a6 6 0 0 1 1.013.16l3.134-3.133a3 3 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146" />
+    </svg>`;
+const svgWarning =`
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
+	<path d="M0 0h1024v1024H0z" fill="none" />
+	<path fill="currentColor" d="m955.7 856l-416-720c-6.2-10.7-16.9-16-27.7-16s-21.6 5.3-27.7 16l-416 720C56 877.4 71.4 904 96 904h832c24.6 0 40-26.6 27.7-48M480 416c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v184c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8zm32 352a48.01 48.01 0 0 1 0-96a48.01 48.01 0 0 1 0 96" />
+</svg>`
 const nomMois = [
     "Janvier",
     "Février",
@@ -609,3 +624,69 @@ export function affichageIcone(){
     const iconeMaison = document.querySelectorAll(".iconeMaison")
     iconeMaison.forEach(svg => {svg.innerHTML=svgHouse});
 }
+
+export function initModalEspaceEngage() {
+  const btnOuvrir = document.getElementById("btn-ouvrir-espace-engage");
+  const modal = document.getElementById("modal-espace-engage");
+  const btnAnnuler = document.getElementById("btn-annuler-modal");
+  const btnFermerX = document.getElementById("btn-fermer-x-modal");
+
+  if (!btnOuvrir || !modal) return;
+
+  const modalBox = modal.querySelector(".id-modal-box");
+
+  // Fonction d'ouverture du popup
+  function ouvrirModal() {
+    modal.classList.remove("pointer-events-none", "opacity-0");
+    modal.classList.add("opacity-100");
+
+    if (modalBox) {
+      modalBox.classList.remove("scale-95");
+      modalBox.classList.add("scale-100");
+    }
+    
+    document.body.style.overflow = "hidden"; // Empêche le défilement de fond
+  }
+
+  // Fonction de fermeture du popup
+  function fermerModal() {
+    modal.classList.remove("opacity-100");
+    modal.classList.add("opacity-0", "pointer-events-none");
+
+    if (modalBox) {
+      modalBox.classList.remove("scale-100");
+      modalBox.classList.add("scale-95");
+    }
+
+    document.body.style.overflow = ""; // Rétablit le défilement
+  }
+
+  // Écouteurs d'événements
+  btnOuvrir.addEventListener("click", (e) => {
+    e.preventDefault();
+    ouvrirModal();
+  });
+
+  if (btnAnnuler) btnAnnuler.addEventListener("click", fermerModal);
+  if (btnFermerX) btnFermerX.addEventListener("click", fermerModal);
+
+  // Fermeture au clic sur l'arrière-plan
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) fermerModal();
+  });
+
+  // Fermeture via la touche Échap (ESC)
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !modal.classList.contains("opacity-0")) {
+      fermerModal();
+    }
+  });
+
+ const svgWarningId=document.getElementById("svgWarning")
+ const svgCadenaId=document.querySelector(".svgCadena");
+ const svgEpinglerId=document.getElementById("svgEpingler")
+ svgWarningId.innerHTML=svgWarning;
+ svgCadenaId.innerHTML=svgCadenas;
+ svgEpinglerId.innerHTML=svgEpingler;
+}
+
