@@ -83,9 +83,9 @@ function afficherEvenement() {
 
   // 6. Rendu HTML de la liste filtrée
   const couleurUn = "bg-cdj-primary";
-  const couleurDeux = "bg-sky-500";
+  const couleurDeux = "bg-cdj-secondary";
   const couleurTexteUn = "text-cdj-primary";
-  const couleurTexteDeux = "text-sky-500";
+  const couleurTexteDeux = "text-cdj-secondary";
 
   let htmlEvenement = "";
 
