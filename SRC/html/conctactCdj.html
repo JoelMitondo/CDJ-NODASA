@@ -183,7 +183,16 @@
     <!-- EN-TÊTE PAGE CONTACT -->
     <section class="space-y-3 max-w-3xl">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 text-sky-500 text-xs font-bold uppercase tracking-wider">
-        <span>📞 Annuaire Paroissial</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-dasharray="62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z">
+                    <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="62;0" />
+                    <animate fill="freeze" attributeName="fill-opacity" begin="0.7s" dur="0.4s" to="1" />
+                </path>
+            </svg>
+            <span>
+                 Annuaire Paroissial
+            </span>
         </div>
         <h1 class="text-3xl sm:text-5xl font-black text-cdj-text tracking-tight">
         Encadreurs & Contacts
@@ -202,7 +211,11 @@
         <!-- Recherche textuelle -->
         <div class="relative md:col-span-2">
             <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none text-cdj-muted">
-            🔍
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="currentColor" d="M16 11a5 5 0 1 1-10 0a5 5 0 0 1 10 0" />
+                    <path fill="currentColor" fill-rule="evenodd" d="M2 11a9 9 0 1 1 16.032 5.618l3.675 3.675a1 1 0 0 1-1.414 1.414l-3.675-3.675A9 9 0 0 1 2 11m9-7a7 7 0 1 0 0 14a7 7 0 0 0 0-14" clip-rule="evenodd" />
+                </svg>
             </span>
             <input 
             type="text" 
@@ -218,7 +231,7 @@
             <option value="tous">Tous les groupes (Vue Globale)</option>
             <option value="CDJ">Bureau CDJ</option>
             <option value="K.A">Kizito-Anuarite (K.A)</option>
-            <option value="B.J.M">Bilenge Ya Maria (B.J.M)</option>
+            <option value="B.Y.M">Bilenge Ya Maria (B.Y.M)</option>
             <option value="Scouts">Scouts</option>
             <option value="Légion de Marie">Légion de Marie</option>
             </select>
@@ -233,7 +246,7 @@
         
         <!-- Tri Alphabétique -->
         <div class="space-y-1">
-            <label for="tri-alphabetique" class="text-[11px] font-bold uppercase tracking-wider text-cdj-muted">🔤 Ordre d'affichage</label>
+            <label for="tri-alphabetique" class="text-[11px] font-bold uppercase tracking-wider text-cdj-muted">Ordre d'affichage</label>
             <select id="tri-alphabetique" class="w-full px-3 py-2 rounded-xl bg-cdj-bg border border-cdj-border text-cdj-text text-xs font-semibold focus:outline-none focus:border-sky-500">
             <option value="groupe">Par défaut (Groupé par Structure)</option>
             <option value="az">Alphabétique (Nom A - Z)</option>
@@ -243,7 +256,7 @@
 
         <!-- Filtre par Statut / Poste -->
         <div class="space-y-1">
-            <label for="filtre-statut" class="text-[11px] font-bold uppercase tracking-wider text-cdj-muted">👥 Membres affichés</label>
+            <label for="filtre-statut" class="text-[11px] font-bold uppercase tracking-wider text-cdj-muted">Membres affichés</label>
             <select id="filtre-statut" class="w-full px-3 py-2 rounded-xl bg-cdj-bg border border-cdj-border text-cdj-text text-xs font-semibold focus:outline-none focus:border-sky-500">
             <option value="presidium">Présidium Restreint (Président, Vice, Secrétaire)</option>
             <option value="tous">Tous les encadreurs du bureau</option>

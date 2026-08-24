@@ -1,3 +1,11 @@
+const svgPhone = `<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-dasharray="62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z">
+                    <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="62;0" />
+                    <animate fill="freeze" attributeName="fill-opacity" begin="0.7s" dur="0.4s" to="1" />
+                </path>
+            </svg>`
+
 // Base de données simulée des encadreurs (CDJ et Groupes de Vie)
 const listeEncadreurs = [
   // Bureau CDJ
@@ -14,10 +22,10 @@ const listeEncadreurs = [
   { id: 9, nom: "Nzuzi", prenom: "Grace", poste: "Encadreur Technique", groupe: "K.A", contact: "+243854444000", email: "grace@ka.org", photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200" },
 
   // Bilenge Ya Maria (B.J.M)
-  { id: 10, nom: "Kanza", prenom: "Emmanuel", poste: "Président", groupe: "B.J.M", contact: "+243825555000", email: "emmanuel@bjm.org", photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200" },
-  { id: 11, nom: "Bokelo", prenom: "Ruth", poste: "Vice-Présidente", groupe: "B.J.M", contact: "+243816666000", email: "ruth@bjm.org", photo: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=200" },
-  { id: 12, nom: "Moussa", prenom: "Christian", poste: "Secrétaire", groupe: "B.J.M", contact: "+243997777000", email: "christian@bjm.org", photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200" },
-  { id: 13, nom: "Luzolo", prenom: "Naomie", poste: "Chargée de Discipline", groupe: "B.J.M", contact: "+243858888000", email: "naomie@bjm.org", photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200" },
+  { id: 10, nom: "Kanza", prenom: "Emmanuel", poste: "Président", groupe: "B.Y.M", contact: "+243825555000", email: "emmanuel@bjm.org", photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200" },
+  { id: 11, nom: "Bokelo", prenom: "Ruth", poste: "Vice-Présidente", groupe: "B.Y.M", contact: "+243816666000", email: "ruth@bjm.org", photo: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=200" },
+  { id: 12, nom: "Moussa", prenom: "Christian", poste: "Secrétaire", groupe: "B.Y.M", contact: "+243997777000", email: "christian@bjm.org", photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200" },
+  { id: 13, nom: "Luzolo", prenom: "Naomie", poste: "Chargée de Discipline", groupe: "B.Y.M", contact: "+243858888000", email: "naomie@bjm.org", photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200" },
 
   // Scouts
   { id: 14, nom: "Bondo", prenom: "Franck", poste: "Président (Chef de Troupe)", groupe: "Scouts", contact: "+243829999000", email: "franck@scouts.org", photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200" },
@@ -116,7 +124,6 @@ function afficherContacts() {
       htmlGroupes += `
         <div class="space-y-4">
           <div class="flex items-center gap-3 border-b border-cdj-border pb-2">
-            <span class="p-1.5 rounded-lg bg-sky-500/10 text-sky-500 font-bold text-sm">🌱</span>
             <h2 class="text-xl font-black text-cdj-text tracking-tight">${nomGroupe}</h2>
             <span class="px-2 py-0.5 rounded-full bg-sky-500/10 text-sky-500 text-[10px] font-bold">${membres.length} contact(s)</span>
           </div>
@@ -158,7 +165,7 @@ function creerCarteContact(c) {
       <!-- Liens de contact rapide -->
       <div class="mt-4 pt-3 border-t border-cdj-border/60 flex items-center justify-between text-xs gap-2">
         <a href="tel:${c.contact}" class="inline-flex items-center gap-1 text-sky-500 hover:underline font-bold text-xs">
-          📞 ${c.contact}
+          ${svgPhone} ${c.contact}
         </a>
         <a href="https://wa.me/${c.contact.replace(/[^0-9]/g, '')}" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1 rounded-xl bg-emerald-500/10 text-emerald-500 hover:bg-emerald-500/20 font-bold text-[11px] border border-emerald-500/20 transition-all">
           WhatsApp
