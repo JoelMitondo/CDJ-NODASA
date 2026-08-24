@@ -398,52 +398,75 @@
       </div>
     </section>
     </main>
-
-  <!-- FENÊTRE MODALE DE RECHERCHE -->
-  <div id="search-modal" class="fixed inset-0 z-500 hidden bg-slate-900/60 backdrop-blur-sm flex items-start justify-center p-4 sm:p-6 md:p-20 transition-all duration-200">
-      <!-- Carte Conteneur -->
-      <div id="search-modal-card" class="bg-cdj-card border border-cdj-border w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden flex flex-col transform transition-all my-auto sm:my-0">
-          
-          <!-- En-tête : Champ de Saisie -->
-          <div class="relative flex items-center px-4 py-3.5 border-b border-cdj-border">
-          <!-- Icône Loupe -->
-          <svg class="w-5 h-5 text-cdj-muted shrink-0 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-          </svg>
-          
-          <!-- Input Texte -->
-          <input 
-              type="text" 
-              id="search-input" 
-              data-i18n-placeholder="recherche.placeholder"
-              class="w-full bg-transparent text-cdj-text placeholder:text-cdj-muted text-base focus:outline-none" 
-              placeholder="Rechercher un groupe, une activité, une info..."
-              autocomplete="off"
-          />
-
-          <!-- Bouton Fermer (X) -->
-          <button id="close-search-modal" class="p-1.5 rounded-lg text-cdj-muted hover:text-cdj-text hover:bg-cdj-bg transition-colors" title="Fermer (Échap)">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-              </svg>
-          </button>
+    <!-- SECTION : COMMUNIQUÉS OFFICIELS CDJ -->
+    <section id="section-communiques-cdj" class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-8">
+      
+      <!-- En-tête de section -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div class="space-y-3 max-w-2xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/15 text-red-500 text-xs font-bold uppercase tracking-wider border border-red-500/30">
+            <span>Annonces Officielles</span>
           </div>
-
-          <!-- Corps : Résultats de Recherche -->
-          <div id="search-results-container" class="p-4 max-h-[60vh] overflow-y-auto space-y-4">
-          
-          <!-- État initial (Message par défaut) -->
-          <div data-i18n="recherche.instruction" id="search-placeholder" class="text-center py-8 text-cdj-muted text-sm">
-              <p>Tapez au moins 2 caractères pour lancer la recherche...</p>
-          </div>
-
-          <!-- Zone d'injection des résultats JS -->
-          <div id="search-content" class="hidden space-y-4"></div>
-
-          </div>
-
+          <h2 class="text-3xl sm:text-4xl font-black text-cdj-text tracking-tight">
+            Communiqués du Bureau CDJ
+          </h2>
+          <p class="text-sm sm:text-base text-cdj-muted">
+            Retrouvez l'ensemble des notes d'information, résolutions et décisions de la Commission des Jeunes.
+          </p>
+        </div>
       </div>
-  </div>
+
+      <!-- Grille des communiqués (Dimensions identiques pour toutes les cartes) -->
+      <div id="grille-communiques-cdj" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+        <!-- Injecté dynamiquement via JS -->
+      </div>
+
+    </section>
+    <!-- FENÊTRE MODALE DE RECHERCHE -->
+    <div id="search-modal" class="fixed inset-0 z-500 hidden bg-slate-900/60 backdrop-blur-sm flex items-start justify-center p-4 sm:p-6 md:p-20 transition-all duration-200">
+        <!-- Carte Conteneur -->
+        <div id="search-modal-card" class="bg-cdj-card border border-cdj-border w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden flex flex-col transform transition-all my-auto sm:my-0">
+            
+            <!-- En-tête : Champ de Saisie -->
+            <div class="relative flex items-center px-4 py-3.5 border-b border-cdj-border">
+            <!-- Icône Loupe -->
+            <svg class="w-5 h-5 text-cdj-muted shrink-0 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+            
+            <!-- Input Texte -->
+            <input 
+                type="text" 
+                id="search-input" 
+                data-i18n-placeholder="recherche.placeholder"
+                class="w-full bg-transparent text-cdj-text placeholder:text-cdj-muted text-base focus:outline-none" 
+                placeholder="Rechercher un groupe, une activité, une info..."
+                autocomplete="off"
+            />
+
+            <!-- Bouton Fermer (X) -->
+            <button id="close-search-modal" class="p-1.5 rounded-lg text-cdj-muted hover:text-cdj-text hover:bg-cdj-bg transition-colors" title="Fermer (Échap)">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+            </div>
+
+            <!-- Corps : Résultats de Recherche -->
+            <div id="search-results-container" class="p-4 max-h-[60vh] overflow-y-auto space-y-4">
+            
+            <!-- État initial (Message par défaut) -->
+            <div data-i18n="recherche.instruction" id="search-placeholder" class="text-center py-8 text-cdj-muted text-sm">
+                <p>Tapez au moins 2 caractères pour lancer la recherche...</p>
+            </div>
+
+            <!-- Zone d'injection des résultats JS -->
+            <div id="search-content" class="hidden space-y-4"></div>
+
+            </div>
+
+        </div>
+    </div>
   
     <!-- PIED DE PAGE (FOOTER COMPLET) -->
     <footer id="pied-de-page" class="bg-slate-950 text-slate-300 border-t border-slate-800/80 pt-16 pb-8 px-4 sm:px-6 lg:px-8">

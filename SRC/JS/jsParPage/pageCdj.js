@@ -76,5 +76,97 @@ function afficherMembres(array){
     grille_membres_cdj.innerHTML=userMembre
 }
 
+
+
+function afficherCommuniquesCDJ() {
+  const donneesBrutes = localStorage.getItem("communiqueOfficielCDJ");
+  const grilleCommuniques = document.getElementById("grille-communiques-cdj");
+  if(!donneesBrutes) return;
+  if (!grilleCommuniques) return;
+
+  // Données de démonstration si le localStorage est vide
+  const listeCommuniques = JSON.parse(donneesBrutes);
+  let htmlCommuniques = "";
+
+  listeCommuniques.forEach((item) => {
+    htmlCommuniques += `
+      <article class="carte-communique h-full flex flex-col justify-between bg-cdj-card border border-cdj-border rounded-3xl p-6 shadow-xl hover:shadow-2xl hover:border-sky-400/50 transition-all duration-300 group">
+        
+        <div class="space-y-4">
+          <!-- En-tête : Badge Catégorie & Référence/Date -->
+          <div class="flex items-center justify-between gap-2 flex-wrap">
+            <span class="px-2.5 py-1 rounded-full bg-red-500/15 text-red-500 border border-red-500/20 font-black text-[10px] uppercase tracking-wider">
+              ${item.categorie || 'Officiel'}
+            </span>
+            <span class="text-[11px] font-semibold text-cdj-muted">
+              N° ${item.numero_ref || '00/2026'} • ${item.date}
+            </span>
+          </div>
+
+          <!-- Titre & Description Courte -->
+          <div class="space-y-2">
+            <h3 class="text-lg font-black text-cdj-text group-hover:text-sky-500 transition-colors leading-snug">
+              ${item.titre}
+            </h3>
+            <p class="text-xs text-cdj-muted leading-relaxed line-clamp-3">
+              ${item.description}
+            </p>
+          </div>
+
+          <!-- DÉTAILS COMPLETS DÉROULANTS (Cachés par défaut) -->
+          <div class="details-communique hidden pt-4 border-t border-sky-400/20 space-y-3 animate-fadeIn text-xs text-cdj-muted leading-relaxed">
+            <div class="p-3.5 rounded-2xl bg-sky-500/5 border border-sky-400/20 text-cdj-text space-y-2">
+              <span class="font-black text-sky-500 uppercase text-[10px] block">Contenu Complet :</span>
+              <p>${item.contenu_complet || item.description}</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pied de Carte : Auteur & Bouton Action -->
+        <div class="pt-4 mt-6 border-t border-cdj-border/60 flex items-center justify-between gap-3">
+          <div class="flex items-center gap-2 min-w-0">
+            <div class="w-8 h-8 rounded-xl bg-sky-500/15 text-sky-500 font-bold text-xs flex items-center justify-center shrink-0 border border-sky-400/20">
+              BC
+            </div>
+            <div class="min-w-0">
+              <p class="text-xs font-black text-cdj-text truncate">${item.auteur || 'Bureau CDJ'}</p>
+              <p class="text-[10px] text-cdj-muted truncate">${item.qualite || 'Coordination'}</p>
+            </div>
+          </div>
+
+          <!-- Bouton Voir Plus / Réduire -->
+          <button class="btn-toggle-communique inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-sky-500/10 hover:bg-sky-500 hover:text-white text-sky-500 font-bold text-xs transition-all shrink-0 cursor-pointer">
+            <span class="label-btn">Voir plus</span>
+            <svg class="fleche-btn w-3.5 h-3.5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+        </div>
+
+      </article>
+    `;
+  });
+
+  grilleCommuniques.innerHTML = htmlCommuniques;
+
+  // Gestionnaire de clics pour le déroulement
+  grilleCommuniques.onclick = (event) => {
+    const btn = event.target.closest(".btn-toggle-communique");
+    if (!btn) return;
+
+    const carte = btn.closest(".carte-communique");
+    const details = carte.querySelector(".details-communique");
+    const label = btn.querySelector(".label-btn");
+    const fleche = btn.querySelector(".fleche-btn");
+
+    const estMasque = details.classList.contains("hidden");
+
+    details.classList.toggle("hidden");
+    label.textContent = estMasque ? "Réduire" : "Voir plus";
+    fleche.style.transform = estMasque ? "rotate(180deg)" : "rotate(0deg)";
+  };
+}
+
 miseEnPageCdj()
 afficherMembres(membreCdj)
+afficherCommuniquesCDJ()
