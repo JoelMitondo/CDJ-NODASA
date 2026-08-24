@@ -653,6 +653,66 @@ const evenementsData = [
     "frais" : "45.000Fc",
     "orateur" : "Gratien Mbey",
     "apropos_evenement" : "La CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesse, La CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesseLa CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesse"
+  },
+    {
+    "id": "evt-001",
+    "nom_evenement": "Grande Messe des Jeunes & Assemblée Générale",
+    "date_evenement": "2026-08-15",
+    "lieu": "Église Paroissiale NODASA",
+    "adresse_exacte" : "22, virunga, Kindele, Lemba",
+    "groupe_responsable": "Bureau CDJ",
+    "heure_debut": "09h00",
+    "heure_fin": "12h30",
+    "droit_entree": "Jeunes de la paroisse",
+    "description_evenement": "Célébration eucharistique réunissant l'ensemble des 8 groupes de vie pour le lancement officiel des activités du second semestre, suivie d'une séance d'échange avec le Bureau.",
+    "frais" : "45.000Fc",
+    "orateur" : "Gratien Mbey",
+    "apropos_evenement" : "La CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesse, La CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesseLa CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesse"
+  },
+  {
+    "id": "evt-002",
+    "nom_evenement": "Camp de Formation & Survie en Plein Air",
+    "date_evenement": "2026-08-22",
+    "lieu": "Cour Paroissiale & Terrain Annexe",
+    "adresse_exacte" : "22, virunga, Kindele, Lemba",
+    "groupe_responsable": "Scouts",
+    "heure_debut": "08h00",
+    "heure_fin": "16h00",
+    "droit_entree": "Jeunes du groupe",
+    "description_evenement": "Exercices pratiques de secourisme, cartographie, civisme et techniques de secourisme pour les patrouilles de la troupe.",
+    "frais" : "Gratuits",
+    "orateur" : "Gratien Mbey",
+    "apropos_evenement" : "La CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesse, La CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesseLa CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesse"
+  },
+  {
+    "id": "evt-003",
+    "nom_evenement": "Nuit d'Adoration & Louange Eucharistique",
+    "date_evenement": "2026-08-28",
+    "lieu": "Chapelle Paroissiale",
+    "adresse_exacte" : "22, virunga, Kindele, Lemba",
+    "groupe_responsable": "APA",
+    "heure_debut": "20h00",
+    "heure_fin": "05h00",
+    "droit_entree": "Gratuit",
+    "description_evenement": "Temps fort d'intercession, de méditation du Saint-Sacrement et d'animation musicale spirituelle ouvert à toute la jeunesse.",
+    "frais" : "45.000Fc",
+    "orateur" : "Gratien Mbey",
+    "apropos_evenement" : "La CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesse, La CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesseLa CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesse"
+  },
+  {
+    "id": "evt-004",
+    "nom_evenement": "Journée Portes Ouvertes & Inscriptions",
+    "date_evenement": "2026-09-05",
+    "lieu": "Salle Paroissiale Saint-Joseph",
+    "adresse_exacte" : "22, virunga, Kindele, Lemba",
+    "groupe_responsable": "K.A",
+    "heure_debut": "14h00",
+    "heure_fin": "17h00",
+    "droit_entree": "Jeunes de la paroisse",
+    "description_evenement": "Présentation du parcours Kizito et Anuarite pour les parents et enfants souhaitant intégrer le groupe pour l'année pastorale 2026-2027.",
+    "frais" : "45.000Fc",
+    "orateur" : "Gratien Mbey",
+    "apropos_evenement" : "La CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesse, La CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesseLa CDJ Nodasa, coordonne les formations dispensées par les groupes de vie de la paroisse, pour permettre l'épanouissement de jeunes, elle offre un cadre pour les formations, les retraites, recollections, messe de jeunes, et organise également des activités ludiques, excursions, repas communautaires, Journées foraines etc, et initie également des projets de développement visant la jeunesse"
   }
 ]
 localStorage.setItem("evenements", JSON.stringify(evenementsData))

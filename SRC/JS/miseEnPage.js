@@ -473,7 +473,6 @@ export function btnFiltreEvenement() {
     filtreAgenda.addEventListener("click", (event) => {
 
         const btnClique = event.target.closest("button");
-
         // Si le clic ne vient pas d'un bouton
         if (!btnClique) return;
 
@@ -487,7 +486,6 @@ export function btnFiltreEvenement() {
                 "text-white",
                 "shadow-sm"
             );
-
             bouton.classList.add(
                 "text-cdj-muted",
                 "hover:text-cdj-text"
@@ -507,6 +505,7 @@ export function btnFiltreEvenement() {
         );
     });
 }
+
 export function afficherEvenement(){
     const lesEvenements = JSON.parse(localStorage.getItem("evenements"))
     const container_evenement = document.getElementById("conteneur-evenements")
@@ -521,7 +520,7 @@ export function afficherEvenement(){
     
     let evenement = ""
     
-    for(let i = 0; i < lesEvenements.length; i++){
+    for(let i = 0; i < 6; i++){
         let couleurUtilisee = ""
         let couleurTexte = ""
         let groupe_hover = ""
