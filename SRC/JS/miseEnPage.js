@@ -98,6 +98,76 @@ const nomMois = [
 ];
 
 
+export function initModalEspaceEngage() {
+  const btnOuvrir = document.getElementById("btn-ouvrir-espace-engage");
+  const btnOuvrirMobil = document.getElementById("btn_espace_engagé_mobile")
+  const modal = document.getElementById("modal-espace-engage");
+  const btnAnnuler = document.getElementById("btn-annuler-modal");
+  const btnFermerX = document.getElementById("btn-fermer-x-modal");
+
+  if (!btnOuvrir || !modal) return;
+
+  const modalBox = modal.querySelector(".id-modal-box");
+
+  // Fonction d'ouverture du popup
+  function ouvrirModal() {
+    modal.classList.remove("pointer-events-none", "opacity-0");
+    modal.classList.add("opacity-100");
+
+    if (modalBox) {
+      modalBox.classList.remove("scale-95");
+      modalBox.classList.add("scale-100");
+    }
+    
+    document.body.style.overflow = "hidden"; // Empêche le défilement de fond
+  }
+
+  // Fonction de fermeture du popup
+  function fermerModal() {
+    modal.classList.remove("opacity-100");
+    modal.classList.add("opacity-0", "pointer-events-none");
+
+    if (modalBox) {
+      modalBox.classList.remove("scale-100");
+      modalBox.classList.add("scale-95");
+    }
+
+    document.body.style.overflow = ""; // Rétablit le défilement
+  }
+
+  // Écouteurs d'événements
+  btnOuvrir.addEventListener("click", (e) => {
+    e.preventDefault();
+    ouvrirModal();
+  });
+  // Écouteurs d'événements sur mobil
+  btnOuvrirMobil.addEventListener("click", (e) => {
+    e.preventDefault();
+    ouvrirModal();
+  });
+  if (btnAnnuler) btnAnnuler.addEventListener("click", fermerModal);
+  if (btnFermerX) btnFermerX.addEventListener("click", fermerModal);
+
+  // Fermeture au clic sur l'arrière-plan
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) fermerModal();
+  });
+
+  // Fermeture via la touche Échap (ESC)
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !modal.classList.contains("opacity-0")) {
+      fermerModal();
+    }
+  });
+
+ const svgWarningId=document.getElementById("svgWarning")
+ const svgCadenaId=document.querySelector(".svgCadena");
+ const svgEpinglerId=document.getElementById("svgEpingler")
+ svgWarningId.innerHTML=svgWarning;
+ svgCadenaId.innerHTML=svgCadenas;
+ svgEpinglerId.innerHTML=svgEpingler;
+}
+
 export function miseEnPage(){
     const infoCommis = JSON.parse(localStorage.getItem("infoCommis"))
     
@@ -623,70 +693,5 @@ export function affichageIcone(){
     iconeLieu.forEach(svg => {svg.innerHTML=svgIconeLieu});
     const iconeMaison = document.querySelectorAll(".iconeMaison")
     iconeMaison.forEach(svg => {svg.innerHTML=svgHouse});
-}
-
-export function initModalEspaceEngage() {
-  const btnOuvrir = document.getElementById("btn-ouvrir-espace-engage");
-  const modal = document.getElementById("modal-espace-engage");
-  const btnAnnuler = document.getElementById("btn-annuler-modal");
-  const btnFermerX = document.getElementById("btn-fermer-x-modal");
-
-  if (!btnOuvrir || !modal) return;
-
-  const modalBox = modal.querySelector(".id-modal-box");
-
-  // Fonction d'ouverture du popup
-  function ouvrirModal() {
-    modal.classList.remove("pointer-events-none", "opacity-0");
-    modal.classList.add("opacity-100");
-
-    if (modalBox) {
-      modalBox.classList.remove("scale-95");
-      modalBox.classList.add("scale-100");
-    }
-    
-    document.body.style.overflow = "hidden"; // Empêche le défilement de fond
-  }
-
-  // Fonction de fermeture du popup
-  function fermerModal() {
-    modal.classList.remove("opacity-100");
-    modal.classList.add("opacity-0", "pointer-events-none");
-
-    if (modalBox) {
-      modalBox.classList.remove("scale-100");
-      modalBox.classList.add("scale-95");
-    }
-
-    document.body.style.overflow = ""; // Rétablit le défilement
-  }
-
-  // Écouteurs d'événements
-  btnOuvrir.addEventListener("click", (e) => {
-    e.preventDefault();
-    ouvrirModal();
-  });
-
-  if (btnAnnuler) btnAnnuler.addEventListener("click", fermerModal);
-  if (btnFermerX) btnFermerX.addEventListener("click", fermerModal);
-
-  // Fermeture au clic sur l'arrière-plan
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) fermerModal();
-  });
-
-  // Fermeture via la touche Échap (ESC)
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && !modal.classList.contains("opacity-0")) {
-      fermerModal();
-    }
-  });
-
- const svgWarningId=document.getElementById("svgWarning")
- const svgCadenaId=document.querySelector(".svgCadena");
- const svgEpinglerId=document.getElementById("svgEpingler")
- svgWarningId.innerHTML=svgWarning;
- svgCadenaId.innerHTML=svgCadenas;
- svgEpinglerId.innerHTML=svgEpingler;
 }
 

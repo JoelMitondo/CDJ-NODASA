@@ -107,7 +107,6 @@
                     <svg class="block w-4 h-4 text-cdj-primary dark:text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
                 </button>
                 <!-- BOUTON D'ACTION : CONNEXION ESPACE ENGAGÉ -->
-                <!-- BOUTON D'ACTIVATION (Exemple dans votre barre de navigation ou en-tête) -->
                 <button 
                     id="btn-ouvrir-espace-engage" 
                     class="hidden sm:inline-flex items-center gap-2 bg-cdj-primary text-white hover:bg-opacity-90 px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm shadow-md transition-all transform active:scale-95 cursor-pointer">
@@ -173,9 +172,9 @@
 
             <!-- LIEN CONNEXION MOBILE -->
             <div class="pt-2">
-            <a href="/SRC/html/connexion.html" class="w-full flex items-center justify-center gap-2 bg-cdj-primary text-white py-3 rounded-xl font-bold text-sm shadow-md" data-i18n="navigation.connexion">
-                <span>Espace Engagé</span>
-            </a>
+                <button id="btn_espace_engagé_mobile" class="w-full flex items-center justify-center gap-2 bg-cdj-primary text-white py-3 rounded-xl font-bold text-sm shadow-md" data-i18n="navigation.connexion">
+                    <span data-i18n="navigation.connexion">Espace Engagé</span>
+                </button>
             </div>
 
         </div>
@@ -510,7 +509,7 @@
         <!-- LIEN VERS TOUTES LES ACTUALITÉS -->
         <a 
         id="lien-voir-toutes-actualites" 
-        href="actualites.html" 
+        href="/SRC/html/cdj.html#section-communiques-cdj" 
         class="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-cdj-primary dark:text-sky-400 hover:underline shrink-0 self-start md:self-auto">
         <span data-i18n="actualites.bouton_tous">Voir toutes les publications</span>
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
@@ -935,7 +934,7 @@
         </p>
 
         <div class="p-3.5 rounded-2xl bg-sky-500/5 border border-sky-400/20 text-xs text-cdj-text space-y-1">
-            <p class="font-bold text-sky-500"> <span id="svgEpingler"></span> Prérequis de connexion :</p>
+            <p class="flex gap-1 font-bold text-sky-500"> <span id="svgEpingler"></span> Prérequis de connexion :</p>
             <p class="text-cdj-muted">Votre <strong>Identifiant CDJ</strong> attribués par le bureau et votre <strong>mot de passe</strong> vous seront demandés à l'étape suivante.</p>
         </div>
         </div>
@@ -950,7 +949,7 @@
 
         <a 
             id="btn-continuer-connexion" 
-            href="connexion.html" 
+            href="/SRC/html/connexion.html" 
             class="w-full sm:w-1/2 py-2.5 px-4 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs text-center transition-all shadow-lg cursor-pointer">
             Continuer →
         </a>
