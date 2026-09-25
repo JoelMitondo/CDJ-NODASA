@@ -4,7 +4,6 @@
 /*PALETTE DE COULEURS DE LA CDJ NODASA (Tailwind v4 @theme)*/
 
 @theme {
-  /* Couleurs de structure & d'interface */
   --color-cdj-primary: var(--color-primary);
   --color-cdj-secondary: var(--color-secondary);
   --color-cdj-bg: var(--color-bg);
@@ -14,33 +13,34 @@
   --color-cdj-border: var(--color-border);
 
   /* Piliers du Logo & Badges d'état (Extraits directement des silhouettes) */
-  --color-cdj-piete: #7b2cbf;       /* Violet : Piété (ex: statut excusé) */
-  --color-cdj-foi: #0284c7;         /* Bleu Ciel : Foi (ex: sacrements / infos) */
-  --color-cdj-honnete: #10b981;     /* Vert : Honnêteté / Présence (Vert du logo) */
-  --color-cdj-engagement: #dc2626;  /* Rouge : Engagement / Alerte 3 absences */
-  --color-cdj-gold: #f59e0b;        /* Doré : Sagesse & Jeunesse */
+  --color-cdj-piete: #7c3aed;       /* Violet élégant */
+  --color-cdj-foi: #0284c7;         /* Bleu azur */
+  --color-cdj-honnete: #059669;     /* Vert émeraude */
+  --color-cdj-engagement: #dc2626;  /* Rouge profond */
+  --color-cdj-gold: #d89b16;        /* Doré chaud */
 }
 
 /*THÈME CLAIR (Mode par défaut) */
 :root {
-  --color-primary: #0f2a4a;     /* Bleu Nuit institutionnel (Issu du grand "C") */
-  --color-secondary: #f59e0b;   /* Jaune Doré Sagesse (Silhouette supérieure) */
-  --color-bg: #f8fafc;          /* Fond principal doux (Gris-bleu très clair) */
-  --color-card: #ffffff;        /* Surface des cartes (Blanc pur) */
-  --color-text: #0f172a;        /* Texte principal (Très sombre, haute lisibilité) */
-  --color-muted: #64748b;       /* Texte secondaire & sous-titres */
-  --color-border: #e2e8f0;      /* Lignes de séparation & bordures d'inputs */
+  --color-primary: #17365d;     /* Bleu institutionnel profond */
+  --color-secondary: #d89b16;   /* Doré élégant */
+  --color-bg: #f5f7fa;          /* Gris bleuté très doux */
+  --color-card: #ffffff;        /* Blanc */
+  --color-text: #172033;        /* Bleu-noir doux */
+  --color-muted: #667085;       /* Gris bleuté */
+  --color-border: #dfe4ea;      /* Gris clair */
 }
 
 /* ==========================================================================
-   3. THÈME SOMBRE (Activé via la classe .dark sur la balise <html>)
+   THÈME SOMBRE
    ========================================================================== */
 .dark {
-  --color-primary: #38bdf8;     /* Bleu ciel vif (Pour ressortir sur fond sombre) */
-  --color-secondary: #fbbf24;   /* Doré ajusté pour le mode nuit */
-  --color-bg: #0b1329;          /* Fond sombre inspiré du bleu nuit du logo */
-  --color-card: #152238;        /* Surface des cartes (Bleu nuit profond) */
-  --color-text: #f8fafc;        /* Texte clair (Blanc cassé) */
-  --color-muted: #94a3b8;       /* Texte secondaire sombre */
-  --color-border: #1e293b;      /* Bordures sombres discrètes */
+  --color-primary: #60a5fa;     /* Bleu lumineux mais moins agressif */
+  --color-secondary: #e7b84b;   /* Doré doux */
+  --color-bg: #0d1726;          /* Bleu nuit profond */
+  --color-card: #142235;        /* Surface bleu nuit */
+  --color-text: #f1f5f9;        /* Blanc légèrement adouci */
+  --color-muted: #94a3b8;       /* Gris bleuté */
+  --color-border: #26364a;      /* Bordure discrète */
 }
+
