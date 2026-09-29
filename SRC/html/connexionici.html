@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - CDJ</title>
+    <!-- Tailwind CSS (CDN pour l'exemple) -->
+    <link rel="stylesheet" href="/SRC/output.css">
+    <script>
+        // Configuration de tes classes personnalisées (thème CDJ)
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cdj-bg': '#090d16',
+                        'cdj-card': '#111827',
+                        'cdj-border': '#1e293b',
+                        'cdj-text': '#f8fafc',
+                        'cdj-muted': '#94a3b8'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cdj-bg text-cdj-text min-h-full flex items-center justify-center p-4 sm:p-6">
+
+    <div class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-10 max-w-md w-full shadow-2xl space-y-6">
+        
+        <!-- En-tête -->
+        <div class="space-y-2 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/15 text-sky-400 font-bold text-[10px] uppercase tracking-wider border border-sky-500/20">
+                Espace Encadreur
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-black tracking-tight">
+                Connexion
+            </h1>
+            <p class="text-xs sm:text-sm text-cdj-muted">
+                Connectez-vous pour accéder à votre espace de gestion et d'encadrement.
+            </p>
+        </div>
+
+        <!-- Bouton Connexion Google (Ally / OAuth) -->
+        <div>
+            <a href="/auth/google/redirect" 
+                class="w-full py-3 px-4 rounded-xl bg-cdj-bg border border-cdj-border hover:border-sky-500/50 text-cdj-text font-bold text-xs flex items-center justify-center gap-3 transition-all cursor-pointer shadow-sm">
+                <!-- Icône Google SVG -->
+                <svg class="w-4 h-4" viewBox="0 0 24 24">
+                    <path fill="#EA4335" d="M12 5c1.6 0 3 .6 4.1 1.6l3.1-3.1C17.3 1.8 14.8 1 12 1 7.4 1 3.5 3.6 1.6 7.4l3.7 2.9C6.2 7.1 8.9 5 12 5z"/>
+                    <path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.5c-.3 1.5-1.1 2.8-2.4 3.7l3.7 2.9c2.2-2 3.7-5 3.7-8.8z"/>
+                    <path fill="#FBBC05" d="M5.3 14.7c-.2-.7-.4-1.5-.4-2.7s.2-2 .4-2.7L1.6 6.4C.6 8.4 0 10.6 0 13s.6 4.6 1.6 6.6l3.7-2.9z"/>
+                    <path fill="#34A853" d="M12 23c3.2 0 6-1.1 8-3l-3.7-2.9c-1.1.7-2.5 1.2-4.3 1.2-3.1 0-5.8-2.1-6.7-5.3L1.6 15.9C3.5 19.7 7.4 23 12 23z"/>
+                </svg>
+                Continuer avec Google
+            </a>
+        </div>
+
+        <!-- Séparateur visuel -->
+        <div class="flex items-center gap-4">
+            <div class="flex-1 h-px bg-cdj-border"></div>
+            <span class="text-[10px] uppercase tracking-widest text-cdj-muted font-bold">Ou avec vos identifiants</span>
+            <div class="flex-1 h-px bg-cdj-border"></div>
+        </div>
+
+        <!-- Formulaire de Connexion Classique (Email ou Téléphone + Mot de passe) -->
+        <form action="#" method="POST" class="space-y-4">
+
+            <!-- Identifiant : Email ou Téléphone -->
+            <div class="space-y-1.5">
+                <label class="block text-xs font-bold text-cdj-muted uppercase tracking-wider">Email ou Téléphone</label>
+                <input type="text" name="login" required 
+                    class="w-full bg-cdj-bg border border-cdj-border rounded-xl px-4 py-2.5 text-xs text-cdj-text focus:outline-none focus:border-sky-500 transition-colors"
+                    placeholder="exemple@domaine.com ou +243...">
+            </div>
+
+            <!-- Mot de passe -->
+            <div class="space-y-1.5">
+                <div class="flex items-center justify-between">
+                    <label class="block text-xs font-bold text-cdj-muted uppercase tracking-wider">Mot de passe</label>
+                    <a href="#" class="text-[11px] text-sky-500 hover:text-sky-400 transition-colors">Mot de passe oublié ?</a>
+                </div>
+                <input type="password" name="password" required 
+                    class="w-full bg-cdj-bg border border-cdj-border rounded-xl px-4 py-2.5 text-xs text-cdj-text focus:outline-none focus:border-sky-500 transition-colors"
+                    placeholder="••••••••••••">
+            </div>
+
+            <!-- Bouton de Soumission -->
+            <a href="/SRC/html/connexion.html" 
+                class="w-full py-3 px-4 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs text-center transition-all shadow-lg cursor-pointer mt-2">
+                Se connecter →
+            </a>
+
+        </form>
+
+        <!-- Lien vers la page d'invitation si pas de compte -->
+        <div class="text-center pt-2 border-t border-cdj-border">
+            <p class="text-xs text-cdj-muted">
+                Vous n'avez pas de compte ? 
+                <a href="/SRC/html/invitation.html" class="font-bold text-sky-500 hover:text-sky-400 underline transition-colors">
+                    Faire une demande d'invitation
+                </a>
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>

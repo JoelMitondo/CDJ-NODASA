@@ -119,8 +119,6 @@ export function miseEnPage(){
     }
     //Info Président de la CDJ
     const identifiantBurreauCDJ = infoCommis.membres_bureau
-    const nomPresidentCDJ=document.querySelector(".nomPresidentCDJ")
-    nomPresidentCDJ.textContent=afficherInfoUser(identifiantBurreauCDJ, "Président").nom
 
 }
 

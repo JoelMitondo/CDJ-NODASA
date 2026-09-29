@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande d'Invitation - CDJ</title>
+    <!-- Tailwind CSS (CDN pour l'exemple) -->
+    <link rel="stylesheet" href="/SRC/output.css">
+    <script>
+        // Configuration de tes classes personnalisées (basée sur ton thème)
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cdj-bg': '#090d16',
+                        'cdj-card': '#111827',
+                        'cdj-border': '#1e293b',
+                        'cdj-text': '#f8fafc',
+                        'cdj-muted': '#94a3b8'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cdj-bg text-cdj-text min-h-full flex items-center justify-center p-4 sm:p-6">
+
+    <div class="bg-cdj-card border border-cdj-border rounded-3xl p-6 sm:p-10 max-w-xl w-full shadow-2xl space-y-6">
+        
+        <!-- En-tête -->
+        <div class="space-y-2 text-center sm:text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/15 text-sky-400 font-bold text-[10px] uppercase tracking-wider border border-sky-500/20">
+                Espace Encadreur
+            </div>
+            <h1 class="text-2xl sm:text-3xl font-black tracking-tight">
+                Demande d'Invitation
+            </h1>
+            <p class="text-xs sm:text-sm text-cdj-muted">
+                Remplissez ce formulaire pour soumettre votre demande d'invitation et obtenir vos identifiants auprès du bureau.
+            </p>
+        </div>
+
+        <!-- Formulaire -->
+        <form action="#" method="POST" class="space-y-4">
+
+            <!-- Ligne Nom & Postnom -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="space-y-1.5">
+                    <label class="block text-xs font-bold text-cdj-muted uppercase tracking-wider">Nom</label>
+                    <input type="text" name="nom" required 
+                        class="w-full bg-cdj-bg border border-cdj-border rounded-xl px-4 py-2.5 text-xs text-cdj-text focus:outline-none focus:border-sky-500 transition-colors"
+                        placeholder="Ex: Mitondo">
+                </div>
+                <div class="space-y-1.5">
+                    <label class="block text-xs font-bold text-cdj-muted uppercase tracking-wider">Postnom</label>
+                    <input type="text" name="postnom" required 
+                        class="w-full bg-cdj-bg border border-cdj-border rounded-xl px-4 py-2.5 text-xs text-cdj-text focus:outline-none focus:border-sky-500 transition-colors"
+                        placeholder="Ex: Mohindo">
+                </div>
+            </div>
+
+            <!-- Prénom -->
+            <div class="space-y-1.5">
+                <label class="block text-xs font-bold text-cdj-muted uppercase tracking-wider">Prénom</label>
+                <input type="text" name="prenom" required 
+                    class="w-full bg-cdj-bg border border-cdj-border rounded-xl px-4 py-2.5 text-xs text-cdj-text focus:outline-none focus:border-sky-500 transition-colors"
+                    placeholder="Ex: Joël">
+            </div>
+
+            <!-- Groupe & Rôle -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="space-y-1.5">
+                    <label class="block text-xs font-bold text-cdj-muted uppercase tracking-wider">Groupe</label>
+                    <select name="groupe" required 
+                        class="w-full bg-cdj-bg border border-cdj-border rounded-xl px-4 py-2.5 text-xs text-cdj-text focus:outline-none focus:border-sky-500 transition-colors cursor-pointer">
+                        <option value="" disabled selected>Sélectionnez un groupe</option>
+                        <option value="gr K.A">gr K.A</option>
+                        <option value="gr APA">gr APA</option>
+                        <option value="gr Scouts">gr Scouts</option>
+                        <option value="gr BYM">gr BYM</option>
+                    </select>
+                </div>
+                <div class="space-y-1.5">
+                    <label class="block text-xs font-bold text-cdj-muted uppercase tracking-wider">Rôle</label>
+                    <input type="text" name="role" required 
+                        class="w-full bg-cdj-bg border border-cdj-border rounded-xl px-4 py-2.5 text-xs text-cdj-text focus:outline-none focus:border-sky-500 transition-colors"
+                        placeholder="Ex: Encadreur principal">
+                </div>
+            </div>
+
+            <!-- Téléphone & WhatsApp -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="space-y-1.5">
+                    <label class="block text-xs font-bold text-cdj-muted uppercase tracking-wider">Téléphone</label>
+                    <input type="tel" name="telephone" required 
+                        class="w-full bg-cdj-bg border border-cdj-border rounded-xl px-4 py-2.5 text-xs text-cdj-text focus:outline-none focus:border-sky-500 transition-colors"
+                        placeholder="Ex: +243 ...">
+                </div>
+                <div class="space-y-1.5">
+                    <label class="block text-xs font-bold text-cdj-muted uppercase tracking-wider">Ce numéro a-t-il WhatsApp ?</label>
+                    <select name="whatsapp" required 
+                        class="w-full bg-cdj-bg border border-cdj-border rounded-xl px-4 py-2.5 text-xs text-cdj-text focus:outline-none focus:border-sky-500 transition-colors cursor-pointer">
+                        <option value="oui">Oui</option>
+                        <option value="non">Non</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="space-y-1.5">
+                <label class="block text-xs font-bold text-cdj-muted uppercase tracking-wider">Adresse Email</label>
+                <input type="email" name="email" required 
+                    class="w-full bg-cdj-bg border border-cdj-border rounded-xl px-4 py-2.5 text-xs text-cdj-text focus:outline-none focus:border-sky-500 transition-colors"
+                    placeholder="exemple@domaine.com">
+            </div>
+
+            <!-- Photo avec affichage automatique en local -->
+            <div class="space-y-2">
+                <label class="block text-xs font-bold text-cdj-muted uppercase tracking-wider">Photo d'identité</label>
+                <div class="flex items-center gap-4">
+                    <!-- Aperçu de la photo -->
+                    <div id="apercu-container" class="w-14 h-14 rounded-2xl bg-cdj-bg border border-cdj-border flex items-center justify-center overflow-hidden shrink-0">
+                        <span id="apercu-placeholder" class="text-xs text-cdj-muted">Photo</span>
+                        <img id="apercu-img" src="#" alt="Aperçu" class="w-full h-full object-cover hidden">
+                    </div>
+                    <!-- Input de fichier stylisé -->
+                    <label class="flex-1 flex flex-col items-center justify-center border-2 border-dashed border-cdj-border rounded-2xl p-3 hover:border-sky-500/50 transition-colors cursor-pointer bg-cdj-bg/50">
+                        <span class="text-xs text-cdj-muted font-medium" id="file-name-text">Cliquez pour choisir une photo</span>
+                        <input type="file" id="input-photo" name="photo" accept="image/*" required class="hidden" onchange="apercevoirPhoto(event)">
+                    </label>
+                </div>
+            </div>
+
+            <!-- Boutons d'action -->
+            <div class="flex flex-col sm:flex-row items-center gap-3 pt-4">
+                <a href="javascript:history.back()" 
+                    class="w-full sm:w-1/2 py-3 px-4 rounded-xl border border-cdj-border text-cdj-text font-bold text-xs text-center hover:bg-cdj-bg transition-all cursor-pointer">
+                    Retour
+                </a>
+                <button type="submit" 
+                    class="w-full sm:w-1/2 py-3 px-4 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-xs text-center transition-all shadow-lg cursor-pointer">
+                    Envoyer l'invitation →
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+
+
+</body>
+</html>
